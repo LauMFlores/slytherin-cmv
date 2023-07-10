@@ -1,0 +1,49 @@
+.faq {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+}
+
+  
+.faq-pregunta {
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: 1px solid rgb(59, 58, 58);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.637);
+  border-radius: 10px;
+  letter-spacing: 1.5px;
+  background-color: rgb(23, 24, 23);
+  font-size: 18px;
+  color: white;
+}
+
+.faq-respuesta {
+  color: black;
+  padding: 15px 20px;
+  font-size: 18px;
+  background-color: rgb(118, 155, 135);
+  background-color:  #214d21e3;
+  line-height: 25px;
+  text-shadow: 0.3px -0.8px 1px rgba(40, 41, 40, 0.685);
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 4px solid rgb(23, 24, 23);
+
+}
+  
+.revelio {
+  letter-spacing: 5px;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 5px;
+  color: silver;
+  text-shadow: 2px 2px 2px black;
+ 
+}
+
+  

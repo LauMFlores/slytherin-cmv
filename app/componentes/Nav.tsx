@@ -6,13 +6,16 @@ export default function Nav () {
         <>
         <ul>
             <li>
-                <Link href='./'>Informacion General</Link>
+                <Link className='enlaces' href='./general'>General</Link>
             </li>
             <li>
-                <Link href='./nuevos-ingresos'>Nuevos Ingresos</Link>
+                <Link className='enlaces' href='./nuevos-ingresos'>Nuevos Ingresos</Link>
             </li>
             <li>
-                <Link href='./provisiones-magicas'>Provisiones Magicas de Emergencia</Link>
+                <Link className='enlaces' href='./provisiones-magicas'>Provisiones Magicas de Emergencia</Link>
+            </li>
+            <li>
+                <Link className='enlaces' href='./'>LOGOUT</Link>
             </li>
         </ul>
         </>

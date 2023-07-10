@@ -10,4 +10,31 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  text-align: center;
+}
+
+body {
+  background-color: black;
+  background-color: silver;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color:black;
+  height: 90px;
+  /* max-width: 1300px; */
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.header-titulo {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 5px;
+  text-shadow: 7px 2px 2px rgb(96, 97, 96);
+  letter-spacing: 4px;
+  
 }

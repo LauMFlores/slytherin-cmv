@@ -1,3 +1,31 @@
-* {
-    background-color: green;
+ul {
+    background-color: darkgreen;
+    display: flex;
+    height: 70px;
+    text-align: center;
+    
+}
+
+li {
+    flex-grow: 1;
+    list-style: none;
+    height: 70px;
+    
+}
+
+.enlaces {
+    text-decoration: none;
+    color: white;
+    height: 70px;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    padding: 20px;
+    transition: all 0.7s;
+    font-size: 16px;
+}
+
+.enlaces:hover {
+    padding-top: 30px;
+    background-color: rgba(51, 54, 51, 0.959);
+    font-size: 18px;
 }

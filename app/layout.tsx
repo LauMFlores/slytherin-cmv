@@ -1,7 +1,10 @@
-import Footer from './componentes/Footer'
-import Nav from './componentes/Nav'
+//import Footer from './componentes/Footer'
+//import Nav from './componentes/Nav'
+import HogwartsLogo from './componentes/HogwartsLogo'
+import Musica from './componentes/Musica'
 import './globals.css'
 import { Inter } from 'next/font/google'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,9 +21,12 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={inter.className}>
-        <Nav/>
+        <header>
+          <HogwartsLogo/>
+          <h1 className='header-titulo'>SLYTHERIN CMV</h1>
+          <Musica/>
+        </header>
         {children}
-        <Footer/>
       </body>
     </html>
   )

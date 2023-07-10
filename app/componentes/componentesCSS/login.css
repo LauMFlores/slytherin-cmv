@@ -1,0 +1,133 @@
+.login {
+    /* width: auto;
+    height: 80vh; */
+    color: rgb(231, 220, 220);
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    border-top: 1px solid rgb(87, 84, 84) ;
+    
+}
+
+.login-titulo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 10px 5px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.288);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.363);
+    background-color: #123505; 
+    background-color: #194219;
+    letter-spacing: 3px;
+    
+}
+
+.login-formulario *{
+    margin-top: 20px;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 60%;
+    
+}
+
+.login-usuario{ 
+    border-radius: 3px;
+    border: 2.5px solid #194219;
+    font-size: 18px;
+    
+
+}
+    
+
+.login-clave{ 
+    border-radius: 3px;
+    border: 2.5px solid #194219;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.login-error,
+.login-mensaje {
+    color: #080808;
+    padding: 20px;
+     
+}
+
+.login-mostrar-clave-boton {
+    width: 100px;
+   margin-top: 5px;
+   border-radius: 10px;
+   border: 1px solid silver;
+   box-shadow: 2px 2px 2px rgb(124, 121, 121);
+    
+      
+}
+
+.alohomora-boton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid rgb(12, 12, 12);
+    width: 200px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(60, 141, 97);
+    background-color: #194219d2;
+    font-weight: bold;
+    transition: all 0.9s;
+    letter-spacing: 2px;
+}
+
+.alohomora-boton:hover {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+.login-boton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 20px;
+    border: 3px solid white;
+    width: 190px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.7s;
+    background-color: #071601; 
+    margin-top: 20px;
+}
+
+.login-boton:hover {
+    background-color: black;
+    letter-spacing: 3px;
+}
+
+@media (min-width: 720px) {
+    .login {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      /* width: 100%;
+      height: auto; */
+    
+      min-height: 400px;
+      margin-right: 15px;
+    }
+
+    /* .login-titulo {}
+
+    .login-formulario *{}
+
+    .login-boton {} */
+  }

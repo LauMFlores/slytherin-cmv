@@ -1,0 +1,11 @@
+.boton-musica{
+    margin: 20px;
+    padding: 4px 7px;
+    border-radius: 15px;
+    border: 2px solid rgb(110, 117, 109);
+    background-color: silver;
+    box-shadow: 2px 2px 4px silver;
+    font-weight: bold;
+    cursor: pointer;
+
+}
