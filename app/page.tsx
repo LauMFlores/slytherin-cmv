@@ -4,16 +4,17 @@ import styles from './page.module.css';
 import Login from './componentes/Login';
 import Faq from './componentes/Faq';
 // import HogwartsLogo from './componentes/HogwartsLogo';
-
+ 
 
 export default function Home() {
   
   return (
-    <main className={styles.main}> 
-        
-        <Login/>
-        <Faq/>
-     
-    </main>
+    
+      <main className={styles.main}> 
+          
+          <Login/>
+          <Faq/>
+      </main>
+   
   )
 }

@@ -24,7 +24,7 @@ export default function Musica() {
       <button className='boton-musica' onClick={toggleMusic}>
         {sound ? '🔇 OFF' : '🔊 ON'}
       </button>
-      <audio src='./hedwigTheme.mp3'></audio>
+      <audio loop src='./hedwigTheme.mp3'></audio>
     </div>
   );
 }

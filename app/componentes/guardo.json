@@ -1,0 +1,99 @@
+[{"id": 1,
+"tipo":"indumentaria",
+"imagen": "./guantes.webp",
+"nombre": "Guantes Protectores",
+"descripcion": "Pueden utilizarse para las clases de herbologia y de cuidados de animales magicos. Tambien excelentes para montar escobas.",
+"precio": 1,
+"descuento": 1,
+"promocion": true
+},
+{
+"id": 2,
+"tipo":"indumentaria",
+"imagen": "/tunica.jpg",
+"nombre": "Tunica Basica",
+"descripcion": "Tunica negra basica, para uso diario en el castillo.",
+"precio": 5,
+"descuento": 0.8,
+"promocion": false
+},
+{
+"id": 3,
+"tipo":"escoba",
+"imagen": "./protecciones.jpg",
+"nombre": "Kit Protecciones para Escoba",
+"descripcion": "Combo de protecciones para las lecciones de escoba para principiantes o para las practicas de quidditch",
+"precio": 2,
+"descuento": 1,
+"promocion": false
+},
+{
+"id": 4,
+"tipo":"escoba",
+"imagen": "/nimbus2023.jpg",
+"nombre": "Escoba Nimbus Modelo 2023",
+"descripcion": "La renombrada escoba Nimbus, de las mas veloces del mercado, disponible en su ultima version: 2023",
+"precio": 100,
+"descuento": 1,
+"promocion": false
+},
+{
+"id": 5,
+"tipo":"basicos",
+"imagen": "./kit-tinta-pluma.avif",
+"nombre": "Kit del estudiante",
+"descripcion": "1 Pluma, 3 frascos de tinta y 10 rollos de pergamino",
+"precio": 3,
+"descuento": 1,
+"promocion": false
+},
+{
+"id": 6,
+"tipo":"basicos",
+"imagen": "./tinta-pluma.png",
+"nombre": "Frasco de tinta con pluma",
+"descripcion": "Frasco de tinta negra, pluma incluida. 2 unidades.",
+"precio": 1,
+"descuento": 1,
+"promocion": false
+},
+{
+"id": 7,
+"tipo":"basicos",
+"imagen": "./pergamino-2.jpg",
+"nombre": "Rollo de pergamino",
+"descripcion": "Rollos de pergamino, para todo tipo de tintas. 6 unidades ",
+"precio": 2,
+"descuento": 1,
+"promocion": false
+},
+{
+"id": 8,
+"tipo":"pociones",
+"imagen": "./potion-bottle.jpg",
+"nombre": "Frascos para pociones",
+"descripcion": "Frascos para pociones",
+"precio": 5000,
+"descuento": 1,
+"promocion": false
+},
+{
+"id": 9,
+"tipo":"pociones",
+"imagen": "./potion-bottle-2.jpg",
+"nombre": "Frascos para pociones",
+"descripcion": "Frascos para pociones",
+"precio": 5000,
+"descuento": 1,
+"promocion": false
+},
+{
+"id": 10,
+"tipo":"pociones",
+"imagen": "./potion-bottle-3.webp",
+"nombre": "Frascos para pociones",
+"descripcion": "Frascos para pociones",
+"precio": 5000,
+"descuento": 1,
+"promocion": false
+}]

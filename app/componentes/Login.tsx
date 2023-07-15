@@ -166,6 +166,9 @@ export default function Login() {
           </Link></>
         )}
       </div>
+        <Link className='login-boton' href="/general">
+              ENTRAR
+            </Link>
     </div>
   );
 }

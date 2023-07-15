@@ -1,0 +1,91 @@
+
+/* .tarjeta * {
+    margin: 0;
+} */
+
+.tarjeta {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 550px;
+    border: 3px solid gray;
+    border-radius: 5px;
+
+   
+}
+
+/* h2{
+    padding: 20px;
+    border: 2px solid rgb(250, 247, 247);
+    background-color: rgba(100, 165, 165, 0.842);
+    letter-spacing: 1.5px;
+    text-align: left;
+    padding-left: 100px;
+}  */
+
+ 
+
+.tarjeta-imagen-contenedor {
+    width: 290px;
+    height: 300px;
+    
+}
+
+.tarjeta-imagen{
+ width: 100%;
+ height: 250px;
+ object-fit: cover;
+}
+
+.tarjeta-nombre {
+   padding: 10px;
+    
+}
+
+.tarjeta-precio-contenedor {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+ 
+    
+}
+
+.tarjeta-precio {
+    text-decoration:line-through;
+    padding-right: 20px;
+}
+
+.tarjeta-descuento {
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.tarjeta-precio-final {
+    font-size: 19px;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding-left: 15px;
+   
+   
+   
+}
+
+.tarjeta-descripcion {
+    padding-bottom:10px;
+    line-height: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* .promocion {
+    font-size: 15px;
+    color: rgb(144, 148, 106); 
+    font-weight: bold;
+    text-decoration: overline;
+    padding: 10px 20px 10px;
+    letter-spacing: 0.7px;
+    line-height: 25px;
+
+} */
