@@ -1,0 +1,22 @@
+.lechuzas-contenedor {
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos al final en sentido horizontal (derecha) */
+    height: auto; /* Altura del contenedor */
+    background-color: rgb(100, 148, 100)
+    
+
+}
+
+
+.box {
+    width: 100px; /* Ancho del div */
+    height: auto; /* Altura del div */
+    background-color: #ccc;
+    transition: transform 1.9s; /* Transición suave para la animación */
+    background-color: rgb(100, 148, 100)
+  }
+
+  .box.open {
+    width: 400px;
+    transform: translateX(-50%); /* Desplaza el div hacia la izquierda al abrirse */
+  }

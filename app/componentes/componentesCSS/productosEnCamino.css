@@ -1,0 +1,17 @@
+.lechuzas-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color:  rgb(100, 148, 100);
+
+}
+
+.lechuzas-ul *{
+    background-color:  rgb(100, 148, 100);
+}
+
+.lechuzas {
+    height: auto;
+    margin-bottom: 200px;
+    background-color:  rgb(100, 148, 100)
+}

@@ -1,9 +1,12 @@
 :root {
   --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-size-1: clamp(10px, 8px + 0.8vw, 14px);
+  --font-size-3: clamp(14px, 8px + 0.8vw, 18px);
+  --font-size-5: clamp(14px, 12px + 0.8vw, 19px);
+  --font-size-8: clamp(18px, 14px + 1.1vw, 26px);
+  --font-size-9: clamp(18px, 16px + 1.8vw, 34px);
+  --font-size-10: clamp(12px, 10px + 1.1vw, 26px);
+  /* background-color: rgb(4, 26, 4); */
   }
   
 * {
@@ -14,27 +17,37 @@
 }
 
 body {
-  background-color: black;
   background-color: silver;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  /* background-color: rgb(145, 150, 146);  */
+  /* background-image: url("../public/pattern.jpg"); */
+ 
 }
 
-header {
+.layout-header-contenedor {
+  background-color: rgb(177, 173, 173);
+  background-color: rgba(63, 63, 63, 0.973);
+  background-color: rgba(0, 0, 0, 0.877);
+  border-bottom: 5px solid rgba(247, 245, 245, 0.658);
+}
+
+.layout-header {
   display: flex;
   justify-content: space-between;
-  background-color:black;
+  align-items: center;
   height: 90px;
-  /* max-width: 1300px; */
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
-
+  padding: 3px;
 }
 
-.header-titulo {
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 20px 5px;
-  text-shadow: 7px 2px 2px rgb(96, 97, 96);
+.layout-header-titulo {
+  color: rgb(207, 203, 203);
+  text-shadow: 7px 2px 8px rgb(96, 97, 96);
   letter-spacing: 4px;
+  font-size: var(--font-size-9) ;
+  text-align: left;
   
 }

@@ -1,11 +1,6 @@
-//import Footer from './componentes/Footer'
-//import Nav from './componentes/Nav'
 import HogwartsLogo from './componentes/HogwartsLogo'
 import Musica from './componentes/Musica'
 import './globals.css'
-
-
-
 
 export const metadata = {
   title: 'Campus Magico Virtual de Slytherin',
@@ -20,10 +15,12 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body>
-        <header>
-          <HogwartsLogo/>
-          <h1 className='header-titulo'>SLYTHERIN CMV</h1>
-          <Musica/>
+        <header className='layout-header-contenedor'>
+          <div className='layout-header'>
+            <HogwartsLogo/>
+            <h1 className='layout-header-titulo'>SLYTHERIN CMV</h1>
+            <Musica/>
+          </div>
         </header>
         {children}
       </body>

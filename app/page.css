@@ -1,0 +1,23 @@
+.main-contenedor {
+  background-color: rgb(209, 202, 202);
+  /* background-color: #071601; */
+  /* background-color: #050f00; */
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.home-contenedor {
+ background-color: rgb(93, 95, 97);
+ background-color: rgb(207, 203, 203);
+ /* background-color: rgba(0, 0, 0, 0.418); */
+}
+
+@media (min-width: 720px) {
+  .main-contenedor {
+    max-width: 1300px;
+  }
+}
+
+
+

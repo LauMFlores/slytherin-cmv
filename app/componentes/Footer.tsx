@@ -1,5 +1,9 @@
 import './componentesCSS/footer.css'
 
 export default function Footer () {
-    return ("Aqui va el footer")
+    return (
+        <footer>
+             &copy; Escuela Hogwarts de Magia y Hechizería.
+        </footer>
+    )
 }

@@ -15,13 +15,13 @@ export default function Musica() {
     }
   }, [sound]);
 
-  function toggleMusic() {
+  function handleToggleMusic() {
     setSound(!sound);
   }
 
   return (
-    <div>
-      <button className='boton-musica' onClick={toggleMusic}>
+    <div className='musica-contenedor'>
+      <button className='musica-boton' onClick={handleToggleMusic}>
         {sound ? '🔇 OFF' : '🔊 ON'}
       </button>
       <audio loop src='./hedwigTheme.mp3'></audio>

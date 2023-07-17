@@ -11,9 +11,9 @@ export default function Logo () {
           <>
           <div className='logo' onMouseEnter={onMouseHover} onMouseLeave={onMouseUnhover}>
               {isHovering ? (
-                <img src="/slytheringif.gif"  alt="logo" />
+                <img src="/slytheringif0.gif"  alt="logo" />
               ) : (
-                <img src="/slytherin-logo.jpg"  alt="logo" />
+                <img src="/slytherin-logo0.jpg"  alt="logo" />
               )} 
 
           </div>

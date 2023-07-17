@@ -1,3 +1,5 @@
+import './componentesCSS/productosEnCamino.css'
+
 interface ProductosEnCaminoProps {
     productos: any[];
     cantidadItems: number;
@@ -17,7 +19,7 @@ interface ProductosEnCaminoProps {
     return (
       <div className="lechuzas">
         <h3>Lechuzas:</h3>
-        <ul>
+        <ul className="lechuzas-ul">
             <li>Cantidad de lechuzas en viaje: {productos.length}</li>
             <li>Cantidad total de ítems solicitados: {cantidadItems}</li>
             <li>Importe a debitar de su cuenta en Gringotts: ${importe} Galeones </li>
