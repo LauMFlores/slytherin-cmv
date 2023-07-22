@@ -1,10 +1,10 @@
-ul {
+ /* ul {
     background-color: darkgreen;
     display: flex;
     height: 70px;
     text-align: center;
     
-}
+} */
 
 li {
     flex-grow: 1;

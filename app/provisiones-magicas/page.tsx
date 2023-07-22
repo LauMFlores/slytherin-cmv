@@ -88,17 +88,17 @@ export default function provisionesMagicas () {
         
     
             {mostrarCategorias 
-            ? <div className='filtro-contenedor ok' onClick={handleToggleCategorias}> 
-                <p>Cerrar Categorias</p>
-                <div className="box open">
+            ? <div className='contenedor-izquierdo' onClick={handleToggleCategorias}> 
+                <p className='contenedor-nombre'>◀Categorias</p>
+                <div className="filtro-contenedor open">
                 <Filtro categorias={categorias} onFiltrar={filtrarProductos} />
                 <Buscar onBuscar={buscarProductos} /> 
                 </div>
               </div>
              
-            : <div className='ok' onClick={handleToggleCategorias}> 
-                <p>Abrir Categorias</p>
-                <div className="box"></div>
+            : <div className='contenedor-izquierdo' onClick={handleToggleCategorias}> 
+                <p className='contenedor-nombre'> Categorias ▶</p>
+                <div className="filtro-contenedor"></div>
               </div>}
      
             <div className="tarjetas-contenedor">
@@ -113,16 +113,22 @@ export default function provisionesMagicas () {
                       agregarProductoEnCamino={agregarProductoEnCamino}
                   />
                 ))} 
-        </div>
+            </div>
 
-        <div className="lechuzas-contenedor">
-           <p  onClick={handleToggleLechuzas}>
-            {mostrarLechuzas ? <p>Cerrar Lechuzas</p> : <p>Ver Lechuzas</p>}</p>
-            <div className={`box ${mostrarLechuzas ? 'open' : ''}`}>
-         
-            {mostrarLechuzas && (
-            <ProductosEnCamino productos={productosEnCamino} cantidadItems={cantidadItems} onEliminarProducto={eliminarProductoEnCamino} />  )}</div>
-        </div> 
+            <div className='contenedor-izquierdo' >
+                {mostrarLechuzas ? 
+                <>
+                  <p className='contenedor-nombre'onClick={handleToggleLechuzas}> Lechuzas▶</p>
+                  <div className="lechuzas-contenedor open">
+                    <ProductosEnCamino productos={productosEnCamino} cantidadItems=     {cantidadItems} onEliminarProducto={eliminarProductoEnCamino} />
+                  </div>
+                </>
+              : <>
+                  <p className='contenedor-nombre' onClick={handleToggleLechuzas}>Lechuzas ◀</p>
+                  <div className="lechuzas-contenedor"></div>
+                </>}
+              </div>
+            
       </div>
       </Layout>
     )

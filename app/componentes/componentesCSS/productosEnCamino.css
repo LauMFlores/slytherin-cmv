@@ -1,17 +1,101 @@
-.lechuzas-ul {
+.lechuzas {
+    padding: 10px 2px;
     display: flex;
     flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
     gap: 20px;
-    background-color:  rgb(100, 148, 100);
 
 }
 
-.lechuzas-ul *{
-    background-color:  rgb(100, 148, 100);
+.lechuzas-info {
+    font-style: italic;
+}
+.lechuzas-total {
+    font-weight: bold;
+    font-style:normal;
+    padding: 5px;
 }
 
-.lechuzas {
+.lechuzas-total-paquetes {
+    /* border: 2px solid rgb(253, 253, 253); */
+    display: flex;
+    flex-direction: column;
     height: auto;
-    margin-bottom: 200px;
-    background-color:  rgb(100, 148, 100)
+    margin: 5px 20px;
+ 
+}
+
+.lechuzas-total-paquetes li{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    font-style:normal;
+    gap: 15px;
+    background-color: rgba(232, 240, 240, 0.445);
+    height: 100%;
+
+}
+
+.lechuzas-total-paquetes p{
+
+}
+
+.lechuzas-total-paquetes button{
+    max-width: 70%;
+    padding: 5px 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.lechuzas-confirmacion {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.856);
+    color: white;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 0px 10px;
+    cursor: default;
+}
+
+.lechuzas-confirmacion-p1{
+   
+    padding: 20px 0px;
+}
+
+.lechuzas-confirmacion-p2{
+    border: 1px solid white;
+    padding: 20px 5px;
+    background-color: rgba(0, 0, 0, 0.623);
+    border-radius: 5px;
+}
+
+.lechuzas-confirmacion-p3{
+ 
+    padding: 20px 0px;
+}
+
+.lechuzas-confirmacion-botones{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.lechuzas-confirmacion-botones button{
+    padding: 10px 5px;
+    border-radius: 5px;
+
 }
