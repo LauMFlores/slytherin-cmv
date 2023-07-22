@@ -1,8 +1,15 @@
 'use client';
 import React, { useState } from "react";
 import Link from 'next/link';
-import Logo from './Logo';
+import Logo from './Logo'; 
 import './componentesCSS/login.css';
+import database from '../data_usuarios.json';
+
+
+const passwordDatabase = database.map((user) => ({
+  ...user,
+  password: "123" //"magiaantigua" // Aqui cambia la clave segun cambia en en la sala comun.
+}));
 
 export default function Login() {
   const [usuario, setUsuario] = useState('');
@@ -11,21 +18,11 @@ export default function Login() {
   const [error, setError] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
-  const database = [
-    {
-      username: "123",
-      password: "123"
-    },
-    {
-      username: "12345",
-      password: "magiaantigua"
-    }
-  ];
 
   const handleSubmit = (event: { preventDefault: () => void; }) => {
     event.preventDefault();
 
-    const userData = database.find((user) => user.username === usuario);
+    const userData = passwordDatabase.find((user) => user.username === usuario);
 
     if (userData && userData.password === clave) {
       setIsSubmitted(true);

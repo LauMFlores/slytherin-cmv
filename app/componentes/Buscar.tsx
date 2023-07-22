@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './componentesCSS/buscar.css'
 
 interface BuscarProps {
   onBuscar: (termino: string) => void;
@@ -7,6 +8,7 @@ interface BuscarProps {
 export default function Buscar( { onBuscar }: BuscarProps) {
 
     const [busqueda, setBusqueda] = useState("");
+  
 
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setBusqueda(event.target.value);
@@ -18,22 +20,22 @@ export default function Buscar( { onBuscar }: BuscarProps) {
 
     };
     
-    function Limpiar(){
-      return(
-        setBusqueda("")
-      )
+    const handleLimpiar = (event: React.MouseEvent<HTMLButtonElement>) => {
+      event.stopPropagation();
+      setBusqueda(""); 
+      onBuscar("");
     };
 
     return (
-      <form onSubmit={handleSubmit}>
-        <input
+      <form className='buscar-contenedor' onSubmit={handleSubmit }>
+        <input onClick={(event) => event.stopPropagation()}
           type="text"
           value={busqueda}
           onChange={handleInputChange}
-          placeholder="Buscar productos..."
+          placeholder="Buscar provisón mágica"
         />
-        <button type="submit">Buscar</button>
-        <button onClick={Limpiar}type="reset">Limpiar</button>
+        <button className='buscar-boton' type="submit" onClick={(event) => event.stopPropagation()}>Buscar</button>
+        <button className='buscar-boton limpiar' onClick={handleLimpiar} type="button" >Limpiar</button>
       </form>
       
     );

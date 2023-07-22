@@ -13,8 +13,6 @@ export default function Home() {
           <Login/>
           <Faq/>  
       </main>
-      
-      <Footer/>
       </div>
   )
 }

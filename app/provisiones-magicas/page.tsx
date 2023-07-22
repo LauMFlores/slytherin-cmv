@@ -60,7 +60,9 @@ export default function provisionesMagicas () {
         return coincideCategoria && coincideTerminoBusqueda;
       });
       
-    
+    const sinResultados = productosFiltrados.length === 0; 
+      
+
     const agregarProductoEnCamino = (producto: any) => {
         setProductosEnCamino([...productosEnCamino, producto]);
         setCantidadItems(cantidadItems + producto.cantidad);
@@ -78,39 +80,50 @@ export default function provisionesMagicas () {
     return (
       
       <Layout>
-
-        <h1>Provisiones Magicas de Emergencia</h1>
-        <h2>Encontrá tus Provisiones Mágicas de Emergencia Aquí</h2>
-
-        <div className="filtro-contenedor">
-          <p onClick={handleToggleCategorias}>
-            {mostrarCategorias ? <p>Cerrar Categorias</p> : <p>Abrir Categorias</p>}</p>
-            {mostrarCategorias && (
-            <>
-                <Filtro categorias={categorias} onFiltrar={filtrarProductos} />
-                <Buscar onBuscar={buscarProductos} />
-            </>
-        )}
+        <div className="descripcion-contenedor">
+          <h2 className='titulo'>Provisiones Magicas de Emergencia</h2>
+          <p className='descripcion'>Encontrá tus Provisiones Mágicas de Emergencia Aquí</p>
         </div>
-
-        <div className="tarjetas-contenedor">
-                {productosFiltrados.map((elemento) => (
-                    <Tarjeta 
-                        key={elemento.id} 
-                        producto={elemento} 
-                        agregarProductoEnCamino={agregarProductoEnCamino}
-                    />
-                ))}
+        <div className="provisiones-contenedor">
+        
+    
+            {mostrarCategorias 
+            ? <div className='filtro-contenedor ok' onClick={handleToggleCategorias}> 
+                <p>Cerrar Categorias</p>
+                <div className="box open">
+                <Filtro categorias={categorias} onFiltrar={filtrarProductos} />
+                <Buscar onBuscar={buscarProductos} /> 
+                </div>
+              </div>
+             
+            : <div className='ok' onClick={handleToggleCategorias}> 
+                <p>Abrir Categorias</p>
+                <div className="box"></div>
+              </div>}
+     
+            <div className="tarjetas-contenedor">
+              {sinResultados && (
+                <p>No se encuentra artículo dentro de {filtro || "la tienda"}.</p>
+              )}
+          
+              {productosFiltrados.map((elemento) => (
+                  <Tarjeta 
+                      key={elemento.id} 
+                      producto={elemento} 
+                      agregarProductoEnCamino={agregarProductoEnCamino}
+                  />
+                ))} 
         </div>
 
         <div className="lechuzas-contenedor">
-            <div className={`box ${mostrarLechuzas ? 'open' : ''}`}>
-          <p  onClick={handleToggleLechuzas}>
+           <p  onClick={handleToggleLechuzas}>
             {mostrarLechuzas ? <p>Cerrar Lechuzas</p> : <p>Ver Lechuzas</p>}</p>
+            <div className={`box ${mostrarLechuzas ? 'open' : ''}`}>
+         
             {mostrarLechuzas && (
             <ProductosEnCamino productos={productosEnCamino} cantidadItems={cantidadItems} onEliminarProducto={eliminarProductoEnCamino} />  )}</div>
         </div> 
-        
+      </div>
       </Layout>
     )
 }

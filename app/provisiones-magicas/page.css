@@ -1,22 +1,69 @@
-.lechuzas-contenedor {
-    display: flex;
-    justify-content: flex-end; /* Alinea los elementos al final en sentido horizontal (derecha) */
-    height: auto; /* Altura del contenedor */
-    background-color: rgb(100, 148, 100)
-    
+.provisiones-contenedor {
+ background-color: lightcoral;
+ display: flex;
 
 }
 
+.descripcion-contenedor{
+ background-color: blue;
+}
+
+.titulo {
+
+}
+
+.descripcion {
+
+}
+
+.filtro-contenedor {
+ /* background-color: blueviolet; */
+ flex-grow: 10;
+}
+
+.filtro-contenedor p{
+position: relative;
+}
+
+.tarjetas-contenedor {
+  display:flex;
+  /* flex-grow: 4; */
+  flex-wrap: wrap;
+}
+
+.lechuzas-contenedor {
+  background-color: aqua;
+  /* flex-grow: 2; */
+}
 
 .box {
-    width: 100px; /* Ancho del div */
-    height: auto; /* Altura del div */
-    background-color: #ccc;
-    transition: transform 1.9s; /* Transición suave para la animación */
-    background-color: rgb(100, 148, 100)
+  width: 0px; 
+  opacity: 0;
+  transition: width 1s;
+}
+
+.ok {
+  border: 10px solid black;
+}
+
+.box.open {
+    /* width: 200px;
+    transform: translateX(-10%);  */
+  animation: opacidad 1s 0.6s forwards;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.637);
+}
+
+@keyframes opacidad{
+  
+  0% {
+    opacity:0;
   }
 
-  .box.open {
-    width: 400px;
-    transform: translateX(-50%); /* Desplaza el div hacia la izquierda al abrirse */
+  100% {
+    opacity:1;
   }
+}
+  
+
+ 

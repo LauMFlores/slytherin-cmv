@@ -1,5 +1,6 @@
 import HogwartsLogo from './componentes/HogwartsLogo'
 import Musica from './componentes/Musica'
+import Footer from './componentes/Footer';
 import './globals.css'
 
 export const metadata = {
@@ -23,6 +24,7 @@ export default function RootLayout({
           </div>
         </header>
         {children}
+        <Footer/>
       </body>
     </html>
   )

@@ -1,7 +1,7 @@
 [
    {
    "id": 1,
-   "tipo":"varita",
+   "tipo":"varitas",
    "imagen": "./varita.webp",
    "nombre": "Varita generica",
    "descripcion": "Varita de madera de roble, nucleo de fibra de corazon de dragon, 15cm.",
@@ -22,7 +22,7 @@
    },
    {
       "id": 3,
-      "tipo":"escoba",
+      "tipo":"escobas",
       "imagen": "./protecciones.jpg",
       "nombre": "Kit Protecciones para Escoba",
       "descripcion": "Combo de protecciones para las lecciones de escoba para principiantes o para las practicas de quidditch",
@@ -32,7 +32,7 @@
 },
 {
    "id": 4,
-   "tipo":"escoba",
+   "tipo":"escobas",
    "imagen": "/nimbus2023.jpg",
    "nombre": "Escoba Nimbus Modelo 2023",
    "descripcion": "La renombrada escoba Nimbus, de las mas veloces del mercado, disponible en su ultima version: 2023",
@@ -42,7 +42,7 @@
 },
 {
    "id": 5,
-   "tipo":"basicos",
+   "tipo":"básicos",
    "imagen": "./kit-tinta-pluma.avif",
    "nombre": "Kit del estudiante",
    "descripcion": "1 Pluma, 3 frascos de tinta y 10 rollos de pergamino",
@@ -52,7 +52,7 @@
 },
 {
    "id": 6,
-   "tipo":"basicos",
+   "tipo":"básicos",
    "imagen": "./tinta-pluma.png",
    "nombre": "Frasco de tinta con pluma",
    "descripcion": "Frasco de tinta negra, pluma incluida. 2 unidades.",
@@ -62,7 +62,7 @@
    },
    {
    "id": 7,
-   "tipo":"basicos",
+   "tipo":"básicos",
    "imagen": "./pergamino-2.jpg",
    "nombre": "Rollo de pergamino",
    "descripcion": "Rollos de pergamino, para todo tipo de tintas. 6 unidades ",
