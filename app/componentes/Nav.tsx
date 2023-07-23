@@ -1,23 +1,37 @@
+'use client';
 import Link from 'next/link';
+import { useState } from 'react';
 import './componentesCSS/nav.css';
 
-export default function Nav () {
+const menuLinks = [
+    { href: '/general', text: 'General' },
+    { href: '/nuevos-ingresos', text: 'Nuevos Ingresos' },
+    { href: '/provisiones-magicas', text: 'Provisiones Mágicas de Emergencia' },
+    { href: '/', text: 'LOGOUT' },
+];
+
+export default function Nav() {
+
+    const [mostrar, setMostrar] = useState(false);
+
+    const toggleMenu = () => {
+        setMostrar(!mostrar);
+    };
+
     return (
-        <>
-        <ul>
-            <li>
-                <Link className='enlaces' href='./general'>General</Link>
-            </li>
-            <li>
-                <Link className='enlaces' href='./nuevos-ingresos'>Nuevos Ingresos</Link>
-            </li>
-            <li>
-                <Link className='enlaces' href='./provisiones-magicas'>Provisiones Magicas de Emergencia</Link>
-            </li>
-            <li>
-                <Link className='enlaces' href='./'>LOGOUT</Link>
-            </li>
-        </ul>
-        </>
-    )
+        <div onClick={toggleMenu} className='nav-contenedor' >
+             <p></p>
+             <p></p>
+             <p></p>
+             <ul className={`nav ${mostrar ? 'abierto' : ''}`}>
+                {menuLinks.map((link) => (
+                    <li className='nav-item'key={link.href}>
+                        <Link className='nav-enlaces' href={link.href}>
+                            {link.text}
+                        </Link>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
 }

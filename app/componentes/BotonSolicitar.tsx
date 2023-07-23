@@ -25,12 +25,12 @@ export default function BotonSolicitar(props: BotonSolicitarProps) {
           }, [mensajeCarrito]);
         
     return (
-        <div>
-            <button className='boton' onClick={handleClick} disabled={disabled}>
+        <div className='solicitar-contenedor' >
+            <button className='solicitar-boton' onClick={handleClick} disabled={disabled}>
                 Accio Item!
             </button> 
             {mensajeCarrito &&
-            <p className='mensajeCarrito' > Excelente, una lechuza ya esta en camino!</p>}
+            <p className='mensaje-carrito' > Excelente, una lechuza ya esta en camino!</p>}
            
             
         </div>

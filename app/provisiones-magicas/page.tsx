@@ -11,6 +11,7 @@ import './page.css';
 
 export default function provisionesMagicas () {
 
+    const pageTitle = 'Provisiones Mágicas de Emergencia';
     const [mostrarCategorias, setMostrarCategorias] = useState(false);
     const [mostrarLechuzas, setMostrarLechuzas] = useState(false);
     const [filtro, setFiltro] = useState("");
@@ -50,7 +51,7 @@ export default function provisionesMagicas () {
         setBusqueda(termino);
       };
     
-    // Agrego cantidad al objeto producto, muestro filtros.
+
     const productosFiltrados = data
       .map((producto) => ({...producto,cantidad: 0,}))
       .filter((producto: any) => {
@@ -79,17 +80,17 @@ export default function provisionesMagicas () {
 
     return (
       
-      <Layout>
+      <Layout pageTitle={pageTitle}>
         <div className="descripcion-contenedor">
-          <h2 className='titulo'>Provisiones Magicas de Emergencia</h2>
+          {/* <h2 className='titulo'>Provisiones Magicas de Emergencia</h2> */}
           <p className='descripcion'>Encontrá tus Provisiones Mágicas de Emergencia Aquí</p>
         </div>
         <div className="provisiones-contenedor">
         
-    
+
             {mostrarCategorias 
             ? <div className='contenedor-izquierdo' onClick={handleToggleCategorias}> 
-                <p className='contenedor-nombre'>◀Categorias</p>
+                <p className='contenedor-nombre'>◀ Categorias</p>
                 <div className="filtro-contenedor open">
                 <Filtro categorias={categorias} onFiltrar={filtrarProductos} />
                 <Buscar onBuscar={buscarProductos} /> 
@@ -103,7 +104,7 @@ export default function provisionesMagicas () {
      
             <div className="tarjetas-contenedor">
               {sinResultados && (
-                <p>No se encuentra artículo dentro de {filtro || "la tienda"}.</p>
+                <p>No se encuentra tal artículo mágico dentro de {filtro || "la tienda"}.</p>
               )}
           
               {productosFiltrados.map((elemento) => (
@@ -115,21 +116,22 @@ export default function provisionesMagicas () {
                 ))} 
             </div>
 
-            <div className='contenedor-izquierdo' >
+            <div className='contenedor-derecho' >
                 {mostrarLechuzas ? 
                 <>
-                  <p className='contenedor-nombre'onClick={handleToggleLechuzas}> Lechuzas▶</p>
+                  <p className='contenedor-nombre'onClick={handleToggleLechuzas}> Lechuzas ▶</p>
                   <div className="lechuzas-contenedor open">
                     <ProductosEnCamino productos={productosEnCamino} cantidadItems=     {cantidadItems} onEliminarProducto={eliminarProductoEnCamino} />
                   </div>
                 </>
               : <>
-                  <p className='contenedor-nombre' onClick={handleToggleLechuzas}>Lechuzas ◀</p>
+                  <p className='contenedor-nombre' onClick={handleToggleLechuzas}>◀ Lechuzas </p>
                   <div className="lechuzas-contenedor"></div>
                 </>}
               </div>
             
       </div>
+     
       </Layout>
     )
 }

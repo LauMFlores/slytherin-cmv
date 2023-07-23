@@ -36,7 +36,7 @@ export default function Tarjeta (props: {
         <img className='tarjeta-imagen'src={props.producto.imagen} alt=''></img>
         <h3 className='tarjeta-nombre'>{props.producto.nombre}</h3>
       </div>
-        <p className='tarjeta-descripcion'>{props.producto.descripcion}</p>
+      <p className='tarjeta-descripcion'>{props.producto.descripcion}</p>
         
         
         <div className="tarjeta-precio-contenedor">
@@ -52,9 +52,9 @@ export default function Tarjeta (props: {
       <Contador precioUnitario={precioFinal} onCantidadChange={setCantidad} /> 
       {cantidad===0? (
       <>
-         
+         <p className='contador-mensaje'> ¿Cuántos necesitás, Joven Slytherin?</p>
         <BotonSolicitar onClick={handleSolicitar} disabled={true}/> 
-        <p> Cuantos necesitas, Joven Slytherin?</p></> 
+        </> 
       ) : (
       <BotonSolicitar onClick={handleSolicitar} disabled={false}/> 
         )}

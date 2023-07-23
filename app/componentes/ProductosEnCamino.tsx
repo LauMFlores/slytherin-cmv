@@ -37,7 +37,7 @@ interface ProductosEnCaminoProps {
 
     return (
       
-        <div className="lechuzas">
+        <div className={`lechuzas ${mostrarConfirmacion ? 'overflow-oculto' : ''}`}>
             <p className="lechuzas-info">Cantidad de lechuzas en viaje: <p className="lechuzas-total">{productos.length}</p></p>
             <p className="lechuzas-info">Cantidad total de ítems solicitados: <p className="lechuzas-total">{cantidadItems}</p> </p>
             <p className="lechuzas-info">Importe a debitar de su cuenta en Gringotts: <p className="lechuzas-total">${importe} Galeones</p> </p>
