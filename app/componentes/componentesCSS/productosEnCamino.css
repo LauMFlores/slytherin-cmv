@@ -1,105 +1,104 @@
 .lechuzas {
     padding: 10px 2px;
-    max-height: 80vh;
+    max-height: 60vh;
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
     gap: 20px;
-    overflow-y: auto;
+    overflow-y: scroll;
     scrollbar-width: none;
     -webkit-scrollbar {
       display: none;  
     };
   }
   
+.lechuzas::-webkit-scrollbar { display: none; }
 
-.lechuzas::-webkit-scrollbar {
-     display: none; 
-}
-
-.overflow-oculto {
-    overflow-y:hidden;
-}
+.overflow-oculto { overflow-y:hidden; }
 
 .lechuzas-info {
     font-style: italic;
     font-size: var(--font-size-1);
 }
+
 .lechuzas-total {
-    font-weight: bold;
+    padding: 5px 5px 10px;
     font-style:normal;
-    padding: 5px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .lechuzas-total-paquetes {
-    /* border: 2px solid rgb(253, 253, 253); */
     display: flex;
     flex-direction: column;
     height: auto;
     margin: 5px 20px;
- 
 }
 
 .lechuzas-total-paquetes li{
+    margin: 5px 0;
+    padding: 5px 3px;
     display: flex;
     flex-direction: column;
-    margin: 5px 0;
-    padding: 3px;
     justify-content: center;
     align-items: center;
-    font-style:normal;
     gap: 15px;
-    background-color: rgba(232, 240, 240, 0.445);
-    height: 100%;
-
+    font-style:normal;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
-.lechuzas-total-paquetes p{
-
-}
+/* .lechuzas-total-paquetes p { } */
 
 .lechuzas-total-paquetes button{
     max-width: 70%;
-    padding: 3px 2px;
+    padding: 5px 3px;
+    margin-bottom:5px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
     font-size: var(--font-size-1);
+    font-family: monospace;
+    border: 1px solid white;
+    border: var(--buscar-boton-border);
+    font-size: var(--font-size-1);
+    color: var( --buscar-boton-color);
+    background-color: var(--buscar-boton-bgcolor);
+    transition: all 0.5s;
 }
+
+.lechuzas-total-paquetes button:hover {
+    background-color: rgba(0, 0, 0, 0.301);
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    background-color: var(--buscar-boton-hover-bgcolor);
+    border: var( --buscar-boton-hover-border);
+}
+
 
 .lechuzas-confirmacion {
     position: absolute;
+    bottom: 0;
+    padding: 0px 10px;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.856);
-    color: white;
-    /* top: 0px;
-    left: 0px;
-    right: 0px; */
-    bottom: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0px 10px;
     cursor: default;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
-.lechuzas-confirmacion-p1{
-    padding: 20px 0px;
-}
+.lechuzas-confirmacion-p1{ padding: 20px 0px;}
 
 .lechuzas-confirmacion-p2{
-    border: 1px solid white;
     padding: 20px 5px;
-    background-color: rgba(0, 0, 0, 0.623);
     border-radius: 5px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
-.lechuzas-confirmacion-p3{
-    padding: 20px 0px;
-}
+.lechuzas-confirmacion-p3{ padding: 20px 0px; }
 
 .lechuzas-confirmacion-botones{
     display: flex;
@@ -107,8 +106,32 @@
 }
 
 .lechuzas-confirmacion-botones button{
-    padding: 10px 5px;
+    padding: 9px 5px;
     border-radius: 5px;
     font-size: var(--font-size-1);
+    font-family: monospace;
+    color: black;
+    background-color: white;
+    border: 2px solid rgb(255, 255, 255);
+    transition: all 0.5s;
+}
 
+.lechuzas-confirmacion-botones button:hover{
+    color: white;
+    background-color: rgba(47, 83, 52, 0.76);
+    border: 2px solid white;
+}
+
+@media (min-width:720px) {
+    .lechuzas-info {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 10px;
+        border-top: 3px solid rgb(255, 255, 255);
+    }
+
+    .lechuzas-total {
+        padding: 5px 0 0;
+        border-bottom: none;
+    }
 }

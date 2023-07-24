@@ -1,16 +1,12 @@
-
 .tarjeta {
     min-width: 230px;
     width: min(320px, 30%);
-    /* height: 500px; */
-   height: auto;
+    height: auto;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    font-size: var(--font-size-1);
-    background-color: white;
-    background-color: rgba(0, 0, 0, 0.219);
-   
+    background-color: var(--tarjeta-bgcolor);
+    font-size: var(--font-size-1); 
 }
  
 .tarjeta-imagen-contenedor { 
@@ -31,31 +27,23 @@
 }
 
 .tarjeta-nombre {
-    font-size: var(--font-size-1);
     padding: 5px;  
+    font-size: var(--font-size-1);  
 }
 
 .tarjeta-precio-contenedor {
+    padding: 10px 5px;  
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 5px;  
     gap: 5px;
-    /* background-color: rgba(18, 131, 78, 0.767); */
-
 }
 
-.tarjeta-precio {
-    text-decoration:line-through;
-}
+.tarjeta-precio { text-decoration:line-through; }
 
-.tarjeta-descuento {
-    font-weight: bold;
-}
+.tarjeta-descuento { font-weight: bold; }
 
-.tarjeta-precio-final {
-    font-style: italic;      
-}
+.tarjeta-precio-final { font-style: italic; }
 
 .tarjeta-descripcion {
   padding: 0 5px;
@@ -63,9 +51,9 @@
 }
 
 .contador-mensaje{
-    font-size: var(--font-size-1);
-    background-color: rgba(114, 180, 125, 0.308);
-    padding: 5px 2px;
-    color: rgb(29, 92, 37);
     margin-bottom: 5px;
+    padding: 5px 2px;
+    color: var(--contador-mensaje-color);
+    background-color: var(--contador-mensaje-bgcolor);
+    font-size: var(--font-size-1);
 }

@@ -1,27 +1,28 @@
 .contador {
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
 }
 
 .boton-sumar,
 .boton-restar {
-    width: 50px;
-    height: 25px;
     margin-right: 15px;
     margin-left: 15px;
-    border-radius: 5px;
-    border: 1px solid rgb(255, 255, 255);
-    box-shadow: 2px 2px 1px rgb(185, 183, 183);
+    width: 50px;
+    height: 25px;
     font-size: 22px;
+    border-radius: 5px;
+    border: var(--contador-botones-border);
+    box-shadow: var(--contador-botones-boxshadow);
 }
 
 .boton-sumar:hover,
 .boton-restar:hover {
     cursor: pointer;
-    background-color: rgb(226, 226, 224);
-    box-shadow: 3px 3px 1px rgb(185, 183, 183);
+    background-color: var(--contador-botones-hover-bgcolor);
+    box-shadow: var(--contador-botones-hover-boxshadow);
+    
 }
 
 .precio-total {

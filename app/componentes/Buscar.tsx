@@ -32,9 +32,9 @@ export default function Buscar( { onBuscar }: BuscarProps) {
           type="text"
           value={busqueda}
           onChange={handleInputChange}
-          placeholder="Buscar provisón mágica"
+          placeholder="Buscar provisión mágica "
         />
-        <button className='buscar-boton' type="submit" onClick={(event) => event.stopPropagation()}>Buscar</button>
+        <button className='buscar-boton' type="submit" onClick={(event) => event.stopPropagation()}>Buscar🔎 </button>
         <button className='buscar-boton limpiar' onClick={handleLimpiar} type="button" >Limpiar</button>
       </form>
       

@@ -8,8 +8,86 @@
   --font-size-9: clamp(18px, 16px + 1.8vw, 34px);
   --font-size-10: clamp(12px, 10px + 1.1vw, 26px);
   /* background-color: rgb(4, 26, 4); */
-  }
+
+/* Colores sin opacidad */
+  --verde1: rgb(44, 126, 58); 
+  /* --verde2: rgb(153, 187, 158); */
+  --verde2: rgb(161, 206, 168);
+  --verde3: rgb(43, 80, 48);
+  --verde4: rgb(43, 143, 96);
+  --verde5: rgb(69, 115, 85);
+  --verde6: ;
+  --verde7: ;
+  --gris1: rgb(226, 226, 224);
+  --gris2: rgb(196, 196, 196);
+  --gris3: rgb(185, 183, 183);
+  --gris4: rgb(97, 97, 97);
+  --gris5: ;
+  --gris6-transparente-menu:  rgba(113, 116, 113, 0.7);
+  --gris7-transparente-menu:  rgba(113, 116, 113, 0.95);
+  --blanco: white;
+  --negro: black;
+  --negro-transparente: rgba(0, 0, 0, 0.75);
+  --verde-transparente: rgba(3, 73, 27, 0.65);
+
+
+  /* botonSolicitar */
+  --mensaje-carrito-bgcolor:rgb(153, 187, 158); /* --verde2 */
+  --mensaje-carrito-border: 2px solid rgb(255, 255, 255);
   
+  /* contador */
+  --contador-botones-border: 1px solid rgb(255, 255, 255); /* --blanco */
+  --contador-botones-boxshadow: 2px 2px 1px rgb(185, 183, 183); /* --gris3 */
+  --contador-botones-hover-boxshadow: 3px 3px 1px rgb(185, 183, 183); /* --gris3 */
+  --contador-botones-hover-bgcolor: rgb(226, 226, 224); /* --gris1 */
+
+  /* tarjeta */
+  --tarjeta-bgcolor: rgb(196, 196, 196); /* --gris2 */
+  --contador-mensaje-color: rgb(43, 80, 48); /* --verde3 texto, ver si cambio */
+  --contador-mensaje-bgcolor:  rgb(153, 187, 158); /* --verde2 */
+
+   /* buscar */
+  --buscar-input-border: 2px solid rgb(185, 183, 183); /* --gris3 */
+  --buscar-boton-border: 1px solid rgb(97, 97, 97); /* --gris4 */
+  --buscar-boton-bgcolor: rgba(0, 0, 0, 0.733); /* --negro transparente */
+  --buscar-boton-color: white;
+  --buscar-boton-hover-border: 1px solid black;
+  --buscar-boton-hover-bgcolor: black;
+
+  /* filtro */
+  --filtro-boton-color: white;
+  --filtro-boton-bgcolor: rgba(3, 73, 27, 0.644); /* --verde transparente */
+  --filtro-boton-boxshadow: 3px -2px 10px rgba(24, 23, 23, 0.479);
+  --filtro-boton-hover-bgcolor: rgba(0, 0, 0, 0.726); /* --negro transparente */
+  --filtro-boton-hover-border: 5px solid white;
+
+  /* Page: provisiones magicas  */
+  --provisiones-contenedor-bgcolor: white;
+  --provisiones-contenedor-border: 15px solid white;
+  --introduccion-p2-border: 2px solid rgb(69, 115, 85); /* --verde5 o algun verde */
+
+  --contenedor-lateral-bgcolor: rgb(69, 115, 85); /* --verde5 */
+  --contenedor-lateral-border: 5px solid white; 
+  --contenedor-nombre-color: white; 
+  --contenedor-nombre-hover-border: 5px solid var(--verde3);
+  --abierto-bgcolor: rgba(113, 116, 113, 0.7); /* --gris6 */
+  --abierto-lechuzas-border: 2px solid black; 
+  --abierto-lechuzas-bgcolor: rgba(113, 116, 113, 0.95);/* --gris7 */
+  --tarjetas-contenedor-bgcolor: white; 
+  /* -- mediaquieries  */
+  /* --mq-contenedor-lateral-border: 10px solid  rgb(43, 80, 48); --verde4 */
+  --mq-contenedor-lateral-border: 10px solid rgb(161, 206, 168); /* --verde2 */
+  --mq-abierto-bgcolor: rgb(196, 196, 196); /* --gris2 */
+  --mq-abierto-lechuzas-bgcolor: var(--verde5); /* --verde4 */
+  /* --mq-abierto-bgcolor: var(--verde5); */
+
+
+}
+
+
+
+
+
 * {
   box-sizing: border-box;
   padding: 0;

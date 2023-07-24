@@ -25,7 +25,7 @@
       "tipo":"escobas",
       "imagen": "./protecciones.jpg",
       "nombre": "Kit Protecciones para Escoba",
-      "descripcion": "Combo de protecciones para las lecciones de escoba para principiantes o para las practicas de quidditch",
+      "descripcion": "Combo de protecciones para lecciones de vuelvo en escoba o para practicas de quidditch",
    "precio": 2,
    "descuento": 1,
    "promocion": false
@@ -35,7 +35,7 @@
    "tipo":"escobas",
    "imagen": "/nimbus2023.jpg",
    "nombre": "Escoba Nimbus Modelo 2023",
-   "descripcion": "La renombrada escoba Nimbus, de las mas veloces del mercado, disponible en su ultima version: 2023",
+   "descripcion": "La renombrada escoba Nimbus, de las mas veloces del mercado, en su ultima version: 2023",
    "precio": 100,
    "descuento": 1,
    "promocion": false

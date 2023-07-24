@@ -30,7 +30,7 @@ export default function BotonSolicitar(props: BotonSolicitarProps) {
                 Accio Item!
             </button> 
             {mensajeCarrito &&
-            <p className='mensaje-carrito' > Excelente, una lechuza ya esta en camino!</p>}
+            <p className='mensaje-carrito' >Excelente, una lechuza ya está en camino! 🦉</p>}
            
             
         </div>

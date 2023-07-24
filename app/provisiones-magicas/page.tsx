@@ -81,9 +81,11 @@ export default function provisionesMagicas () {
     return (
       
       <Layout pageTitle={pageTitle}>
-        <div className="descripcion-contenedor">
-          {/* <h2 className='titulo'>Provisiones Magicas de Emergencia</h2> */}
-          <p className='descripcion'>Encontrá tus Provisiones Mágicas de Emergencia Aquí</p>
+        <div className="introduccion-contenedor">
+          <p className='introduccion-p1'>
+            ¿Se ha olvidado de comprar uno de sus libros de texto en el Callejón Diagón? ¿Un amigo le quemó la túnica practicando el hechizo Bombarda? ¿Su compañero en clase de pociones explotó sus frascos de vidrio por error y aún no domina Reparo? No desespere...</p> 
+          <p className='introduccion-p2'>Todas sus provisiones mágicas de emergencia se encuentran aquí.</p>
+          <p className='introduccion-p3'> Seleccione la cantidad que necesita, invoque el hechizo Accio desde el botón y una de nuestras lechuzas se pondrá en camino instantáneamente hacia donde se encuentre. Recuerde que el dinero se debitará de su cuenta familiar de Gringotts y que puede cancelar su pedido si aún no lo recibió.</p>
         </div>
         <div className="provisiones-contenedor">
         
@@ -91,20 +93,20 @@ export default function provisionesMagicas () {
             {mostrarCategorias 
             ? <div className='contenedor-izquierdo' onClick={handleToggleCategorias}> 
                 <p className='contenedor-nombre'>◀ Categorias</p>
-                <div className="filtro-contenedor open">
+                <div className="filtro-contenedor abierto">
                 <Filtro categorias={categorias} onFiltrar={filtrarProductos} />
                 <Buscar onBuscar={buscarProductos} /> 
                 </div>
               </div>
              
             : <div className='contenedor-izquierdo' onClick={handleToggleCategorias}> 
-                <p className='contenedor-nombre'> Categorias ▶</p>
+                <p className='contenedor-nombre'> Categorias▶</p>
                 <div className="filtro-contenedor"></div>
               </div>}
      
             <div className="tarjetas-contenedor">
               {sinResultados && (
-                <p>No se encuentra tal artículo mágico dentro de {filtro || "la tienda"}.</p>
+                <p className="sin-item">No se encuentra tal artículo mágico dentro de {filtro || "la tienda"}.</p>
               )}
           
               {productosFiltrados.map((elemento) => (
@@ -119,13 +121,13 @@ export default function provisionesMagicas () {
             <div className='contenedor-derecho' >
                 {mostrarLechuzas ? 
                 <>
-                  <p className='contenedor-nombre'onClick={handleToggleLechuzas}> Lechuzas ▶</p>
-                  <div className="lechuzas-contenedor open">
+                  <p className='contenedor-nombre'onClick={handleToggleLechuzas}> Lechuzas ▶ 🦉</p>
+                  <div className="lechuzas-contenedor abierto">
                     <ProductosEnCamino productos={productosEnCamino} cantidadItems=     {cantidadItems} onEliminarProducto={eliminarProductoEnCamino} />
                   </div>
                 </>
               : <>
-                  <p className='contenedor-nombre' onClick={handleToggleLechuzas}>◀ Lechuzas </p>
+                  <p className='contenedor-nombre' onClick={handleToggleLechuzas}> ◀Lechuzas</p>
                   <div className="lechuzas-contenedor"></div>
                 </>}
               </div>

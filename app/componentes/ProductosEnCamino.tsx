@@ -52,9 +52,9 @@ interface ProductosEnCaminoProps {
 
                 {mostrarConfirmacion && (
                   <div className='lechuzas-confirmacion'>
-                      <p className='lechuzas-confirmacion-p1'>¿Estás seguro de que deseas cancelar esta lechuza?</p>
+                      <p className='lechuzas-confirmacion-p1'>¿Está seguro que desea cancelar esta lechuza?</p>
                       <p className='lechuzas-confirmacion-p2'>{producto.nombre} x{producto.cantidad}</p>
-                      <p className='lechuzas-confirmacion-p3'> El paquete volverá a la tienda y se te devolverá el dinero en la cuenta de Gringotts</p>
+                      <p className='lechuzas-confirmacion-p3'> El paquete volverá a la tienda y se le devolverá el dinero a su cuenta de Gringotts</p>
                       <div className='lechuzas-confirmacion-botones' >
                         <button onClick={() => handleConfirmarCancelarLechuza(productoIndex)}>Confirmar</button>
                         <button onClick={handleCancelarCancelarLechuza}>Cancelar</button>
