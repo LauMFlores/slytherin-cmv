@@ -21,7 +21,7 @@ export default function Faq(){
     return (
         <div className='faq-contenedor' >
             <p onClick={() => toggleParrafo('parrafo1')} className='faq-pregunta'>¿Qué es mi Identificación Estudiantil Mágica o IEM? 
-            {ocultarParrafos.parrafo1 ? <span>🔻</span> : <span>🔺 </span>} </p>
+            {ocultarParrafos.parrafo1 ? <span> ▼</span> : <span> ▲</span>} </p>
             {ocultarParrafos.parrafo1 
             ? null 
             : <div className='faq-respuesta' > 
@@ -30,7 +30,7 @@ export default function Faq(){
               </div>}
             
             <p onClick={() => toggleParrafo('parrafo2')} className='faq-pregunta'>¿Dónde encuentro mi IEM? 
-            {ocultarParrafos.parrafo2 ? <span>🔻</span> : <span>🔺</span>}</p>
+            {ocultarParrafos.parrafo2 ? <span> ▼</span> : <span> ▲</span>}</p>
             {ocultarParrafos.parrafo2 
             ? null 
             : <div className='faq-respuesta' >
@@ -40,7 +40,7 @@ export default function Faq(){
               </div>}
 
             <p onClick={() => toggleParrafo('parrafo3')} className='faq-pregunta'>¿Cuál es mi contraseña? 
-            {ocultarParrafos.parrafo3 ? <span>🔻</span> : <span>🔺</span>}</p>
+            {ocultarParrafos.parrafo3 ? <span> ▼</span> : <span> ▲</span>}</p>
             {ocultarParrafos.parrafo3 
             ? null 
             : <div className='faq-respuesta' > 

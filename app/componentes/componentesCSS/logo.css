@@ -9,12 +9,14 @@
     height: 100%;
     object-fit: cover;
     /* object-position: 50% 30%; */
-    
 }
 
 @media (min-width: 600px) {
   .logo {
-      height: 50vh;
+      height: 50vh; 
+     
+      
+
   }
 }
 
@@ -22,6 +24,7 @@
     .logo {
         height: 50vh;
         clip-path: circle(40%);
+        filter:opacity(0.7);
     }
 
     
