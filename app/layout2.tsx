@@ -1,4 +1,4 @@
-
+import './layout2.css'
 import Nav from './componentes/Nav';
 
 export default function Layout({ children, pageTitle }: { children: React.ReactNode; pageTitle: string }) {

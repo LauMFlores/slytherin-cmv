@@ -64,7 +64,7 @@
   /* Page: provisiones magicas  */
   --provisiones-contenedor-bgcolor: white;
   --provisiones-contenedor-border: 15px solid white;
-  --introduccion-p2-border: 2px solid rgb(69, 115, 85); /* --verde5 o algun verde */
+  --introduccion-p2-border: 1px solid rgb(43, 104, 65); /* --verde5 o algun verde */
 
   --contenedor-lateral-bgcolor: rgb(69, 115, 85); /* --verde5 */
   --contenedor-lateral-border: 5px solid white; 
@@ -93,6 +93,7 @@
   padding: 0;
   margin: 0;
   text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -127,31 +128,7 @@ body {
   letter-spacing: 4px;
   font-size: var(--font-size-9) ;
   text-align: left;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   
 }
 
-.layout2{
-  position: relative;
-}
-
-.layout2-contenedor {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  font-size: var(--font-size-2);
-  position: sticky;
-  top: 0;
-  z-index: 20;
- 
-}
-
-.layout2-contenedor h2 {
-  padding: 10px 2px;
-  flex-grow: 2;
-  background-color: rgba(221, 223, 221, 0.87);
-  letter-spacing: 1px;
- 
- 
-
-}

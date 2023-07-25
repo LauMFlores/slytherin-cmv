@@ -1,11 +1,3 @@
-.provisiones-contenedor {
-  position: relative;
-  display: grid;
-  grid-template-columns:1fr 1fr;
-  border: var(--provisiones-contenedor-border);
-  background-color: var(--provisiones-contenedor-bgcolor);
-}
-
 .introduccion-contenedor{
   margin-left: auto;
   margin-right: auto;
@@ -29,16 +21,26 @@
   font-weight: bold;
   border-top: var(--introduccion-p2-border);
   border-bottom: var(--introduccion-p2-border);
+
+}
+
+.provisiones-contenedor {
+  position: relative;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  /* border: var(--provisiones-contenedor-border); */
+  background-color: var(--provisiones-contenedor-bgcolor);
 }
 
 .contenedor-izquierdo,
 .contenedor-derecho {
   position: sticky;
-  top:40px;
+  top:65px;
   order: 1;
   cursor: pointer;
   border: var(--contenedor-lateral-border);
-  background-color: var(--contenedor-lateral-bgcolor)
+  background-color: var(--contenedor-lateral-bgcolor);
+  margin: 10px 0;
 }
 
 .contenedor-nombre {
@@ -67,7 +69,8 @@
 
 .lechuzas-contenedor { width: 100%;}
  
-.abierto {
+.contenedor-izquierdo .abierto,
+.contenedor-derecho .abierto {
   position: absolute;
   min-width: 140px;
   max-height: 80vh;
@@ -88,6 +91,7 @@
   justify-content: space-evenly;
   gap: 10px;
   background-color: var(--tarjetas-contenedor-bgcolor);
+  margin: 10px;
 }
 
 .tarjetas-contenedor .sin-item {
@@ -96,6 +100,13 @@
   min-height: 420px;
   line-height: 20px;
   font-size: var(--font-size-2);
+}
+
+
+@media (min-width: 443px) {
+  .contenedor-izquierdo,
+  .contenedor-derecho {
+    top:45px;}
 }
 
 @media (min-width: 720px) {
@@ -114,17 +125,33 @@
   }
 
   .contenedor-izquierdo,
-  .contenedor-derecho { border: none; }
+  .contenedor-derecho { 
+    border: none; 
+    margin: 0;
+  }
   
   .contenedor-derecho { border-right: var(--mq-contenedor-lateral-border); }
 
   .contenedor-izquierdo { border-left: var(--mq-contenedor-lateral-border); }
 
-  .contenedor-nombre { padding: 20px 10px;}
+  .contenedor-nombre { 
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor-nombre span{
+    display: block;
+    padding-top: 20px;
+    order: 2;
+    font-size: 20px;
+  }
    
   .contenedor-nombre:hover { border-top: 5px solid var(--verde5)}
 
- .abierto {
+  .contenedor-izquierdo .abierto,
+  .contenedor-derecho .abierto {
     position: sticky;
     top:60px;
     width: 20vw;
@@ -133,7 +160,8 @@
     background-color: var(--mq-abierto-bgcolor);
   }
 
-  .tarjetas-contenedor { order: 1; }
+  .tarjetas-contenedor { order: 1; 
+    margin: 20px;}
 
   .contenedor-derecho .abierto { 
     border-bottom: none;

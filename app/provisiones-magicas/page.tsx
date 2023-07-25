@@ -87,9 +87,8 @@ export default function provisionesMagicas () {
           <p className='introduccion-p2'>Todas sus provisiones mágicas de emergencia se encuentran aquí.</p>
           <p className='introduccion-p3'> Seleccione la cantidad que necesita, invoque el hechizo Accio desde el botón y una de nuestras lechuzas se pondrá en camino instantáneamente hacia donde se encuentre. Recuerde que el dinero se debitará de su cuenta familiar de Gringotts y que puede cancelar su pedido si aún no lo recibió.</p>
         </div>
-        <div className="provisiones-contenedor">
         
-
+        <div className="provisiones-contenedor">
             {mostrarCategorias 
             ? <div className='contenedor-izquierdo' onClick={handleToggleCategorias}> 
                 <p className='contenedor-nombre'>◀ Categorias</p>
@@ -100,7 +99,7 @@ export default function provisionesMagicas () {
               </div>
              
             : <div className='contenedor-izquierdo' onClick={handleToggleCategorias}> 
-                <p className='contenedor-nombre'> Categorias▶</p>
+                <p className='contenedor-nombre'> Categorias <span>▶</span> </p>
                 <div className="filtro-contenedor"></div>
               </div>}
      
@@ -127,7 +126,7 @@ export default function provisionesMagicas () {
                   </div>
                 </>
               : <>
-                  <p className='contenedor-nombre' onClick={handleToggleLechuzas}> ◀Lechuzas</p>
+                  <p className='contenedor-nombre' onClick={handleToggleLechuzas}> <span>◀</span> Lechuzas </p>
                   <div className="lechuzas-contenedor"></div>
                 </>}
               </div>
