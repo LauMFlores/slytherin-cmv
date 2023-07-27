@@ -33,6 +33,7 @@
   margin-left: 10px;
   margin-right: 10px;
   border-bottom: 4px solid rgb(23, 24, 23);
+  background-color: #9ddfb38a;
 }
   
 .revelio {
@@ -133,6 +134,7 @@
     transform: translateY(-30px);
   }
 }
+
 @media (min-width: 720px) {
   .faq-respuesta {
   background-color: #9ddfb38a;}
