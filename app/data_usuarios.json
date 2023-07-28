@@ -2,11 +2,49 @@
     {
     "username": "123",
     "nombre": "Maria Laura",
-    "apellido":"Morello Flores"
+    "apellido":"Morello Flores",
+    "prefecto":false
     },
     {
     "username": "12345",
     "nombre": "Eva",
-    "apellido":"Ferreira"
-    }
+    "apellido":"Ferreira",
+    "prefecto":false
+    },
+    {
+    "username": "33467",
+    "nombre": "Sybill",
+    "apellido":"Cooper",
+    "prefecto":true
+    },
+    {
+    "username": "32566",
+    "nombre": "Apolo",
+    "apellido":"Longbottom",
+    "prefecto":true
+    },
+    {
+    "username": "10233",
+    "nombre": "Horace",
+    "apellido":"Slughorn",
+    "jefe":true
+    },
+    {
+    "username": "10233",
+    "nombre": "seeker",
+    "apellido":"Slughorn",
+    "quidditch":"buscador"
+    },
+    {
+        "username": "10233",
+        "nombre": "chaser",
+        "apellido":"Slughorn",
+        "quidditch":"cazador"
+        },
+        {
+            "username": "10233",
+            "nombre": "seeker",
+            "apellido":"Slughorn",
+            "quidditch":"bateador"
+            }
 ]
