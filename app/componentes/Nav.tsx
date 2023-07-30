@@ -5,7 +5,7 @@ import './componentesCSS/nav.css';
 
 const menuLinks = [
     { href: '/general', text: 'General' },
-    { href: '/nuevos-ingresos', text: 'Nuevos Ingresos' },
+    { href: '/salon-personal', text: 'Salón Personal' },
     { href: '/provisiones-magicas', text: 'Provisiones Mágicas de Emergencia' },
     { href: '/', text: 'LOGOUT' },
 ];

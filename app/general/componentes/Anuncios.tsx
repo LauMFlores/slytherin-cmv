@@ -1,4 +1,3 @@
-// import data from "../data/data_anuncios.json";
 import '../estilos/anuncios.css';
 import data from '../../data_usuarios.json'
 
@@ -8,42 +7,60 @@ export default function Anuncios () {
     const cazadores = data.filter(user => user.quidditch === "cazador");
     const bateadores= data.filter(user => user.quidditch === "bateador")
     const buscador= data.find(user => user.quidditch === "buscador");
+
     return (
-        <div>
-            <h3> Tablón de Anuncios</h3>
-            <div>Bienvenidos!</div>
-            <div>
-                <h4>Prefectos y Jefe de Slytherin</h4>
-                <p>Con orgullo anunciamos a los prefectos designados para el año escolar. Los felicitamos por el logro!!!</p>
-                <ul>
-                    {prefectos.map(user => (
-                        <li key={user.username}>{user.nombre} {user.apellido}</li>
-                    ))}
-                </ul>
-                <p>Por 5to año consecutivo, con la sabiduria y rigurosidad de siempre, anunciamos tambien a nuestro jefe de casa:</p>
-                {jefe && <p>Prof. {jefe.nombre} {jefe.apellido}</p>}
-                <p>Por inquitudes, problemas o cualquier necesidad, tratara los temas relacionados a la Casa Slytherin en su despacho en el aula de pociones, de Jueves a Sabados de 15 a 19hs.</p>
+        <div className='anuncios-contenedor'>
+
+            <div className='anuncios'>
+                <h4 className='anuncios-titulo'>Prefectos y Jefe de Slytherin</h4>
+                <p>Con orgullo anunciamos a los prefectos designados para el año escolar. ¡Los felicitamos por el logro!</p>
+                    <ul>
+                        {prefectos.map(user => (
+                            <li className='nombramiento' key={user.username}>{user.nombre} {user.apellido}</li>
+                        ))}
+                    </ul>
+                <p >Por 5to año consecutivo, con la sabiduría y rigurosidad de siempre, anunciamos también a nuestro jefe de casa:</p>
+                {jefe && 
+                <p className='nombramiento'>Prof. {jefe.nombre} {jefe.apellido}</p>}
+                <p>Por inquitudes, problemas o cualquier necesidad, tratará los temas relacionados a la Casa Slytherin en su despacho en el aula de pociones, de Jueves a Sábados de 15 a 19hs.</p>
             </div>
-            <h4>Equipo de Quidditch</h4>
-            <p> Anunciamos las posiciones de quidditch definidas para este año:</p>
-            <p> Cazadores: 
-            <ul>
-                    {cazadores.map(user => (
-                        <li key={user.username}>{user.nombre} {user.apellido}</li>
-                    ))}
-                </ul>
-            </p>
-            <p> Bateadores: 
-            <ul>
-                    {bateadores.map(user => (
-                        <li key={user.username}>{user.nombre} {user.apellido}</li>
-                    ))}
-                </ul>
-            </p><p> Buscador:
-                </p>
-            
-            {buscador && <p> {buscador.nombre} {buscador.apellido}</p> }
-            <h4>Zonas Prohibidas</h4>
+
+            <div className='anuncios'>
+                <h4 className='anuncios-titulo'>Equipo de Quidditch</h4>
+                <p> De esta manera quedan definidas las posiciones de quidditch para este año:</p>
+                    <ul> Cazadores: 
+                        {cazadores.map(user => (
+                            <li className='nombramiento' key={user.username}>{user.nombre} {user.apellido}</li>
+                        ))}
+                    </ul>
+                    <ul>Bateadores:
+                        {bateadores.map(user => (
+                            <li className='nombramiento' key={user.username}>{user.nombre} {user.apellido}</li>
+                        ))}
+                    </ul>
+                {buscador && 
+                    <ul>Buscador: 
+                         <li className='nombramiento'> {buscador.nombre} {buscador.apellido}</li> 
+                    </ul>}
+                <p> La temporada inicia el 23 de octubre, con un evento de apertura organizado por la Prof. Hooch. Los esperamos a todos a las 17:00 hs en el estadio de Quidditch.</p> 
+                <p className='verde'> ¡¡ Vamos Serpientes !! 🏆🐍</p>
+                <p></p>
+            </div>
+
+            <div className='anuncios'>
+            {/* ❌❕✖❗ */}
+                <h4 className='anuncios-titulo'> IMPORTANTE: <br/>🚫 Toque de Queda y Restricciones </h4>
+                <p> Se recuerda a los alumnos que no se permite circular por ningún área del castillo entre las 22:00 pm y 6:00 am.  </p>
+                <p>Asimismo, se mencionan a continuación las zonas con acceso prohibido durante el año escolar vigente: </p>
+                 <p className='subrayado'>❌ Sección Restringida de la Biblioteca </p>
+                <p> Sólo se permitirá el acceso a aquel estudiante que posea un permiso firmado por algún profesor o miembre del personal de la escuela.</p>
+                <p className='subrayado'>❌Torre de Astronomía</p>
+                <p> Se permite circular por la torre únicamente en el horario asignado para cursar la materia, con tolerancia máxima de 15 minutos previos y 15 minutos al finalizar la clase.</p>
+                <p className='subrayado'>❌ Terrenos del Bosque Prohibido</p>
+                <p> Queda terminantemente prohibido el ingreso en cualquier horario para todos los estudiantes. </p>
+                <p className='rojo'>Infringir tanto el toque de queda como acceder a dichas áreas restringidas del castillo conlleva en una severa sanción disciplinaria, pudiendo derivar incluso en la expulsión de Hogwarts. </p>
+            </div>
+
         </div>
     )
 }

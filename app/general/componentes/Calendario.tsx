@@ -45,41 +45,49 @@ export default function Calendario () {
           }
         };
 
+        function getClasePorTipoEvento(tipoEvento: string): string {
+          switch (tipoEvento) {
+            case 'recesos':
+              return 'recesos';
+            case 'examenes':
+              return 'examenes';
+            case 'quidditch':
+              return 'quidditch';
+            case 'hogsmeade':
+              return 'hogsmeade';
+            case 'general':
+              return 'general';
+            default:
+              return '';
+          }
+        }
 return (
-  <div>
-    <h3>CALENDARIO ACADÉMICO {data.anio}</h3>
-
-    <div>
+  
+  <div className="calendario-contenedor">
+    <div className="calendario-filtro">
       <label>
         Todos
-        <input
-          type="radio"
-          name="filter"
-          value="todos"
-          checked={filtroActivo === "todos"}
-          onChange={() => handleFiltroActivo("todos")}
-        />
+          <input type="radio" name="filtros" value="todos"
+            checked={filtroActivo === "todos"}
+            onChange={() => handleFiltroActivo("todos")}/>
       </label>
 
       {tiposEventosUnicos.map((tipoEvento) => (
-        <label key={tipoEvento}>
-          {tipoEvento.charAt(0).toUpperCase() + tipoEvento.slice(1)}
-          <input
-            type="radio"
-            name="filter"
-            value={tipoEvento}
+      <label key={tipoEvento}>
+        {tipoEvento.charAt(0).toUpperCase() + tipoEvento.slice(1)}
+          <input type="radio" name="filtro" value={tipoEvento}
             checked={filtroActivo === tipoEvento}
-            onChange={() => handleFiltroActivo(tipoEvento)}
-          />
-        </label>
+            onChange={() => handleFiltroActivo(tipoEvento)}/>
+      </label>
       ))}
+      
     </div>
 
-    <div>
+    <div className="calendario">
         {eventosFiltrados.map((evento) => (
-          <div key={evento.evento}>
-            <h4>{evento.evento}</h4>
-            <p>{formatoFecha(evento.fechaISO)}</p>
+          <div className={`calendario-evento ${getClasePorTipoEvento(evento.tipoEvento)}`}  key={evento.evento}>
+            <p className="calendario-nombre">{evento.evento}</p>
+            <p className="calendario-fecha">{formatoFecha(evento.fechaISO)}</p>
           </div>
         ))}
       </div>

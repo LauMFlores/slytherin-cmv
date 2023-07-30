@@ -1,26 +1,99 @@
 .general-contenedor{
-    border: 3px solid pink ;
+   padding-bottom: 30px;
+   background-image: linear-gradient(to right,
+   #0f855dbd 10%,
+   #81c29ebd 30%,
+   #81d681bd 70%);
    
 }
 
 .general-botonera{
-    border: 3px solid rgb(18, 144, 175) ;
-    padding: 50px;
+    background-color: silver;
+    padding: 15px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
 }
 
-.general-anuncios{
-    border: 3px solid rgb(102, 20, 197) ;
-}
-
-.general-calendario{
-    border: 3px solid rgb(102, 20, 197) ;
-}
-
-.general-puntos{
-    border: 3px solid rgb(102, 20, 197) ;
+.general-botonera button {
+    flex-grow: 1;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 4px 5px rgb(109, 108, 108);
+    font-family: monospace;
+    background-color: rgb(70, 69, 69);
+    color: white;
+    transition: all 0.5s;
+    max-width:150px;
    
 }
 
+.general-botonera button:hover {
+    background-color: black; 
+    box-shadow: 0px 5px 5px rgb(255, 255, 255);
+}
+
+.general-botonera button:focus {
+    background-color: black; 
+}
+.general-titulos {
+    padding: 15px 5px;
+    letter-spacing: 1.5px;
+    background-color: rgb(43, 143, 96);
+    /* border-bottom: 1px solid rgb(17, 17, 17);
+    border-top: 1px solid rgb(17, 17, 17); */
+    border-top: 5px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(252, 251, 251);
+    /* background-image: linear-gradient(to right,
+        #0f855dbd 10%,
+        #81c29ebd 30%,
+        #81d681bd 70%) */
+        background-color: rgb(54, 54, 54);
+        color: white;
+       
+}
+
+.general-descripcion {
+    margin: 0px 35px;
+    padding-top:20px;
+    padding-bottom:20px;
+    /* background-color: silver; */
+    /* background-image: linear-gradient(to right,
+    #0f855dbd 10%,
+    #81c29ebd 30%,
+    #81d681bd 70%); */
+    border-bottom: 2px solid rgb(252, 252, 252);
+    font-weight: bold;
+    font-style: italic;
+
+
+}
+
+.general-anuncios{  
+  
+}
+
+.general-calendario{
+    
+}
+
+.general-puntos{
+  
+}
+
 .general-trivia{
-    border: 3px solid rgb(102, 20, 197) ;
+  
+}
+
+@media (min-width: 720px) {
+    .general-contenedor{
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }

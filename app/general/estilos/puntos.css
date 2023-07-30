@@ -1,0 +1,109 @@
+.puntos-contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+
+.puntos-casa-contenedor {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    letter-spacing: 2px;
+    min-height: 120px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.gryffindor{
+    background-color: rgba(212, 95, 95, 0.479);
+    border-top: 15px solid rgb(156, 22, 22);  
+}
+
+.hufflepuff {
+    background-color: rgba(255, 255, 0, 0.404);
+    border-top: 15px solid yellow;
+}
+
+.slytherin{
+    background-color: rgba(0, 128, 0, 0.411);
+    border-top: 15px solid rgb(49, 112, 49); 
+}
+
+.ravenclaw{
+    background-color: rgba(9, 69, 180, 0.425);
+    border-top: 15px solid rgb(24, 24, 146);
+}
+
+.puntos-imagen{
+    min-width: 70px;
+    max-width: 110px;
+    min-height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.puntos-imagen img {
+    width: 100%;
+    /* object-fit: cover;  */
+}
+
+.puntos-titulo {
+  font-size: var(--font-size-2);
+}
+
+.puntos-puntuacion {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    padding: 10px 30px;
+    background-color: rgba(0, 0, 0, 0.349);
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: var(--font-size-2);
+}
+
+
+@media (min-width: 720px) {
+    .puntos-contenedor {
+        flex-direction: row;
+    }
+
+    .puntos-casa-contenedor {
+        padding-left: 0;
+        padding-right: 0;
+        flex-direction: column;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .gryffindor{
+        border-left: 15px solid rgb(156, 22, 22);  
+        border-top: none;
+    }
+    
+    .hufflepuff {
+        border-left: 15px solid yellow;
+        border-top: none;
+    }
+    
+    .slytherin{
+        border-left: 15px solid rgb(49, 112, 49); 
+        border-top: none;
+    }
+    
+    .ravenclaw{
+        border-left: 15px solid rgb(24, 24, 146);
+        border-top: none;
+    }
+    .puntos-imagen{
+        max-width: 140px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .puntos-puntuacion {
+        padding: 10px 50px;
+    }
+}
