@@ -48,7 +48,7 @@ export default function General() {
           {contenedorActivo === "hechizos" && 
             <div className="general-trivia">
                 <h3 className='general-titulos'>Hechizos</h3> 
-                <p className='general-descripcion'>Trivia</p>
+                <p className='general-descripcion'>Puede practicar regularmente su conocimiento de hechizos aquí y estar siempre preparado para cualquier examen sorpresa. <br/> Cuando esté listo, aprete la tarjeta mágica para ver su contenido y seleccione la opción que cree correcta.</p>
                 <Trivia/>
             </div>}
         </div>

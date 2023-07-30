@@ -67,8 +67,10 @@
     #81c29ebd 30%,
     #81d681bd 70%); */
     border-bottom: 2px solid rgb(252, 252, 252);
-    font-weight: bold;
     font-style: italic;
+    letter-spacing: 0.5px;
+    font-size: var(--font-size-6);
+    line-height: 20px;
 
 
 }
