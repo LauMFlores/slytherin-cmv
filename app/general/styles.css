@@ -1,4 +1,4 @@
-.general-contenedor{
+.campus-contenedor{
    padding-bottom: 30px;
    background-image: linear-gradient(to right,
    #0f855dbd 10%,
@@ -7,40 +7,7 @@
    
 }
 
-.general-botonera{
-    background-color: silver;
-    padding: 15px 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-
-}
-
-.general-botonera button {
-    flex-grow: 1;
-    cursor: pointer;
-    height: 40px;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0px 4px 5px rgb(109, 108, 108);
-    font-family: monospace;
-    background-color: rgb(70, 69, 69);
-    color: white;
-    transition: all 0.5s;
-    max-width:150px;
-   
-}
-
-.general-botonera button:hover {
-    background-color: black; 
-    box-shadow: 0px 5px 5px rgb(255, 255, 255);
-}
-
-.general-botonera button:focus {
-    background-color: black; 
-}
-.general-titulos {
+.campus-titulos {
     padding: 15px 5px;
     letter-spacing: 1.5px;
     background-color: rgb(43, 143, 96);
@@ -53,11 +20,10 @@
         #81c29ebd 30%,
         #81d681bd 70%) */
         background-color: rgb(54, 54, 54);
-        color: white;
-       
+        color: white;      
 }
 
-.general-descripcion {
+.campus-descripcion {
     margin: 0px 35px;
     padding-top:20px;
     padding-bottom:20px;
@@ -75,24 +41,9 @@
 
 }
 
-/* .general-anuncios{  
-  
-}
-
-.general-calendario{
-    
-}
-
-.general-puntos{
-  
-}
-
-.general-trivia{
-  
-} */
 
 @media (min-width: 720px) {
-    .general-contenedor{
+    .campus-contenedor{
         max-width: 1600px;
         margin-left: auto;
         margin-right: auto;

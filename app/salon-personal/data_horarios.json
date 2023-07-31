@@ -1,0 +1,136 @@
+[
+    { "id": "1",
+      "dia": "Lunes",
+      "horario": "10:00 AM - 12:00 PM",
+      "materia": "Pociones",
+      "usuarios": []
+    },
+    {"id": "2",
+      "dia": "Martes",
+      "horario": "2:00 PM - 4:00 PM",
+      "materia": "Pociones",
+      "usuarios": []
+    },
+    {
+      "id": "1",
+      "dia": "Miércoles",
+      "horario": "10:00 AM - 12:00 PM",
+      "materia": "Encantamientos",
+      "usuarios": []
+    },
+    {
+        "id": "2",
+      "dia": "Jueves",
+      "horario": "2:00 PM - 4:00 PM",
+      "materia": "Encantamientos",
+      "usuarios": []
+    },
+    {"id": "1",
+      "dia": "Viernes",
+      "horario": "10:00 AM - 12:00 PM",
+      "materia": "Defensa Contra las Artes Oscuras",
+      "usuarios": []
+    },
+    {"id": "2",
+      "dia": "Sábado",
+      "horario": "2:00 PM - 4:00 PM",
+      "materia": "Defensa Contra las Artes Oscuras",
+      "usuarios": []
+    },
+    {"id": "1",
+      "dia": "Lunes",
+      "horario": "8:00 AM - 10:00 AM",
+      "materia": "Herbología",
+      "usuarios": []
+    },
+    {"id": "2",
+      "dia": "Miércoles",
+      "horario": "4:00 PM - 6:00 PM",
+      "materia": "Herbología",
+      "usuarios": []
+    },
+    {"id": "1",
+      "dia": "Martes",
+      "horario": "8:00 AM - 10:00 AM",
+      "materia": "Transformaciones",
+      "usuarios": []
+    },
+    {"id": "2",
+      "dia": "Jueves",
+      "horario": "4:00 PM - 6:00 PM",
+      "materia": "Transformaciones",
+      "usuarios": []
+    },
+    {"id": "1",
+      "dia": "Miércoles",
+      "horario": "8:00 AM - 10:00 AM",
+      "materia": "Astronomía",
+      "usuarios": []
+    },
+    {"id": "2",
+      "dia": "Viernes",
+      "horario": "4:00 PM - 6:00 PM",
+      "materia": "Astronomía",
+      "usuarios": []
+    },
+    {"id": "1",
+      "dia": "Jueves",
+      "horario": "8:00 AM - 10:00 AM",
+      "materia": "Historia de la Magia",
+      "usuarios": []
+    },
+    {"id": "2",
+      "dia": "Sábado",
+      "horario": "4:00 PM - 6:00 PM",
+      "materia": "Historia de la Magia",
+      "usuarios": ["123"]
+    },
+    {"id": "1",
+      "dia": "Viernes",
+      "horario": "8:00 AM - 10:00 AM",
+      "materia": "Runas Antiguas",
+      "usuarios": ["123"]
+    },
+    {"id": "2",
+      "dia": "Lunes",
+      "horario": "4:00 PM - 6:00 PM",
+      "materia": "Runas Antiguas",
+      "usuarios": []
+    },
+    {"id": "1",
+      "dia": "Sábado",
+      "horario": "8:00 AM - 10:00 AM",
+      "materia": "Adivinación",
+      "usuarios": ["123"]
+    },
+    {"id": "2",
+      "dia": "Martes",
+      "horario": "4:00 PM - 6:00 PM",
+      "materia": "Adivinación",
+      "usuarios": []
+    },
+    {"id": "1",
+      "dia": "Miércoles",
+      "horario": "2:00 PM - 4:00 PM",
+      "materia": "Estudio de los Muggles",
+      "usuarios": []
+    },
+    {"id": "2",
+      "dia": "Jueves",
+      "horario": "10:00 AM - 12:00 PM",
+      "materia": "Estudio de los Muggles",
+      "usuarios": ["123"]
+    },
+    {"id": "1",
+      "dia": "Viernes",
+      "horario": "2:00 PM - 4:00 PM",
+      "materia": "Cuidado de Criaturas Mágicas",
+      "usuarios": []
+    },
+    {"id": "2",
+      "dia": "Sábado",
+      "horario": "10:00 AM - 12:00 PM",
+      "materia": "Cuidado de Criaturas Mágicas",
+      "usuarios": ["123"]
+    }
+  ]

@@ -27,6 +27,7 @@ export default function Login() {
     if (userData && userData.password === clave) {
       setIsSubmitted(true);
       setError('');
+      localStorage.setItem('usuarioAutenticado', JSON.stringify(userData));
     } else {
         setError('🔒 Usuario o contraseña incorrectos.');
         setClave('');

@@ -7,7 +7,6 @@ const menuLinks = [
     { href: '/general', text: 'General' },
     { href: '/salon-personal', text: 'Salón Personal' },
     { href: '/provisiones-magicas', text: 'Provisiones Mágicas de Emergencia' },
-    { href: '/', text: 'LOGOUT' },
 ];
 
 export default function Nav() {
@@ -26,12 +25,17 @@ export default function Nav() {
         }
     };
 
+    const handleLogout = () => {
+        localStorage.removeItem("usuarioAutenticado");
+      };
+
     useEffect(() => {
         window.addEventListener('resize', handlePantallaGrande);
         return () => {
             window.removeEventListener('resize', handlePantallaGrande);
         };
     }, []);
+
 
 
     return (
@@ -47,6 +51,11 @@ export default function Nav() {
                         </Link>
                     </li>
                 ))}
+                    <li className="nav-item" key="logout">
+                        <Link className="nav-enlaces" onClick={handleLogout}href="/">
+                            LOGOUT
+                        </Link>
+                    </li>
             </ul>
         </div>
     );

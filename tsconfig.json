@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/componentes/Filtro.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/componentes/Filtro.tsx", "app/salon-personal/componentes/Horarios.jsx", "app/salon-personal/componentes/Calificaciones.jsx"],
   "exclude": ["node_modules"]
 }

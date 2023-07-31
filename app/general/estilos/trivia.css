@@ -37,8 +37,8 @@
     backface-visibility: hidden; 
   }
 
-  .hechizos-tarjeta .dorso:before,
-  .hechizos-tarjeta:before {
+  .hechizos-tarjeta .dorso::before,
+  .hechizos-tarjeta::before {
     content: "";
     display: block;
     position: absolute;

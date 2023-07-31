@@ -3,13 +3,38 @@
     "username": "123",
     "nombre": "Maria Laura",
     "apellido":"Morello Flores",
-    "prefecto":false
+    "prefecto":false,
+    "calificaciones": [
+        {"Pociones": "0",
+        "Encantamientos": "",
+        "Defensa Contra las Artes Oscuras": "",
+        "Herbología": "",
+        "Transformaciones": "8",
+        "Astronomía": "",
+        "Historia de la Magia": "",
+        "Runas Antiguas": "",
+        "Adivinación": "",
+        "Estudio de los Muggles": "",
+        "Cuidado de Criaturas Mágicas": ""
+          
+        } ]
     },
     {
     "username": "12345",
-    "nombre": "Eva",
-    "apellido":"Ferreira",
-    "prefecto":false
+    "nombre": "Mauri",
+    "apellido":"Godoy",
+    "prefecto":false,
+    "horarios": [
+        {
+          "dia": "Martes",
+          "horario": "9:00 AM - 11:00 AM",
+          "materia": "Defensa Contra las Artes Oscuras"
+        },
+        {
+          "dia": "Jueves",
+          "horario": "3:00 PM - 5:00 PM",
+          "materia": "Astronomía"
+        }]
     },
     {
     "username": "33467",

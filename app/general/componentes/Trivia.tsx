@@ -92,7 +92,7 @@ useEffect(() => {
 
 if (cargando) {
     return (
-        <h1>Cargando Hechizos...</h1>
+        <h2>Cargando Hechizos...</h2>
     )
 }
 
