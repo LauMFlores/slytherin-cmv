@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './componentesCSS/buscar.css'
+import '../estilos/buscar.css';
 
 interface BuscarProps {
   onBuscar: (termino: string) => void;

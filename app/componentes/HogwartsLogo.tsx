@@ -1,4 +1,4 @@
-import './componentesCSS/hogwartsLogo.css';
+import './estilos/hogwartsLogo.css';
 
 export default function HogwartsLogo () {
     return (

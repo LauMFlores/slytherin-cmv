@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link';
-import './componentesCSS/faq.css';
+import './estilos/faq.css';
 import React, {useState} from "react";
 
 export default function Faq(){

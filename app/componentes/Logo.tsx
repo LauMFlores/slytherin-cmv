@@ -1,6 +1,6 @@
 'use client';
 import React, {useState} from "react";
-import './componentesCSS/logo.css';
+import './estilos/logo.css';
 
 export default function Logo () {
         const [isHovering, setIsHovered] = useState(false);

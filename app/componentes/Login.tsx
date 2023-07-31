@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from 'next/link';
 import Logo from './Logo'; 
-import './componentesCSS/login.css';
+import './estilos/login.css';
 import database from '../data_usuarios.json';
 
 

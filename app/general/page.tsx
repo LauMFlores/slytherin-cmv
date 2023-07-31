@@ -8,7 +8,7 @@ import Calendario from "./componentes/Calendario";
 import Puntos from "./componentes/Puntos";
 import Trivia from "./componentes/Trivia";
 import data from "./data/data_calendario.json";
-import Botonera from "../salon-personal/componentes/Botonera";
+import Botonera from "../componentes/Botonera";
 
 export default function General() {
   const pageTitle = "Campus Mágico de Slytherin";

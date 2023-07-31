@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import BotonSolicitar from './BotonSolicitar';
-import './componentesCSS/tarjeta.css'
+import '../estilos/tarjeta.css'
 import Contador from './Contador';
 
 

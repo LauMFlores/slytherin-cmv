@@ -2,7 +2,7 @@
    {
    "id": 1,
    "tipo":"varitas",
-   "imagen": "./varita.webp",
+   "imagen": "./imgProvisiones/varita.webp",
    "nombre": "Varita generica",
    "descripcion": "Varita de madera de roble, nucleo de fibra de corazon de dragon, 15cm.",
    "precio": 10,
@@ -13,7 +13,7 @@
    {
       "id": 2,
       "tipo":"indumentaria",
-      "imagen": "/tunica.jpg",
+      "imagen": "/imgProvisiones/tunica.jpg",
       "nombre": "Tunica Basica",
       "descripcion": "Tunica negra basica, para uso diario en el castillo.",
       "precio": 5,
@@ -23,7 +23,7 @@
    {
       "id": 3,
       "tipo":"escobas",
-      "imagen": "./protecciones.jpg",
+      "imagen": "./imgProvisiones/protecciones.jpg",
       "nombre": "Kit Protecciones para Escoba",
       "descripcion": "Combo de protecciones para lecciones de vuelvo en escoba o para practicas de quidditch",
    "precio": 2,
@@ -33,7 +33,7 @@
 {
    "id": 4,
    "tipo":"escobas",
-   "imagen": "/nimbus2023.jpg",
+   "imagen": "/imgProvisiones/nimbus2023.jpg",
    "nombre": "Escoba Nimbus Modelo 2023",
    "descripcion": "La renombrada escoba Nimbus, de las mas veloces del mercado, en su ultima version: 2023",
    "precio": 100,
@@ -43,7 +43,7 @@
 {
    "id": 5,
    "tipo":"básicos",
-   "imagen": "./kit-tinta-pluma.avif",
+   "imagen": "./imgProvisiones/kit-tinta-pluma.avif",
    "nombre": "Kit del estudiante",
    "descripcion": "1 Pluma, 3 frascos de tinta y 10 rollos de pergamino",
    "precio": 3,
@@ -53,7 +53,7 @@
 {
    "id": 6,
    "tipo":"básicos",
-   "imagen": "./tinta-pluma.png",
+   "imagen": "./imgProvisiones/tinta-pluma.png",
    "nombre": "Frasco de tinta con pluma",
    "descripcion": "Frasco de tinta negra, pluma incluida. 2 unidades.",
    "precio": 1,
@@ -63,7 +63,7 @@
    {
    "id": 7,
    "tipo":"básicos",
-   "imagen": "./pergamino-2.jpg",
+   "imagen": "./imgProvisiones/pergamino-2.jpg",
    "nombre": "Rollo de pergamino",
    "descripcion": "Rollos de pergamino, para todo tipo de tintas. 6 unidades ",
    "precio": 2,
@@ -73,7 +73,7 @@
 {
    "id": 8,
    "tipo":"pociones",
-   "imagen": "./potion-bottle.jpg",
+   "imagen": "./imgProvisiones/potion-bottle.jpg",
    "nombre": "Frascos para pociones",
    "descripcion": "Frascos para pociones",
    "precio": 5000,
@@ -83,7 +83,7 @@
 {
    "id": 9,
    "tipo":"pociones",
-   "imagen": "./potion-bottle-2.jpg",
+   "imagen": "./imgProvisiones/potion-bottle-2.jpg",
    "nombre": "Frascos para pociones",
    "descripcion": "Frascos para pociones",
    "precio": 5000,
@@ -93,7 +93,7 @@
 {
    "id": 10,
    "tipo":"pociones",
-   "imagen": "./potion-bottle-3.webp",
+   "imagen": "./imgProvisiones/potion-bottle-3.webp",
    "nombre": "Frascos para pociones",
    "descripcion": "Frascos para pociones",
    "precio": 5000,
@@ -102,7 +102,7 @@
 }, 
    {"id": 11,
    "tipo":"indumentaria",
-   "imagen": "./guantes.webp",
+   "imagen": "./imgProvisiones/guantes.webp",
    "nombre": "Guantes Protectores",
    "descripcion": "Pueden utilizarse para las clases de herbologia y de cuidados de animales magicos. Tambien excelentes para montar escobas.",
    "precio": 1,

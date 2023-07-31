@@ -1,5 +1,5 @@
 'use client';
-import './componentesCSS/productosEnCamino.css';
+import '../estilos/productosEnCamino.css';
 import React, { useState } from "react";
 
 interface ProductosEnCaminoProps {

@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import './componentesCSS/nav.css';
+import './estilos/nav.css';
 
 const menuLinks = [
     { href: '/general', text: 'General' },

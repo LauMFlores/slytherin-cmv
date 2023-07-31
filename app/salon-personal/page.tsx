@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from "react";
 import Layout from "../layout2";
-import Botonera from "./componentes/Botonera";
+import Botonera from "../componentes/Botonera";
 import Horarios from "./componentes/Horarios";
 import Calificaciones from "./componentes/Calificaciones";
 import "../general/styles.css";

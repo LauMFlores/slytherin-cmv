@@ -2,12 +2,12 @@
 'use client';
 import React, { useState } from "react";
 import Layout from "../layout2"
-import data from "./data_tarjetas.json"
-import Tarjeta from "../componentes/Tarjeta";
-import Filtro from "../componentes/Filtro";
-import Buscar from "../componentes/Buscar";
-import ProductosEnCamino from "../componentes/ProductosEnCamino";
-import './page.css';
+import data from "./data/data_tarjetas.json"
+import Tarjeta from "./componentes/Tarjeta";
+import Filtro from "./componentes/Filtro";
+import Buscar from "./componentes/Buscar";
+import ProductosEnCamino from "./componentes/ProductosEnCamino";
+import './styles.css';
 
 export default function provisionesMagicas () {
 

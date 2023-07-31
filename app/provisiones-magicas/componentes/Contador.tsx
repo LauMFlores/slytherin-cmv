@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import './componentesCSS/contador.css';
+import '../estilos/contador.css';
 
 export default function Contador(props: {
     onCantidadChange: (cantidad: number) => void;

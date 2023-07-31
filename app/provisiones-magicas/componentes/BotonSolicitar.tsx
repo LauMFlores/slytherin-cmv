@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useEffect } from 'react';
-import './componentesCSS/botonSolicitar.css'
+import '../estilos/botonSolicitar.css'
 
 
 interface BotonSolicitarProps {

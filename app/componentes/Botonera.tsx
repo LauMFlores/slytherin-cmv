@@ -1,5 +1,5 @@
 import React from "react";
-import '../estilos/botonera.css';
+import './estilos/botonera.css';
 
 interface BotoneraProps {
   opciones: string[];

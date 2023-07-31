@@ -1,4 +1,4 @@
-import './componentesCSS/filtro.css'
+import '../estilos/filtro.css';
 
 interface FiltroProps {
   categorias: string[];

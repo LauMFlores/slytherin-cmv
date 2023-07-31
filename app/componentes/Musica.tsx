@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
-import './componentesCSS/musica.css';
+import './estilos/musica.css';
 
 export default function Musica() {
   const [sound, setSound] = useState(false);
