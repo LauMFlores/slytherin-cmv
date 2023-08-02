@@ -1,42 +1,42 @@
 .puntos-contenedor {
-    display: flex;
-    flex-direction: column;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .puntos-casa-contenedor {
+    min-height: 120px;
+    padding-left: 50px;
+    padding-right: 50px;
     flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 20px;
     letter-spacing: 2px;
-    min-height: 120px;
-    padding-left: 50px;
-    padding-right: 50px;
 }
 
 .gryffindor{
-    background-color: rgba(212, 95, 95, 0.479);
-    border-top: 15px solid rgb(156, 22, 22);  
+    background-color: var(--gryffindor-rojo-bg);
+    border-top: 15px solid var(--gryffindor-rojo);
 }
 
 .hufflepuff {
-    background-color: rgba(255, 255, 0, 0.404);
-    border-top: 15px solid yellow;
+    background-color: var(--hufflepuff-amarillo-bg);
+    border-top: 15px solid var(--hufflepuff-amarillo);
 }
 
 .slytherin{
-    background-color: rgba(0, 128, 0, 0.411);
-    border-top: 15px solid rgb(49, 112, 49); 
+    background-color: var(--slytherin-verde-bg);
+    border-top: 15px solid var(--slytherin-verde);
 }
 
 .ravenclaw{
-    background-color: rgba(9, 69, 180, 0.425);
-    border-top: 15px solid rgb(24, 24, 146);
+    background-color: var(--ravenclaw-azul-bg);
+    border-top: 15px solid var( --ravenclaw-azul);
 }
 
 .puntos-imagen{
@@ -47,63 +47,55 @@
     padding-bottom: 5px;
 }
 
-.puntos-imagen img {
-    width: 100%;
-    /* object-fit: cover;  */
-}
+.puntos-imagen img { width: 100%; }
 
-.puntos-titulo {
-  font-size: var(--font-size-2);
-}
+.puntos-titulo { font-size: var(--font-size-4); }
 
 .puntos-puntuacion {
-    border-bottom: 2px solid rgb(0, 0, 0);
     padding: 10px 30px;
-    background-color: rgba(0, 0, 0, 0.349);
-    font-weight: bold;
     border-radius: 5px;
-    font-size: var(--font-size-2);
+    font-weight: bold;
+    border-bottom: 2px solid var(--negro);
+    background-color: var(--negro-opacidad-30);
+    font-size: var(--font-size-4);
 }
 
 
 @media (min-width: 720px) {
-    .puntos-contenedor {
-        flex-direction: row;
-    }
+    .puntos-contenedor { flex-direction: row; }
 
     .puntos-casa-contenedor {
         padding-left: 0;
         padding-right: 0;
-        flex-direction: column;
-        padding-bottom: 20px;
         padding-top: 20px;
+        padding-bottom: 20px;
+        flex-direction: column;
     }
 
-    .gryffindor{
-        border-left: 15px solid rgb(156, 22, 22);  
+    .gryffindor {
+        border-left: 15px solid var(--gryffindor-rojo);  
         border-top: none;
     }
     
     .hufflepuff {
-        border-left: 15px solid yellow;
+        border-left: 15px solid var(--hufflepuff-amarillo);
         border-top: none;
     }
     
-    .slytherin{
-        border-left: 15px solid rgb(49, 112, 49); 
+    .slytherin {
+        border-left: 15px solid var(--slytherin-verde); 
         border-top: none;
     }
     
-    .ravenclaw{
-        border-left: 15px solid rgb(24, 24, 146);
+    .ravenclaw {
+        border-left: 15px solid var( --ravenclaw-azul);
         border-top: none;
     }
+
     .puntos-imagen{
         max-width: 140px;
         padding-top: 5px;
         padding-bottom: 5px;
     }
-    .puntos-puntuacion {
-        padding: 10px 50px;
-    }
+    .puntos-puntuacion { padding: 10px 50px; }
 }

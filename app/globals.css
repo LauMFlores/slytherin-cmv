@@ -9,10 +9,14 @@
 
   
   --max-width: 1100px;
-  --font-size-1: clamp(10px, 8px + 0.8vw, 14px);
-  --font-size-2: clamp(12px, 8px + 0.8vw, 16px);
-  --font-size-3: clamp(14px, 8px + 0.8vw, 18px);
-  --font-size-5: clamp(14px, 12px + 0.8vw, 19px);
+  /* --font-size-1: clamp(10px, 8px + 0.8vw, 14px); */
+  --font-size-1: clamp(15px, 8px + 0.8vw, 18px);
+  /* --font-size-2: clamp(12px, 8px + 0.8vw, 16px); */
+  --font-size-2: clamp(17px, 8px + 0.8vw, 20px);
+  --font-size-3: clamp(16px, 8px + 0.8vw, 19px);
+  --font-size-4:clamp(18px, 10px + 1.1vw, 22px);
+
+  --font-size-5: clamp(16px, 8px + 0.8vw, 18px);
   --font-size-8: clamp(18px, 14px + 1.1vw, 26px);
   --font-size-9: clamp(16px, 10px + 1.4vw, 34px);
   --font-size-10: clamp(12px, 10px + 1.1vw, 26px);
@@ -112,6 +116,7 @@ body {
   /* background-color: rgb(145, 150, 146);  */
   /* background-image: url("../public/pattern.jpg"); */
   background-color: rgba(0, 0, 0, 0.74);
+  font-size: var(--font-size-1);
 }
 
 /* .layout-header-contenedor {

@@ -1,167 +1,173 @@
-/* Estilos para la tarjeta */
 .hechizos-contenedor {
-    padding-top: 30px;
     min-height: 500px;
+    padding-top: 30px;
 }
 
 .hechizos-tarjeta {
-    perspective: 1000px;
+    position: relative;
     width: 300px;
     height: 400px;
-    cursor: pointer;
     margin-left: auto;
     margin-right:auto;
+    cursor: pointer;
     border-radius: 25px;
-
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.8s ease-out; 
-    background-color: rgb(0, 0, 0);
+    box-shadow: 10px 10px 10px var(--negro-opacidad-45);  
+    background-color: var(--negro);
     margin-bottom: 20px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.425);
-  }
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: transform 0.8s ease-out; 
+}
   
-  .hechizos-tarjeta.flip {
-    transform: rotateY(180deg);
+.hechizos-tarjeta.flip { transform: rotateY(180deg); }
 
-  }
-
-  /* .hechizos-tarjeta.cover {
-    transform: rotateY(0deg);
-  } */
-
-  .hechizos-tarjeta .flip-cara {
+.hechizos-tarjeta .flip-cara {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden; 
-  }
+}
 
-  .hechizos-tarjeta .dorso::before,
-  .hechizos-tarjeta::before {
+.hechizos-tarjeta .dorso::before,
+.hechizos-tarjeta::before {
     content: "";
     display: block;
     position: absolute;
     left: 0;
     top: 0;
+    z-index:-1;
     width: 100%;
     height: 100%;
-    opacity: 0.2;
     background-image: url(../../../public/hogwarts-logo.png);
     background-repeat:space repeat;
     background-size: 40px;
     filter: grayscale(1);
-    z-index:-1;
-    
-  }
-  .hechizos-tarjeta .dorso {
-    background-color: #000000;
+    opacity: 0.2;
+}
+
+.hechizos-tarjeta .dorso {
+    position: relative;
     width: 100%;
     height: 100%;
-    transform: rotateY(0deg);
-    border-radius: 25px;
-    outline: 8px solid rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.301); */
-  
-  }
-  
-  .dorso-imagen{ 
-    width: 90%;
-  }
-
-  .hechizos-tarjeta .frente {
-    background-color: rgb(88, 88, 88);
-    color: white;
-    transform: rotateY(180deg);
     border-radius: 25px;
-    border: 2px solid  rgb(255, 250, 250);
+    outline: 8px solid var(--negro);
+    background-color: var(--negro);
+    transform: rotateY(0deg);
+}
+  
+.dorso-imagen{ width: 90%; }
+
+.dorso:hover { animation: pulse 1s linear infinite; }
+
+.hechizos-tarjeta .frente {
     padding: 30px 5px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.301); */
- 
-    
-  }
+    align-items: center;   
+    border-radius: 25px;
+    border: 2px solid var(--blanco);
+    color: var(--blanco);
+    background-color: var(--gris-medio);
+    transform: rotateY(180deg);
+}
 
-  .hechizos-pregunta {
+.hechizos-pregunta {
     font-weight: bold;
     padding: 10px 5px;
-  }
+}
 
-  .hechizos-respuesta {
-    height: 30px;
-  }
-  .hechizos-opciones-contenedor {
-    display: flex;
-    flex-direction: column;
+.hechizos-respuesta { height: 30px; }
+
+.hechizos-contenedor .tarjeta-exito {
+    border: 2px solid var(--verde-mensaje);
+    background-color: var(--verde-mensaje-bg);
+    box-shadow: 0px 0px 10px var(--blanco);
+}
+
+.hechizos-contenedor .tarjeta-error {
+    border: 2px solid var(--rojo-mensaje); 
+    background-color: var(--rojo-mensaje-bg);
+    box-shadow: 0px 0px 10px var(--rojo-mensaje);
+}
+
+.hechizos-contenedor .mensaje-exito {
+    margin-top: 10px;
+    padding-top: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-top: 5px solid var(--verde-mensaje-border);
+    font-size: var(--font-size-3);
+}
+
+.hechizos-contenedor .mensaje-error {
+    margin-top: 10px;
+    padding-top: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-top: 5px solid var(--rojo-mensaje-border);
+    font-size: var(--font-size-3);
+}
+
+.hechizos-opciones-contenedor {
+    height: 180px;
     width: 70%;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
-    height: 180px;
+}
 
-  }
-
-  .hechizos-botones {
-    border-radius: 10px;
-    border: 2px solid white;
+.hechizos-botones {
     padding: 10px 5px;
     cursor: pointer;
-    background-color: white;
-    transition: all 0.9s;
+    border-radius: 10px;
+    border: 2px solid var(--blanco);
+    background-color: var(--blanco);
     font-style: italic;
     font-size: var(--font-size-3);
-  
-
-  }
-
-  .hechizos-botones:hover,
-  .hechizos-nuevo:hover{
-    box-shadow: 0 2px 10px white;
-    border: 2px solid black;
-    background-color: black;
-    color: white;
-
-  }
-
-  .hechizos-botones:focus {
-    background-color: black;
-    color: white;
-  }
-
-  .hechizos-nuevo {
-    background-color: rgb(51, 51, 51);
-    color: white;
-    border: 2px solid rgb(51, 51, 51);
-    box-shadow: 1px 1px 5px rgb(0, 0, 0);
-    padding: 10px 10px;
     transition: all 0.9s;
+}
+
+.hechizos-botones:hover,
+.hechizos-nuevo:hover{
+    box-shadow: 0 2px 10px var(--blanco);
+    border: 2px solid var(--negro);
+    color: var(--blanco);
+    background-color: var(--negro);
+}
+
+.hechizos-botones:focus {
+    color: var(--blanco);
+    background-color: var(--negro);
+}
+
+.hechizos-nuevo {
+    padding: 10px 10px;
     cursor: pointer;
     border-radius: 10px;
+    box-shadow: 1px 1px 5px var(--negro);
+    border: 2px solid var(--gris-oscuro);
+    color: var(--blanco);
+    background-color: var(--gris-oscuro);
     font-size: var(--font-size-3);
-    font-family: monospace;
+    font-family: var(--font-family-2);
+    transition: all 0.9s;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
   }
-
-  .dorso:hover {
-      animation: pulse 1s linear infinite;
- 
-  }
-
-
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
   
-    50% {
-      transform: scale(0.97);
-    }
-  
-    100% {
-      transform: scale(1);
-    }
+  50% {
+    transform: scale(0.97);
   }
+  
+  100% {
+    transform: scale(1);
+  }
+}

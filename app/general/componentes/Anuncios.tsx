@@ -1,5 +1,5 @@
-import '../estilos/anuncios.css';
 import data from '../../data_usuarios.json'
+import '../estilos/anuncios.css';
 
 export default function Anuncios () {
     const prefectos = data.filter(user => user.prefecto === true);
@@ -10,7 +10,7 @@ export default function Anuncios () {
 
     return (
         <div className='anuncios-contenedor'>
-
+            {/* anuncio 1 */}
             <div className='anuncios'>
                 <h4 className='anuncios-titulo'>Prefectos y Jefe de Slytherin</h4>
                 <p>Con orgullo anunciamos a los prefectos designados para el año escolar. ¡Los felicitamos por el logro!</p>
@@ -24,7 +24,7 @@ export default function Anuncios () {
                 <p className='nombramiento'>Prof. {jefe.nombre} {jefe.apellido}</p>}
                 <p>Por inquitudes, problemas o cualquier necesidad, tratará los temas relacionados a la Casa Slytherin en su despacho en el aula de pociones, de Jueves a Sábados de 15 a 19hs.</p>
             </div>
-
+            {/* anuncio 2 */}
             <div className='anuncios'>
                 <h4 className='anuncios-titulo'>Equipo de Quidditch</h4>
                 <p> De esta manera quedan definidas las posiciones de quidditch para este año:</p>
@@ -46,7 +46,7 @@ export default function Anuncios () {
                 <p className='verde'> ¡¡ Vamos Serpientes !! 🏆🐍</p>
                 <p></p>
             </div>
-
+            {/* anuncio 3 */}
             <div className='anuncios'>
             {/* ❌❕✖❗ */}
                 <h4 className='anuncios-titulo'> IMPORTANTE: <br/>🚫 Toque de Queda y Restricciones </h4>

@@ -1,33 +1,31 @@
-.general-botonera{
-    background-color: silver;
+.general-botonera {
     padding: 15px 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
-
+    background-color: var(--gris-plata);
 }
 
 .general-botonera button {
+    height: 40px;
+    max-width:150px;
     flex-grow: 1;
     cursor: pointer;
-    height: 40px;
+    letter-spacing: 0.5px;
     border-radius: 5px;
     border: none;
-    box-shadow: 0px 4px 5px rgb(109, 108, 108);
-    font-family: monospace;
-    background-color: rgb(70, 69, 69);
-    color: white;
+    box-shadow: 0 4px 5px var(--gris-medio);
+    color: var(--blanco);
+    background-color: var(--gris-medio);
+    font-size: var(--font-size-3);
+    font-family: var(--font-family-5);
     transition: all 0.5s;
-    max-width:150px;
-   
 }
 
 .general-botonera button:hover {
-    background-color: black; 
-    box-shadow: 0px 5px 5px rgb(255, 255, 255);
+    background-color: var(--negro); 
+    box-shadow: 0 5px 5px var(--blanco);
 }
 
-.general-botonera button:focus {
-    background-color: black; 
-}
+.general-botonera button:focus { background-color: var(--negro); }

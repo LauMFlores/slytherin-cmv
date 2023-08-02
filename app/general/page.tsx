@@ -1,14 +1,13 @@
-
 'use client';
 import React, { useState } from "react";
 import Layout from "../layout2";
-import "./styles.css"; 
+import Botonera from "../componentes/Botonera";
 import Anuncios from "./componentes/Anuncios";
 import Calendario from "./componentes/Calendario";
 import Puntos from "./componentes/Puntos";
 import Trivia from "./componentes/Trivia";
 import data from "./data/data_calendario.json";
-import Botonera from "../componentes/Botonera";
+import "./styles.css"; 
 
 export default function General() {
   const pageTitle = "Campus Mágico de Slytherin";
