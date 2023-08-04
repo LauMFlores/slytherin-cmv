@@ -1,5 +1,72 @@
 :root {
 
+
+
+ /* colores de las casas */
+ --gryffindor-rojo: rgb(156, 22, 22);
+ --gryffindor-rojo-bg: rgba(212, 95, 95, 0.5);
+ --hufflepuff-amarillo: rgb(255, 255, 0);
+ --hufflepuff-amarillo-bg: rgba(255, 255, 0, 0.4);
+ --slytherin-verde: rgb(49, 112, 49); 
+ --slytherin-verde-bg: rgba(0, 128, 0, 0.4);
+ --ravenclaw-azul: rgb(24, 24, 146); 
+ --ravenclaw-azul-bg: rgb(9, 69, 180, 0.4);
+
+ /* colores del sitio */
+ --verde-gradiente: linear-gradient( to right,
+ #0f855dbd 10%,
+ #81c29ebd 30%,
+ #81d681bd 70%); 
+ /* no lo use todavia, saco colores */
+
+ --verde-oscuro-1: #0f855dbd;
+
+ --verde-claro-opacidad-50: rgba(157, 223, 179, 0.5);
+ --verde-claro-chillon:rgb(118, 231, 74);
+--verde-claro: rgb(76, 100, 80);
+
+ --gris-plata: silver;
+ --gris-claro: rgb(218, 216, 216);
+ --gris-medio: rgb(82, 82, 82);
+ /* --gris-oscuro: rgb(70, 70, 70); */
+ --gris-oscuro-2: rgb(51, 51, 51);
+
+ --blanco: white;
+
+ --negro: black;
+
+ --rojo-mensaje: rgb(134, 20, 20);
+ --rojo-mensaje-bg: rgba(121, 61, 51, 0.744);
+ --rojo-mensaje-border: rgb(41, 3, 3);
+ --rojo-mensaje-bg-2: rgba(24, 5, 5, 0.773);
+ --rojo-mensaje-border-2: rgb(109, 29, 29);
+
+ --verde-mensaje: rgb(47, 94, 47);
+ --verde-mensaje-bg: rgba(104, 175, 104, 0.641);
+ --verde-mensaje-border: rgb(3, 44, 12);
+ --verde-mensaje-bg-2: rgba(157, 223, 179, 0.541);
+ --verde-mensaje-border-2: rgba(13, 63, 17, 0.719);
+
+ --negro-opacidad-30: rgba(0, 0, 0, 0.3);
+ --negro-opacidad-45: rgba(0, 0, 0, 0.45);
+ --negro-opacidad-65: rgba(0, 0, 0, 0.65);
+ --negro-opacidad-85: rgba(0, 0, 0, 0.85);
+
+--blanco-opacidad-15: rgba(255, 255, 255, 0.15);
+--gris-oscuro-2-opacidad-85: rgba(51, 51, 51, 0.85);
+--gris-claro-opacidad-30: rgba(145, 145, 145, 0.294);
+
+ /* fuentes del sitio */
+ --font-family-2: monospace; 
+ --font-family-3: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+
+
+
+
+
+
   /* gradiente lindo 
   background-image: linear-gradient(
     #718171bd 20%,
@@ -23,8 +90,7 @@
   /* background-color: rgb(4, 26, 4); */
 
 /* Colores sin opacidad */
-  --verde1: rgb(44, 126, 58); 
-  /* --verde2: rgb(153, 187, 158); */
+  /* --verde1: rgb(44, 126, 58); 
   --verde2: rgb(161, 206, 168);
   --verde3: rgb(43, 80, 48);
   --verde4: rgb(43, 143, 96);
@@ -41,7 +107,7 @@
   --blanco: white;
   --negro: black;
   --negro-transparente: rgba(0, 0, 0, 0.75);
-  --verde-transparente: rgba(3, 73, 27, 0.65);
+  --verde-transparente: rgba(3, 73, 27, 0.65); */
 
 
   /* botonSolicitar */
@@ -107,11 +173,12 @@
   margin: 0;
   text-align: center;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: var(--font-size-1);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
   background-color: silver;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
   /* background-color: rgb(145, 150, 146);  */
   /* background-image: url("../public/pattern.jpg"); */

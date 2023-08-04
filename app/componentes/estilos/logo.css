@@ -1,6 +1,5 @@
 .logo {
     width: auto;
-    height: 40vh;
     height: 30vh;
     clip-path: circle(35%);
     filter:opacity(0.8);
@@ -8,16 +7,14 @@
 
 
 .logo img{
-    /* max-width: min(80%, 340px); */
     height: 100%;
     object-fit: cover;
 }
 
 
-@media (min-width: 400px) {
-    .logo {
-        clip-path: circle(30%);}
-    }
+@media (min-width: 400px) { 
+    .logo { clip-path: circle(30%); } 
+}
 
 @media (min-width: 600px) {
     .logo {
@@ -25,7 +22,6 @@
         clip-path: circle( 30%);   
     }
 }
-
 
 @media (min-width: 720px) {
     .logo {
@@ -38,6 +34,5 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-    }
-    
-  }
+    }    
+}

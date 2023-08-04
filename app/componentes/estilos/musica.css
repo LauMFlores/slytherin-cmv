@@ -1,22 +1,36 @@
-.musica-contenedor{
-    max-width: 75px;
+.musica-contenedor {
     min-width: 65px;
+    max-width: 80px;
+    padding: 0 5px;
 }
 
-.musica-boton{
-    padding: 4px 8px;
-    border-radius: 15px;
-    border: 2.5px solid rgb(174, 179, 173);
-    background-color: silver;
-    box-shadow: 3px -1px 3px rgb(92, 90, 90);
-    font-weight: bold;
+.musica-boton {
+    padding: 3px 5px;
     cursor: pointer;
-    font-size: var(--font-size-1);
-    transition: all 1s;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 0.8px;
+    box-shadow: 2px 1px 2px var(--gris-medio);
+    border: 2px solid var(--gris-plata);
+    background-color: var(--gris-plata);
+    transition: all 0.5s;
 }
 
-.musica-boton:hover{
-    background-color: rgba(192, 192, 192, 0.74);
-    border: 2.5px solid rgb(248, 251, 253);
+.musica-boton:hover {
+    border: 2px solid var(--blanco);
+    box-shadow: 0 0 8px var(--blanco);
 }
 
+
+@media (min-width: 500px) {
+    .musica-contenedor {
+        max-width: 100px;
+        margin:0 10px;
+    }
+    .musica-boton {
+        padding: 3px 10px;
+        font-size: var(--font-size-1);
+     }
+  }

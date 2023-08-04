@@ -27,7 +27,7 @@ export default function Nav() {
 
     const handleLogout = () => {
         localStorage.removeItem("usuarioAutenticado");
-      };
+    };
 
     useEffect(() => {
         window.addEventListener('resize', handlePantallaGrande);
@@ -36,14 +36,13 @@ export default function Nav() {
         };
     }, []);
 
-
-
+    
     return (
         <div onClick={toggleMenu} className='nav-contenedor' >
-             <p className='nav-icon'></p>
-             <p className='nav-icon'></p>
-             <p className='nav-icon'></p>
-             <ul className={`nav ${mostrar ? 'abierto' : ''}`}>
+            <p className='nav-icon'></p>
+            <p className='nav-icon'></p>
+            <p className='nav-icon'></p>
+            <ul className={`nav ${mostrar ? 'abierto' : ''}`}>
                 {menuLinks.map((link) => (
                     <li className='nav-item'key={link.href}>
                         <Link className='nav-enlaces' href={link.href}>

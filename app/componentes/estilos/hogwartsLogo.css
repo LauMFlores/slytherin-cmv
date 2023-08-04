@@ -13,7 +13,5 @@
 
 @media (min-width: 720px) {
 
-    .hogwarts-logo-img  {
-        max-width: 82px;
-    }
+    .hogwarts-logo-img  { max-width: 82px; }
 }

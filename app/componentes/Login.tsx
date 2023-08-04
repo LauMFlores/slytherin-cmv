@@ -8,7 +8,7 @@ import database from '../data_usuarios.json';
 
 const passwordDatabase = database.map((user) => ({
   ...user,
-  password: "123" //"magiaantigua" // Aqui cambia la clave segun cambia en en la sala comun.
+  password: "123" //"magiaantigua" // Cambio la clave segun cambia en la sala común:
 }));
 
 export default function Login() {
@@ -16,38 +16,39 @@ export default function Login() {
   const [clave, setClave] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState('');
-  const [showPassword, setShowPassword] = useState(false);
+  const [mostrarPassword, setMostrarPassword] = useState(false);
 
 
+// Verificación login
   const handleSubmit = (event: { preventDefault: () => void; }) => {
-    event.preventDefault();
-
-    const userData = passwordDatabase.find((user) => user.username === usuario);
-
-    if (userData && userData.password === clave) {
-      setIsSubmitted(true);
-      setError('');
-      localStorage.setItem('usuarioAutenticado', JSON.stringify(userData));
-    } else {
-        setError('🔒 Usuario o contraseña incorrectos.');
-        setClave('');
-      }
+      event.preventDefault();
+      const userData = passwordDatabase.find((user) => user.username === usuario);
+      if (userData && userData.password === clave) {
+          setIsSubmitted(true);
+          setError('');
+          localStorage.setItem('usuarioAutenticado', JSON.stringify(userData));
+        } else {
+          setError('🔒 Usuario o contraseña incorrectos.');
+          setClave('');
+        }
   };
 
+// Verificación de numero en username
   const handleUsernameInput = (event: { target: { value: any; }; }) => {
     const value = event.target.value;
     if (!value || /^\d+$/.test(value)) {
       setUsuario(value);
-      setError('');
-      
+      setError('');   
     } else {
       setError('▶ Ingrese solo números en el campo de usuario');
     }
   };
 
-  const handleToggleShowPassword = () => {
-    setShowPassword(!showPassword);
+// Toggle clave
+  const handleToggleMostrarPassword = () => {
+    setMostrarPassword(!mostrarPassword);
   };
+
 
   return (
     <div className='login-contenedor'>
@@ -56,52 +57,45 @@ export default function Login() {
         <h2 className='login-titulo'>CAMPUS MÁGICO VIRTUAL</h2>
         <h2 className='login-titulo'>LOGIN</h2>
         <form onSubmit={handleSubmit} className='login-formulario' action="">
-          
-          <input
-            className='login-usuario'
-            type="text"
-            name='usuario'
-            placeholder='Ingrese su IEM'
-            value={usuario}
-            // onChange={(event) => setUsuario(event.target.value)}
-            onChange={handleUsernameInput} 
-            autoComplete='off'
-            required
-            disabled={isSubmitted}
-          />
-          
-          <input
-            className='login-clave'
-            type={showPassword ? 'text' : 'password'}
-            name='clave'
-            placeholder='Ingrese la contraseña'
-            value={clave}
-            onChange={(event) => setClave(event.target.value)}
-            required
-            disabled={isSubmitted}
-          />
-
-          <button
-            className='login-mostrar-clave-boton'
-            type='button'
-            onClick={handleToggleShowPassword}
-          >
-            {showPassword ? 'Ocultar' : 'Ver clave'}
-          </button>
-
-          {!isSubmitted &&
-          <button type='submit' className='login-alohomora-boton'>ALOHOMORA</button>}
-        
+          {/* usuario */}
+            <input
+              className='login-usuario'
+              type="text"
+              name='usuario'
+              placeholder='Ingrese su IEM'
+              value={usuario}
+              onChange={handleUsernameInput} 
+              autoComplete='off'
+              required
+              disabled={isSubmitted}
+            />
+          {/* clave */}
+            <input
+              className='login-clave'
+              type={mostrarPassword ? 'text' : 'password'}
+              name='clave'
+              placeholder='Ingrese la contraseña'
+              value={clave}
+              onChange={(event) => setClave(event.target.value)}
+              required
+              disabled={isSubmitted}
+            />
+          {/* toggle clave */}
+            <button className='login-mostrar-clave-boton' type='button' onClick={handleToggleMostrarPassword}>
+              {mostrarPassword ? 'Ocultar' : 'Ver clave'}
+            </button>
+          {/* boton alohomora */}
+            {!isSubmitted &&
+            <button type='submit' className='login-alohomora-boton'>ALOHOMORA</button>}
         </form>
 
+        {/* mensajes */}
         {error && <p className="login-error">{error}</p>}
-
         {isSubmitted && (
-            <>
+          <>
             <p className="login-mensaje">¡Hechizo exitoso!</p>
-          <Link className='login-entrar-boton' href="/general">
-            ENTRAR
-          </Link></>
+            <Link className='login-entrar-boton' href="/general"> ENTRAR </Link>
+          </>
         )}
       </div>
         {/* <Link className='login-entrar-boton' href="/general">

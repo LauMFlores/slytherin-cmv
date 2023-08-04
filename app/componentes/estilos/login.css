@@ -1,35 +1,26 @@
-.login-contenedor {
-    letter-spacing: 1.2px;
-    font-weight: bold;  
-    /* padding-bottom: 50px;  */
-}
+/* .login-contenedor {} */
+
 .login {
     position: relative;
     z-index: 1;
-    background-color: #91919133;
-    border-radius: 10px;
     padding-bottom:100px;
-
+    border-radius: 10px;
+    background-color: var(--blanco-opacidad-15);
 }
 
 .login-titulo {
-    color: rgb(231, 220, 220);
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
-    padding: 10px 5px;
+    margin-top: 12px;
+    padding: 12px 5px;
     text-align: center;
-    border-top: 3px solid rgba(7, 7, 7, 0.137);
-    box-shadow: 5px 5px 20px rgba(10, 10, 10, 0.514);
-    background-color: #194219d5;
     letter-spacing: 4px;
+    box-shadow: 5px 5px 20px var(--negro-opacidad-65);
+    color: var(--blanco);
+    border-top: 1px solid var(--blanco);
+    background-color: var(--negro-opacidad-85);
     font-size: var(--font-size-10);
-    color: white;
-    background-color: transparent;
-    background-color: #161616ec;
-    color: rgb(255, 255, 255);
-    border-top: 1px solid rgb(255, 255, 255);
- 
+    font-family: var(--font-family-3);
 }
 
 .login-formulario{
@@ -39,256 +30,161 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
 }
 
-.login-usuario{ 
-    border-radius: 3px;
-    border: 2.5px solid #194219;
-    border: 2.5px solid #2c2e2c8c;
-    font-size: var(--font-size-5);
-    display: block; 
-    padding: 5px 10px;
+.login-usuario, 
+.login-clave { 
     width: 70%;
+    padding: 5px 10px;
+    display: block; 
     border-radius: 5px;
-    background-color: rgba(54, 53, 53, 0.87);
-    border: 1px solid rgb(255, 255, 255);
-    color: white;
+    border: 1px solid var(--blanco);
+    color: var(--blanco);
+    background-color: var(--gris-oscuro-2-opacidad-85);
+    transition: all 0.3s;
 }
  
-.login-clave{ 
-    border-radius: 3px;
-    border: 2.5px solid #194219;
-    border: 2.5px solid #2c2e2c8c;
-    font-size: var(--font-size-5);
-    display: block;
-    padding: 5px 10px;
-    width: 70%;
-    border-radius: 5px;
-    background-color: rgba(54, 53, 53, 0.938);
-    border: 1px solid rgb(255, 253, 253);
-    color: white;
-      
-}
-
 .login-usuario:hover,
 .login-clave:hover {
-    box-shadow: 0px 0px 3px rgb(253, 253, 253); 
+    box-shadow: 0 0 4px var(--blanco);
+}
+
+.login-usuario:focus,
+.login-clave:focus {
+    outline: none;
+    border: 1px solid var(--blanco);
+    background-color: var(--negro-opacidad-45);
 }
 
 .login-usuario::placeholder,
 .login-clave::placeholder {
-    color: rgb(255, 255, 255);
-    font-family: monospace;
-    font-size: 15px;
-    color: black;
-    color: white;  
+    color: var(--blanco);
+    font-family: var(--font-family-2);
 }
 
 .login-mostrar-clave-boton {
     width: 80px;
+    padding: 3px 1px;
     border-radius: 5px;
-    border: 1px solid silver;
-    /* box-shadow: 0px 2px 2px rgb(253, 253, 253);  */
     cursor: pointer; 
-    padding: 3px 0;
     font-weight: bold;
-    color: rgb(37, 37, 37);
+    font-size: 14px;
+    font-family: var(--font-family-2);
+    color: var(--gris-oscuro-2);
+    border: 1px solid var(--gris-plata);
+    background-color: var(--gris-plata);
     transition: all 0.3s;
-    background-color: rgb(185, 185, 185);
-    /* color: white; */
 }
 
 .login-mostrar-clave-boton:hover {
-    background-color: rgba(180, 179, 179, 0.301);
-    color: white;
-      box-shadow: 0px 0px 5px rgb(253, 253, 253); 
+    box-shadow: 0 0 5px var(--blanco); 
+    color: var(--blanco);
+    background-color: var(--gris-medio);
 }
 
 .login-error { 
+    margin: 10px 10px 0;
     padding: 12px;
-    font-size: var(--font-size-1);
-    background-color: #332a2a62;
-    border-left: 12px solid rgba(121, 9, 9, 0.562);
-    
-    margin-top: 10px;
-    margin-left: 10px; 
-    margin-right: 10px; 
-    background-color: #180505c5;
-    border-left: 12px solid rgb(109, 29, 29);
-    color: white;
+    color: var(--blanco);
+    border-left: 12px solid var(--rojo-mensaje-border-2);
+    background-color: var(--rojo-mensaje-bg-2);
 }
 
 .login-mensaje {
     margin-top: 10px; 
     padding: 12px;
-    font-size: var(--font-size-1);
-    background-color: #332a2a62;
-    border-left: 12px solid rgba(13, 63, 17, 0.719); 
-    background-color: #9ddfb38a; 
+    border-left: 12px solid var(--verde-mensaje-border-2);
+    background-color: var(--verde-mensaje-bg-2);
     font-size: var(--font-size-2);
+    font-weight: bold;
 }
 
 .login-alohomora-boton {
-    display: block;
+    width: 200px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    margin-top: 10px;
-    /* border: 3px solid #194219d5; */
-    width: 200px;
     padding: 10px 6px;
-    border-radius: 10px;
+    display: block;
+    text-align: center;
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    border: 2px solid rgba(255, 255, 255, 0);
-    background-color: #425342fb;
-    background-color:#1f501ff1;
-    font-weight: bold;
-    /* transition: font-size 0.9s, background-color 0.9s, box-shadow 0.9s; */
-    transition: all 0.6s;
-    letter-spacing: 2px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(12, 12, 12);
-    /* text-shadow: -2px 2px 5px #000000; */
-    /* box-shadow: 0px 2px 3px rgba(255, 255, 255, 0.74); */
-    background-color: rgba(100, 131, 105, 0.774);
     cursor: pointer;
-    border-left: 4px solid rgb(240, 237, 237);
-    border-right: 4px solid rgb(255, 255, 255);
-    /* border-top: 3px solid rgb(0, 0, 0); */
-
+    border-radius: 10px;
+    border: 2px solid var( --verde-claro);
+    box-shadow: 0px 0px 8px var(--gris-oscuro-2);
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: var(--font-family-3);
+    color: var(--blanco);
+    background-color: var( --verde-claro);
+    transition: all 0.8s;
 }
 
 .login-alohomora-boton:hover {
-    background-color: black;
-    color: white;
-    font-size: 15px;
-    box-shadow: 0px 0px 10px rgb(255, 255, 255);
-    border: 2px solid rgba(255, 255, 255, 0);
-    /* border-left: 2px solid rgba(255, 255, 255, 0);
-    border-right: 2px solid rgb(0, 0, 0); */
+    box-shadow: 0px 0px 10px var(--blanco);
+    border: 2px solid var(--negro);
+    color: var(--blanco);
+    background-color: var(--negro);
 }
 
 .login-entrar-boton {
-    display: block;
+    width: 200px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    border: 3px solid white;
-    width: 190px;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px;
+    padding: 12px 5px;
+    display: block;
     text-decoration: none;
-    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: var(--font-family-3);
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+    color: var(--blanco);
+    background-color: var(--negro);
     transition: all 0.7s;
-    background-color: #071601; 
-    margin-top: 10px;
-    background-color: black;
+    animation: pulse 1s linear infinite;
 }
 
 .login-entrar-boton:hover {
-    background-color: black;
     letter-spacing: 5px;
+    box-shadow: 0 0 5px;
+    outline: 1px solid var(--blanco);
+    background-color: var(--negro);
 }
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    
+    50% {
+      transform: scale(0.97);
+    }
+    
+    100% {
+      transform: scale(1);
+    }
+  }
 
 @media (min-width: 720px) {
     .login-contenedor {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      min-height: 400px;
-      padding-right: 35px;
-      padding-top: 90px;
-      position: relative;
-      max-width: 1200px;
-     /* margin-left: auto;
-     margin-right: auto; */ 
+        position: relative;
+        max-width: 1200px;
+        min-height: 400px;
+        padding-top: 90px;
+        padding-right: 35px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     
     .login {
         position: relative;
         z-index: 1;
-        background-color: #9191914b;
         border-radius: 10px;
+        background-color: var(--gris-claro-opacidad-30);
     }
     
-    .login-titulo {
-        /* background-color: #2b442b;
-        box-shadow: 5px 5px 20px rgba(10, 10, 10, 0.514);
-        color: rgb(28, 31, 29);
-        border-top: 5px solid rgba(19, 75, 24, 0.795);
-        border-top: 5px solid rgba(21, 26, 21, 0.521); */
-        color: white;
-        background-color: transparent;
-    }
-    
-    /* .login-usuario::placeholder,
-    .login-clave::placeholder {
-        color: rgb(255, 255, 255);
-        font-family: monospace;
-        font-size: 15px;
-        color: black;
-        color: white;  
-    }
-
-    .login-usuario{ 
-        border-radius: 3px;
-        border: 2.5px solid #194219;
-        border: 2.5px solid #2c2e2c8c;
-        font-size: var(--font-size-5);
-        display: block; 
-        padding: 5px 10px;
-        width: 70%;
-        border-radius: 5px;
-        background-color: rgba(54, 53, 53, 0.644);
-        border: 1px solid rgb(7, 7, 7);
-        color: white;
-        
-    }
-    
-    .login-clave{ 
-        border-radius: 3px;
-        border: 2.5px solid #194219;
-        border: 2.5px solid #2c2e2c8c;
-        font-size: var(--font-size-5);
-        display: block;
-        padding: 5px 10px;
-        width: 70%;
-        border-radius: 5px;
-        background-color: rgba(63, 62, 62, 0.658);
-        border: 1px solid rgb(7, 7, 7);
-        color: white;
-        
-    }
-    
-    .login-error { 
-        padding: 12px;
-        font-size: var(--font-size-1);
-        background-color: #853838c5;
-        border-left: 12px solid rgb(109, 29, 29);
-        margin-top: 10px;
-        margin-left: 10px; 
-        margin-right: 10px; 
-        font-family: monospace;
-        color: white;
-    }
-    
-    .login-mensaje {
-        margin-top: 10px; 
-        padding: 12px;
-        font-size: var(--font-size-2);
-        background-color: #9ddfb38a;
-        border-left: 12px solid rgba(13, 63, 17, 0.842);  
-        font-family: monospace;
-    }
-
-    .login-mostrar-clave-boton:hover {
-        background-color: rgba(194, 190, 190, 0.712);
-    }
-
-    .login-alohomora-boton {
-        /* background-color: #2c422c;
-        color: rgb(239, 243, 240);
-        border: 3px solid rgba(177, 166, 166, 0.808); */
-    
+    .login-titulo { background-color: transparent; }
 } 
