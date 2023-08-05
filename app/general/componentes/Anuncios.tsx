@@ -28,22 +28,22 @@ export default function Anuncios () {
             <div className='anuncios'>
                 <h4 className='anuncios-titulo'>Equipo de Quidditch</h4>
                 <p> De esta manera quedan definidas las posiciones de quidditch para este año:</p>
-                    <ul> Cazadores: 
+                    <ul> <span className='subrayado'>Cazadores</span> 
                         {cazadores.map(user => (
                             <li className='nombramiento' key={user.username}>{user.nombre} {user.apellido}</li>
                         ))}
                     </ul>
-                    <ul>Bateadores:
+                    <ul> <span className='subrayado'>Bateadores</span> 
                         {bateadores.map(user => (
                             <li className='nombramiento' key={user.username}>{user.nombre} {user.apellido}</li>
                         ))}
                     </ul>
                 {buscador && 
-                    <ul>Buscador: 
+                    <ul> <span className='subrayado'>Buscador</span> 
                          <li className='nombramiento'> {buscador.nombre} {buscador.apellido}</li> 
                     </ul>}
                 <p> La temporada inicia el 23 de octubre, con un evento de apertura organizado por la Prof. Hooch. Los esperamos a todos a las 17:00 hs en el estadio de Quidditch.</p> 
-                <p className='verde'> ¡¡ Vamos Serpientes !! 🏆🐍</p>
+                <p className='verde'> ¡ Vamos Serpientes ! 🏆🐍</p>
                 <p></p>
             </div>
             {/* anuncio 3 */}
@@ -52,11 +52,11 @@ export default function Anuncios () {
                 <h4 className='anuncios-titulo'> IMPORTANTE: <br/>🚫 Toque de Queda y Restricciones </h4>
                 <p> Se recuerda a los alumnos que no se permite circular por ningún área del castillo entre las 22:00 pm y 6:00 am.  </p>
                 <p>Asimismo, se mencionan a continuación las zonas con acceso prohibido durante el año escolar vigente: </p>
-                 <p className='subrayado'>❌ Sección Restringida de la Biblioteca </p>
+                  <p>❌<span className='subrayado'>Sección Restringida de la Biblioteca</span></p>
                 <p> Sólo se permitirá el acceso a aquel estudiante que posea un permiso firmado por algún profesor o miembre del personal de la escuela.</p>
-                <p className='subrayado'>❌Torre de Astronomía</p>
+                <p>❌<span className='subrayado'>Torre de Astronomía</span></p>
                 <p> Se permite circular por la torre únicamente en el horario asignado para cursar la materia, con tolerancia máxima de 15 minutos previos y 15 minutos al finalizar la clase.</p>
-                <p className='subrayado'>❌ Terrenos del Bosque Prohibido</p>
+                <p>❌<span className='subrayado'>Terrenos del Bosque Prohibido</span></p>
                 <p> Queda terminantemente prohibido el ingreso en cualquier horario para todos los estudiantes. </p>
                 <p className='rojo'>Infringir tanto el toque de queda como acceder a dichas áreas restringidas del castillo conlleva en una severa sanción disciplinaria, pudiendo derivar incluso en la expulsión de Hogwarts. </p>
             </div>

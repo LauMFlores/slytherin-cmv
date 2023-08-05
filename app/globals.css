@@ -12,7 +12,7 @@
  /* gradiente del sitio */
   --verde-gradiente: linear-gradient( to right,
    #0f855dbd 10%,
-   #81c29ebd 30%,
+   rgba(129, 194, 158, 0.741) 30%,
    #81d681bd 70%); 
 
 /* colores del sitio */
@@ -22,7 +22,7 @@
   --verde-medio: rgb(69, 115, 85);
   /* --verde-medio:rgba(47, 83, 52, 0.76); */
   --verde-oscuro-1: #0f855dbd;
-  --verde-claro-opacidad-50: rgba(157, 223, 179, 0.5);
+  --verde-claro-opacidad-60: rgba(128, 194, 157, 0.6) ;
   --verde-medio-opacidad-65: rgba(3, 73, 27, 0.6);
 
 /* ------- grises -----  */
@@ -67,16 +67,17 @@
 
  /* fuentes del sitio */
   --font-family-1: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  --font-family-1: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   --font-family-2: monospace; 
   --font-family-3: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
  /* tamaños de fuente del sitio */
   --font-size-0: clamp(14px, 8px + 0.4vw, 17px);
-  --font-size-1: clamp(15px, 8px + 0.8vw, 18px);
-  --font-size-2: clamp(16px, 8px + 0.8vw, 19px);
+  --font-size-1: clamp(16px, 8px + 0.9vw, 18px);
+  --font-size-2: clamp(16px, 8px + 1vw, 19px);
   --font-size-3: clamp(17px, 8px + 0.8vw, 20px);
   --font-size-4:clamp(18px, 10px + 1.1vw, 22px);
-
+  --font-size-5:clamp(18px, 10px + 1.6vw, 28px);
  
   --font-size-9: clamp(18px, 10px + 1.4vw, 34px); 
   /* estaba en 16 */

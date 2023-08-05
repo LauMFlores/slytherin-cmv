@@ -11,17 +11,18 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--gris-plata);
 }
   
 .layout2-contenedor h2 {
-    margin-left:10px;
-    margin-right: 20px;
-    padding: 15px 2px;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding: 15px 0px;
     flex-grow: 2;
     letter-spacing: 1px;
     border-top: 2px solid var(--blanco);
     font-family: var(--font-family-3);
-    font-size: var(--font-size-4);
+    font-size: var(--font-size-5);
 }
 
 @media (min-width: 720px) {

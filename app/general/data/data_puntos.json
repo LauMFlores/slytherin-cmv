@@ -1,22 +1,22 @@
 [
     {
         "casa": "gryffindor",
-        "logo": "./puntos-gryffindor.png",
+        "logo": "./img/puntos-gryffindor.png",
         "puntuacion": 0
     }, 
     {
         "casa": "hufflepuff",
-        "logo": "./puntos-hufflepuff.webp",
+        "logo": "./img/puntos-hufflepuff.webp",
         "puntuacion": 0
     }, 
     {
         "casa": "slytherin",
-        "logo": "./puntos-slytherin.png",
+        "logo": "./img/puntos-slytherin.png",
         "puntuacion": 0
     }, 
     {
         "casa": "ravenclaw",
-        "logo": "./puntos-ravenclaw.webp",
+        "logo": "./img/puntos-ravenclaw.webp",
         "puntuacion": 0
     } 
 ]

@@ -5,8 +5,9 @@
 
 .hechizos-tarjeta {
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 380px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right:auto;
     cursor: pointer;
@@ -113,7 +114,7 @@
 
 .hechizos-opciones-contenedor {
     height: 180px;
-    width: 70%;
+    width: 80%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -157,6 +158,62 @@
     transition: all 0.9s;
 }
 
+.cargando {
+    margin: 20px auto;
+    width: 500px;
+    border-radius: 15px;
+    padding: 10px;
+    line-height: 25px;
+    background-color: var(--blanco-opacidad-50);
+    
+}
+
+.cargando p{
+    font-family: var(--font-family-2);
+    font-weight: bold;
+}
+
+.cargando-animacion span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    margin: 4px;
+    background: var(--cargando-1);
+    border-radius: 10px;
+    animation: loading 1s infinite alternate;
+}
+
+.cargando-animacion span:nth-of-type(2) { 
+    background: var(--cargando-2);
+    animation-delay: 0.2s;
+}
+
+.cargando-animacion span:nth-of-type(3) {
+    background: var(--cargando-3);
+    animation-delay: 0.4s;
+}
+
+.cargando-animacion span:nth-of-type(4) {
+    background: var(--cargando-4);
+    animation-delay: 0.6s;
+}
+
+.cargando-animacion span:nth-of-type(5) {
+    background: var(--cargando-5);
+    animation-delay: 0.8s;
+}
+
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 @keyframes pulse {
   0% {
@@ -170,4 +227,21 @@
   100% {
     transform: scale(1);
   }
+}
+
+@media (min-width: 500px) { 
+    .hechizos-tarjeta { 
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media (min-width: 720px) {
+    .trivia-contenedor { 
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
 }

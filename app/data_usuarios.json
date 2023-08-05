@@ -1,11 +1,120 @@
-[
-    {
-    "username": "123",
+[   
+  { "username": "123",
     "nombre": "Maria Laura",
     "apellido":"Morello Flores",
     "prefecto":false,
     "calificaciones": [
-        {"Pociones": "0",
+        {
+          "Pociones": "0",
+          "Encantamientos": "",
+          "Defensa Contra las Artes Oscuras": "",
+          "Herbología": "",
+          "Transformaciones": "8",
+          "Astronomía": "",
+          "Historia de la Magia": "",
+          "Runas Antiguas": "",
+          "Adivinación": "",
+          "Estudio de los Muggles": "",
+          "Cuidado de Criaturas Mágicas": ""
+        } ]
+  },
+
+  { "username": "12345",
+    "nombre": "Evangelina",
+    "apellido":"Ferreira",
+    "prefecto": false
+  },
+
+  { "username": "33467",
+    "nombre": "Sybill",
+    "apellido":"Cooper",
+    "prefecto": true
+  },
+
+  { "username": "32566",
+    "nombre": "Apolo",
+    "apellido":"Longbottom",
+    "prefecto": true
+  },
+    
+  { "username": "10072",
+    "nombre": "Horace",
+    "apellido":"Slughorn",
+    "profesor": true,
+    "jefe": true
+  },
+
+  { "username": "40566",
+    "nombre": "Jasmine",
+    "apellido":"Silverling",
+    "prefecto": false,
+    "quidditch":"buscador"
+  },
+
+  { "username": "32283",
+    "nombre": "Ellis",
+    "apellido":"Fiddlewood",
+    "prefecto": false,
+    "quidditch":"cazador"
+  },
+
+  { "username": "35026",
+    "nombre": "Rowan",
+    "apellido":"Leveret",
+    "prefecto": false,
+    "quidditch":"cazador"
+  },
+
+  { "username": "37555",
+    "nombre": "Lavender",
+    "apellido":"Goyle",
+    "prefecto": false,
+    "quidditch":"cazador"
+  },
+
+  {
+    "username": "31103",
+    "nombre": "Leota",
+    "apellido":"Fledging",
+    "prefecto": false,
+    "quidditch":"bateador"
+  },
+
+  {
+    "username": "39939",
+    "nombre": "Mathias",
+    "apellido":"Cross",
+    "prefecto": false,
+    "quidditch":"bateador"
+  },
+
+  { "username": "30001",
+    "nombre": "Maria Laura",
+    "apellido":"Morello Flores",
+    "prefecto":false,
+    "calificaciones": [
+        {
+          "Pociones": "0",
+          "Encantamientos": "",
+          "Defensa Contra las Artes Oscuras": "",
+          "Herbología": "",
+          "Transformaciones": "8",
+          "Astronomía": "",
+          "Historia de la Magia": "",
+          "Runas Antiguas": "",
+          "Adivinación": "",
+          "Estudio de los Muggles": "",
+          "Cuidado de Criaturas Mágicas": ""
+        } ]
+  },
+
+  { "username": "30002",
+    "nombre": "Maria Laura",
+    "apellido":"Morello Flores",
+    "prefecto":false,
+    "calificaciones": [
+      {
+        "Pociones": "0",
         "Encantamientos": "",
         "Defensa Contra las Artes Oscuras": "",
         "Herbología": "",
@@ -16,60 +125,26 @@
         "Adivinación": "",
         "Estudio de los Muggles": "",
         "Cuidado de Criaturas Mágicas": ""
-          
-        } ]
-    },
-    {
-    "username": "12345",
-    "nombre": "Mauri",
-    "apellido":"Godoy",
+      } ]
+  },
+
+  { "username": "30003",
+    "nombre": "Maria Laura",
+    "apellido":"Morello Flores",
     "prefecto":false,
-    "horarios": [
-        {
-          "dia": "Martes",
-          "horario": "9:00 AM - 11:00 AM",
-          "materia": "Defensa Contra las Artes Oscuras"
-        },
-        {
-          "dia": "Jueves",
-          "horario": "3:00 PM - 5:00 PM",
-          "materia": "Astronomía"
-        }]
-    },
-    {
-    "username": "33467",
-    "nombre": "Sybill",
-    "apellido":"Cooper",
-    "prefecto":true
-    },
-    {
-    "username": "32566",
-    "nombre": "Apolo",
-    "apellido":"Longbottom",
-    "prefecto":true
-    },
-    {
-    "username": "10233",
-    "nombre": "Horace",
-    "apellido":"Slughorn",
-    "jefe":true
-    },
-    {
-    "username": "10233",
-    "nombre": "seeker",
-    "apellido":"Slughorn",
-    "quidditch":"buscador"
-    },
-    {
-        "username": "10233",
-        "nombre": "chaser",
-        "apellido":"Slughorn",
-        "quidditch":"cazador"
-        },
-        {
-            "username": "10233",
-            "nombre": "seeker",
-            "apellido":"Slughorn",
-            "quidditch":"bateador"
-            }
+    "calificaciones": [
+      {
+        "Pociones": "0",
+        "Encantamientos": "",
+        "Defensa Contra las Artes Oscuras": "",
+        "Herbología": "",
+        "Transformaciones": "8",
+        "Astronomía": "",
+        "Historia de la Magia": "",
+        "Runas Antiguas": "",
+        "Adivinación": "",
+        "Estudio de los Muggles": "",
+        "Cuidado de Criaturas Mágicas": ""
+      } ]
+  }
 ]

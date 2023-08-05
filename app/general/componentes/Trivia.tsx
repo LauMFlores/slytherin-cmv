@@ -106,7 +106,17 @@ export default function Trivia () {
   //mensaje mientras carga
   if (cargando) {
       return (
-          <p>Cargando Hechizos...Espere por favor.</p>
+        <div className="cargando">
+          <p> Cargando Hechizos...Espere por favor.</p> 
+          <p> Puede demorar varios minutos.</p>
+          <div className="cargando-animacion">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       )
   }
 

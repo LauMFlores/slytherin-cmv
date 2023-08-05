@@ -12,19 +12,20 @@
 }
 
 .anuncios-titulo {
-    padding: 10px 0;
+    margin-bottom: 15px;
+    padding: 12px 0;
     letter-spacing: 1px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border-bottom: 5px solid var(--verde-oscuro-1);
+    border-bottom: 10px solid var(--verde-claro-opacidad-60);
     color: var(--blanco);
     background-color: var( --gris-oscuro-2);
     font-size: var(--font-size-3);
 }
 
 .anuncios p {
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 6px;
+    margin-bottom: 6px;
     padding: 2px;
     text-align: left;
 }
@@ -39,16 +40,27 @@
     list-style: none;
     text-align: center;
     font-weight: bold;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
-.anuncios .subrayado { text-decoration: underline; }
+.anuncios .subrayado { 
+    text-decoration: underline; 
+    letter-spacing: 1px; 
+    display: inline-block;
+    margin-top: 8px;
+}
 
 .anuncios .rojo {
+    width: 90%;
+    margin: 15px auto;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    border-radius: 15px;
     text-align: center;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     font-weight: bold;
     color: var(--rojo-mensaje);
+    border: 2px solid var(--rojo-mensaje);
 }
 
 .anuncios .verde {
@@ -61,11 +73,16 @@
 
 @media (min-width: 720px) {
     .anuncios-contenedor {
-        max-width: 1100px;
+        max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
     }
-
+    .anuncios { 
+        max-width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+    }
     .anuncios p{
         padding-left: 5%;
         padding-right: 5%;

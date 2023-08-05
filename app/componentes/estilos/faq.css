@@ -129,7 +129,3 @@
   }
 }
 
-
-@media (min-width: 720px) {
-  .faq-respuesta { background-color: var(--verde-claro-opacidad-50); }
-}

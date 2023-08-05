@@ -1,56 +1,17 @@
 .campus {
-
-    /* componente calendario */
+    /* calendario */
     --evento-calendario-1: rgb(49, 109, 76);
     --evento-calendario-2: rgb(92, 216, 129);
     --evento-calendario-3: rgb(161, 247, 159);
     --evento-calendario-4: rgb(180, 156, 212);
     --evento-calendario-5: rgb(83, 132, 160);
 
-    /* colores de las casas */
-    --gryffindor-rojo: rgb(156, 22, 22);
-    --gryffindor-rojo-bg: rgba(212, 95, 95, 0.5);
-    --hufflepuff-amarillo: rgb(255, 255, 0);
-    --hufflepuff-amarillo-bg: rgba(255, 255, 0, 0.4);
-    --slytherin-verde: rgb(49, 112, 49); 
-    --slytherin-verde-bg: rgba(0, 128, 0, 0.4);
-    --ravenclaw-azul: rgb(24, 24, 146); 
-    --ravenclaw-azul-bg: rgb(9, 69, 180, 0.4);
-
-    /* colores del sitio */
-    --verde-gradiente: linear-gradient( to right,
-    #0f855dbd 10%,
-    #81c29ebd 30%,
-    #81d681bd 70%); 
-    /* no lo use todavia, saco colores */
-
-    --verde-oscuro-1: #0f855dbd;
-
-    --gris-plata: silver;
-    --gris-claro: rgb(218, 216, 216);
-    --gris-medio: rgb(82, 82, 82);
-    /* --gris-oscuro: rgb(75, 75, 75); */
-    --gris-oscuro-2: rgb(51, 51, 51);
-
-    --blanco: white;
-
-    --negro: black;
-
-    --rojo-mensaje: rgb(134, 20, 20);
-    --rojo-mensaje-bg: rgba(121, 61, 51, 0.744);
-    --rojo-mensaje-border: rgb(41, 3, 3);
-
-    --verde-mensaje: rgb(47, 94, 47);
-    --verde-mensaje-bg: rgba(104, 175, 104, 0.641);
-    --verde-mensaje-border: rgb(3, 44, 12);
-
-    --negro-opacidad-30: rgba(0, 0, 0, 0.3);
-    --negro-opacidad-45: rgba(0, 0, 0, 0.45);
-    --negro-opacidad-85: rgba(0, 0, 0, 0.85);
-
-    /* fuentes del sitio */
-    --font-family-2: monospace; 
-
+    /* trivia cargando */
+    --cargando-1: rgb(0, 125, 182);
+    --cargando-2: rgb(0, 143, 178); 
+    --cargando-3: rgb(0, 155, 158);
+    --cargando-4: rgb(0, 167, 125);
+    --cargando-5: rgb(0, 178, 71);
 }
 
 .campus-contenedor{
@@ -72,12 +33,13 @@
 }
 
 .campus-descripcion {
-    margin: 0 35px;
+    margin: 0 25px;
     padding-top:20px;
     padding-bottom:20px;
     letter-spacing: 0.5px;
-    line-height: 20px;
+    line-height: 23px;
     font-style: italic;
+    font-weight: bold;
     border-bottom: 2px solid var(--blanco);
     font-size: var(--font-size-2);
 }
@@ -89,4 +51,6 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    .campus-descripcion { margin: 0 45px; }
 }

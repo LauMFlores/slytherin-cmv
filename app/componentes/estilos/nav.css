@@ -18,7 +18,8 @@
 .nav-contenedor .abierto {
     position: absolute;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column; 
+    padding-top: 0;
 } 
 
 .nav-item {
@@ -32,10 +33,13 @@
     width: 100%;
     padding: 20px 10px;    
     text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
     border-left: 1px solid var(--blanco);
     border-bottom: 1px solid var(--blanco);
     color: var(--blanco);
     background-color: var(--negro-opacidad-85);
+    font-size: var(--font-size-2);
 }
 
 .nav-enlaces:hover { background-color: var(--negro); }

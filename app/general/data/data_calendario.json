@@ -1,26 +1,29 @@
-{
-    "anio": "2023-2024",
+{   "anio": "2023-2024",
     "eventos": [
         {
         "tipoEvento": "general",
         "evento": "Inicio del Año Escolar",
         "fechaISO": "2023-09-06"
         },
+
         {
         "tipoEvento": "general",
         "evento": "Fin del Año Escolar",
         "fechaISO": "2024-06-28"
         },
+
         {
         "tipoEvento": "general",
         "evento": "Ceremonia de Selección",
         "fechaISO": "2023-09-04"
         },
+
         {
         "tipoEvento": "general",
         "evento": "Ceremonia de Fin de Curso",
         "fechaISO": "2024-06-26"
         },
+
         {
         "tipoEvento": "recesos",
         "evento": "Receso Invernal",
@@ -29,6 +32,7 @@
             "fin":"2024-01-08"
             }
         },
+
         {
         "tipoEvento": "recesos",
         "evento": "Receso Primaveral",
@@ -37,6 +41,7 @@
             "fin":"2024-03-31"
             }
         },
+
         {
         "tipoEvento": "examenes",
         "evento": "Examenes de Mitad de Curso",
@@ -46,6 +51,7 @@
             "fin":"2024-01-08"
             }
         },
+
         {
         "tipoEvento": "examenes",
         "evento": "Examenes Finales - Excentos alumnos de 5º y 7º",
@@ -53,7 +59,8 @@
             "inicio":"2024-06-03",
             "fin":"2024-07-07"
             }
-        },   
+        },  
+
         {
         "tipoEvento": "examenes",
         "evento": "Examenes OWLS y NEWTS - Alumnos de 5º y 7º respectivamente",
@@ -62,30 +69,35 @@
             "fin":"2024-06-07"
             }
         },
+
         {
         "tipoEvento": "quidditch",
         "evento": "Inicio de Temporada de Quidditch",
         "fechaISO": "2023-10-23"
         },
+
         {
         "tipoEvento": "quidditch",
         "evento": "Semifinales de Quidditch",
         "fechaISO": "2024-03-17"
         },
+
         {
         "tipoEvento": "quidditch",
         "evento": "Finales de Quidditch",
         "fechaISO": "2024-05-05"
         },
+
         {
         "tipoEvento": "hogsmeade",
         "evento": "Primera Visita a Hogsmeade - Alumnos de 3º o Superior",
         "fechaISO": "2023-11-18"
         },
+        
         {
         "tipoEvento": "hogsmeade",
         "evento": "Segunda Visita a Hogsmeade - Alumnos de 3º o Superior",
         "fechaISO": "2024-04-20"
         } 
-    ]
-} 
+    ] 
+}
