@@ -7,24 +7,21 @@
 
 .boton-sumar,
 .boton-restar {
-    margin-right: 15px;
-    margin-left: 15px;
     width: 50px;
     height: 25px;
-    font-size: 22px;
+    margin-right: 15px;
+    margin-left: 15px;
     border-radius: 5px;
-    border: var(--contador-botones-border);
-    box-shadow: var(--contador-botones-boxshadow);
+    border: 1px solid var(--blanco);
+    box-shadow: 3px 3px 1px var(--gris-claro-2);
+    font-size: 20px;
+    font-family: var(--font-family-2);
 }
 
 .boton-sumar:hover,
 .boton-restar:hover {
     cursor: pointer;
-    background-color: var(--contador-botones-hover-bgcolor);
-    box-shadow: var(--contador-botones-hover-boxshadow);
-    
+    background-color: var(--gris-claro);
 }
 
-.precio-total {
-    width: 80px;
-}
+.precio-total { width: 80px; }

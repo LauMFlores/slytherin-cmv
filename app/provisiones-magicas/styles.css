@@ -11,25 +11,23 @@
 
 .introduccion-p1{ font-style: italic; }
 
-.introduccion-p3{ font-size: var(--font-size-2);}
+.introduccion-p3{ font-size: var(--font-size-2); }
 
 .introduccion-p2{
+  max-width: 60vw;
   margin: 10px 30px;
   padding: 10px 5px;
-  max-width: 60vw;
   letter-spacing: 1px;
   font-weight: bold;
-  border-top: var(--introduccion-p2-border);
-  border-bottom: var(--introduccion-p2-border);
-
+  border-top: 1px solid rgb(43, 104, 65);
+  border-bottom: 1px solid rgb(43, 104, 65);
 }
 
 .provisiones-contenedor {
   position: relative;
   display: grid;
   grid-template-columns:1fr 1fr;
-  /* border: var(--provisiones-contenedor-border); */
-  background-color: var(--provisiones-contenedor-bgcolor);
+  background-color: var(--blanco);
 }
 
 .contenedor-izquierdo,
@@ -37,34 +35,33 @@
   position: sticky;
   top:65px;
   order: 1;
-  cursor: pointer;
-  border: var(--contenedor-lateral-border);
-  background-color: var(--contenedor-lateral-bgcolor);
   margin: 10px 0;
+  cursor: pointer;
+  border: 5px solid var(--blanco); 
+  background-color: rgb(69, 115, 85);
 }
 
 .contenedor-nombre {
   position: sticky;
   top:0;
   padding: 10px 10px;
+  color: var(--blanco);
+  border-top: 5px solid rgb(69, 115, 85);
   font-size: var(--font-size-3);
-  color: var(--contenedor-nombre-color);
   transition: all 0.5s;
-  border-top: 5px solid var(--contenedor-lateral-bgcolor);
 }
 
 .contenedor-nombre:hover {
   letter-spacing: 1.5px;
-  border-top: var(--contenedor-nombre-hover-border);
+  border-top: 5px solid rgb(43, 80, 48);
 }
-
 
 .filtro-contenedor,
 .lechuzas-contenedor {
   position: absolute;
   top: 100%;
-  display: none;
   width: 80%;
+  display: none;
 }
 
 .lechuzas-contenedor { width: 100%;}
@@ -75,29 +72,29 @@
   min-width: 140px;
   max-height: 80vh;
   display: block;
-  background-color: var(--abierto-bgcolor);
+  background-color: rgba(113, 116, 113, 0.7);
 }
 
 .contenedor-derecho .abierto { 
-  border-bottom: var(--abierto-lechuzas-border);
-  background-color: var(--abierto-lechuzas-bgcolor);
+  border-bottom: 2px solid var(--negro);
+  background-color: rgba(113, 116, 113, 0.95);
 }
 
 .tarjetas-contenedor {
+  margin: 10px;
   grid-column: span 3;
   order: 2;
   flex-wrap: wrap;
   display:flex;
   justify-content: space-evenly;
   gap: 10px;
-  background-color: var(--tarjetas-contenedor-bgcolor);
-  margin: 10px;
+  background-color: var(--blanco);
 }
 
 .tarjetas-contenedor .sin-item {
-  padding: 30px 0px;
   width: 50vw;
   min-height: 420px;
+  padding: 30px 0;
   line-height: 20px;
   font-size: var(--font-size-2);
 }
@@ -105,9 +102,7 @@
 
 @media (min-width: 443px) {
   .contenedor-izquierdo,
-  .contenedor-derecho {
-    top:45px;}
-}
+  .contenedor-derecho { top:45px;} }
 
 @media (min-width: 720px) {
   .provisiones-contenedor {
@@ -130,9 +125,9 @@
     margin: 0;
   }
   
-  .contenedor-derecho { border-right: var(--mq-contenedor-lateral-border); }
+  .contenedor-derecho { border-right: 10px solid rgb(161, 206, 168); }
 
-  .contenedor-izquierdo { border-left: var(--mq-contenedor-lateral-border); }
+  .contenedor-izquierdo { border-left: 10px solid rgb(161, 206, 168); }
 
   .contenedor-nombre { 
     padding: 20px 15px;
@@ -142,13 +137,13 @@
   }
 
   .contenedor-nombre span{
+    order: 2;
     display: block;
     padding-top: 20px;
-    order: 2;
     font-size: 20px;
   }
    
-  .contenedor-nombre:hover { border-top: 5px solid var(--verde5)}
+  .contenedor-nombre:hover { border-top: 5px solid rgb(69, 115, 85); }
 
   .contenedor-izquierdo .abierto,
   .contenedor-derecho .abierto {
@@ -157,7 +152,7 @@
     width: 20vw;
     min-width: 200px;
     max-width: 300px;
-    background-color: var(--mq-abierto-bgcolor);
+    background-color: rgb(196, 196, 196);
   }
 
   .tarjetas-contenedor { order: 1; 
@@ -165,9 +160,8 @@
 
   .contenedor-derecho .abierto { 
     border-bottom: none;
-    background-color: var(--mq-abierto-lechuzas-bgcolor);
+    background-color: rgb(69, 115, 85);
   }
-
 }
 
  

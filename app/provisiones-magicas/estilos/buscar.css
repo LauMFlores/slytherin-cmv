@@ -8,36 +8,35 @@
 }
 
 .buscar-contenedor input{
-    padding: 5px;
     max-width: 100%;
     min-width: 70%;
+    padding: 5px;
     border-radius: 5px;
-    border: var(--buscar-input-border);
-    font-size: var(--font-size-1);
+    border: 2px solid var(--gris-claro-2);
+    font-size: var(--font-size-0);
 }
 
+.buscar-contenedor input:hover { box-shadow: 0 0 5px var(--blanco); }
+
 .buscar-boton {
-    padding: 10px 5px;
     min-width: 85px;
     max-width: 100px;
     height: 30px;
+    padding: 10px 5px;
     display:flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    font-family: monospace;
-    border: var(--buscar-boton-border);
-    font-size: var(--font-size-1);
-    color: var( --buscar-boton-color);
-    background-color: var(--buscar-boton-bgcolor);
+    border: 1px solid var(--negro-opacidad-75);
+    color: var(--blanco);
+    background-color: var(--negro-opacidad-75);
+    font-family: var(--font-family-2);
     transition: all 0.5s;
 }
 
-/* .limpiar { padding: 5px 13px; } */
-
 .buscar-boton:hover {
-    background-color: var(--buscar-boton-hover-bgcolor);
-    border: var( --buscar-boton-hover-border);
+    background-color: var(--negro);
+    border: 1px solid  var(--negro);
 }

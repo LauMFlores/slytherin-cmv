@@ -1,12 +1,6 @@
-import { useState } from "react";
-import { useEffect } from 'react';
+import { useState, useEffect } from "react";
+import '../../interfaces/interface';
 import '../estilos/botonSolicitar.css'
-
-
-interface BotonSolicitarProps {
-    onClick: () => void;
-    disabled: boolean
-  }
   
 export default function BotonSolicitar(props: BotonSolicitarProps) {
     
@@ -30,9 +24,7 @@ export default function BotonSolicitar(props: BotonSolicitarProps) {
                 Accio Item!
             </button> 
             {mensajeCarrito &&
-            <p className='mensaje-carrito' >Excelente, una lechuza ya está en camino! 🦉</p>}
-           
-            
+            <p className='mensaje-carrito' >Excelente, una lechuza ya está en camino! 🦉</p>}  
         </div>
     )
 }

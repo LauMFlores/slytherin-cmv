@@ -1,7 +1,6 @@
 import React from 'react';
 import Login from './componentes/Login';
 import Faq from './componentes/Faq';
-import Footer from './componentes/Footer';
 import './page.css';
  
 

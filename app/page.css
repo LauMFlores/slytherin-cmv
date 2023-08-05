@@ -1,73 +1,39 @@
 .main-contenedor {
-  /* background-color: rgb(209, 202, 202); */
-  /* margin-left: auto;
-  margin-right: auto; */
   position: relative;
   z-index:5;
-  /* background-color: rgba(0, 0, 0, 0.103); */
- 
 }
 
-.home-contenedor {
-  background-color: rgb(0, 0, 0);
-}
+.home-contenedor { background-color: var(--negro); }
 
 .home-contenedor::before {
- /* background-color: rgb(93, 95, 97);
- background-color: rgb(207, 203, 203); */
- /* background-color: rgba(0, 0, 0, 0.418); */
- /* background-color: rgb(0, 0, 0); */
- content: ""; 
- position: absolute;
- top: 0;
- left: 0;
- bottom:0;
- right:0;
- z-index: 0;
- margin-left: auto;
- margin-right: auto;
- width: 100%;
- height: 100%;
- background-image: url(../public/wallpaper1.png);
- background-repeat: no-repeat;
- background-size: 100%;
- filter: blur(1px) grayscale(0.5); 
- background-position: center;
- background-size: cover;
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom:0;
+  right:0;
+  z-index: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  background-image: url(../public/wallpaper1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  filter: blur(1px) grayscale(0.5); 
+  background-position: center;
+  background-size: cover;
 }
 
 @media (min-width: 720px) {
   .main-contenedor {
     max-width: 1300px;
-    background-color: rgba(0, 0, 0, 0.363);
-    z-index:20;
-    position: relative;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: var(--negro-opacidad-30);
   }
-
-  .home-contenedor::before {
-    content: ""; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom:0;
-    right:0;
-    z-index: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: 100%;
-    background-image: url(../public/wallpaper1.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    filter: blur(1px) grayscale(0.5); 
-    background-position: center;
-    background-size: cover;
-  }
-  
 }
 
 

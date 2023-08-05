@@ -1,36 +1,41 @@
 .solicitar-contenedor{
     margin-bottom: 10px;
     padding: 5px;
-   
 }
 
-.solicitar-boton {
+.solicitar-boton,
+.solicitar-boton:disabled:hover {
     margin-bottom: 10px;
     padding: 10px 30px;
     cursor: pointer;
-    font-size: var(--font-size-2); 
-    font-family: monospace;
-    color: black;
     border-radius: 5px;
-    border: var(--buscar-boton-border);
-    border: 2px solid white;
-    font-size: var(--font-size-1);
-    color: var( --buscar-boton-color);
-    background-color: var(--buscar-boton-bgcolor);
+    border: 1px solid var(--negro-opacidad-75);
+    color: var(--blanco);
+    background-color: var(--negro-opacidad-75);
+    font-family: var(--font-family-2);
     transition: all 0.5s;
 }
 
+.solicitar-boton:disabled {
+    opacity: 0.2;
+}
+
+.solicitar-boton:disabled:hover {
+    letter-spacing: 0;
+    cursor: default; 
+}
+
 .solicitar-boton:hover {
-    color: white;
-    background-color: rgba(47, 83, 52, 0.76);
-    border: 2px solid rgba(47, 83, 52, 0.76);
     letter-spacing: 1px;
+    color: var(--blanco);
+    border: 1px solid var(--verde-medio);
+    background-color: var(--verde-medio);
 }
 
 .mensaje-carrito{
     padding: 5px 2px;
-    font-size: var(--font-size-1);
-    background-color: var(--mensaje-carrito-bgcolor);
-    border-top: var(--mensaje-carrito-border);
-    border-bottom: var(--mensaje-carrito-border);
+    border-top: 2px solid var(--blanco);
+    border-bottom: 2px solid var(--blanco);
+    background-color: var(--verde-mensaje-bg-2);
+    font-family: var(--font-family-3);
 }

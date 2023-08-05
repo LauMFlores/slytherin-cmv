@@ -1,9 +1,5 @@
+import '../../interfaces/interface';
 import '../estilos/filtro.css';
-
-interface FiltroProps {
-  categorias: string[];
-  onFiltrar: (categoria: string) => void;
-}
 
 export default function Filtro({ categorias, onFiltrar }: FiltroProps) {
  
@@ -18,7 +14,7 @@ export default function Filtro({ categorias, onFiltrar }: FiltroProps) {
   };
 
   return (
-    <div className='filtro'>
+    <div className='filtro' onClick={(event) => event.stopPropagation()} >
       <button onClick={handleMostrarTodo}>Ver todos</button>
       
       {categorias.map((categoria) => (
