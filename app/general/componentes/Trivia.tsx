@@ -130,7 +130,7 @@ export default function Trivia () {
                     {mensaje && <p className={`hechizos-respuesta ${respuestaCorrecta ? "mensaje-exito" : ""} ${respuestaIncorrecta ? "mensaje-error" : ""}`}>{mensaje}</p>}
                   </>
               ) : ( 
-                  <img className="dorso-imagen" src="./hogwarts-logo.png" alt="logo de Hogwarts" />
+                  <img className="dorso-imagen" src="./img/hogwarts-logo.png" alt="logo de Hogwarts" />
               )}
               </div>
            </div>

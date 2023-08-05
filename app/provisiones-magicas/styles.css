@@ -6,12 +6,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: var(--font-size-3);
+  font-size: var(--font-size-2);
 }
 
 .introduccion-p1{ font-style: italic; }
 
-.introduccion-p3{ font-size: var(--font-size-2); }
+.introduccion-p3{ font-size: var(--font-size-3); }
 
 .introduccion-p2{
   max-width: 60vw;
@@ -47,7 +47,7 @@
   padding: 10px 10px;
   color: var(--blanco);
   border-top: 5px solid rgb(69, 115, 85);
-  font-size: var(--font-size-3);
+  font-size: var(--font-size-2);
   transition: all 0.5s;
 }
 
@@ -96,7 +96,7 @@
   min-height: 420px;
   padding: 30px 0;
   line-height: 20px;
-  font-size: var(--font-size-2);
+  font-size: var(--font-size-3);
 }
 
 

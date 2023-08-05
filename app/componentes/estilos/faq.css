@@ -20,14 +20,14 @@
   color: var(--blanco);
   background-color: var(--negro-opacidad-85);
   font-size: var(--font-size-3);
-  font-family:var(--font-family-3);
+  font-family:var(--font-family-2);
 }
 
 .faq-respuesta {
   margin-left: 10px;
   margin-right: 10px;
   padding: 15px 20px;
-  line-height: 25px;
+  line-height: 26px;
   /* text-shadow: 0.3px -0.8px 1px rgba(40, 41, 40, 0.39); */
   border-bottom: 2px solid var(--blanco);
   background-color: var(--verde-claro-opacidad-50);
@@ -49,6 +49,8 @@
 
 .faq-respuesta-texto {
   padding: 5px 0 20px;
+  font-family:var(--font-family-2);
+  font-size: var(--font-size-2);
   animation: fadeIn ease 4s;
 }
 
@@ -62,7 +64,8 @@
   text-align: left;
   font-weight: bold;
   font-style: italic;
-  font-size: 16px;
+  font-size: 17px;
+  font-family:var(--font-family-2);
   color: var(--negro);
   border-bottom: 4px solid var(--blanco);
   background-color:var(--gris-plata);

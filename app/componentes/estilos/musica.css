@@ -29,8 +29,5 @@
         max-width: 100px;
         margin:0 10px;
     }
-    .musica-boton {
-        padding: 3px 10px;
-        font-size: var(--font-size-1);
-     }
+    .musica-boton { padding: 3px 10px; }
   }

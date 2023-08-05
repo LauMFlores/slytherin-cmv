@@ -19,7 +19,7 @@
     border-bottom: 5px solid var(--verde-oscuro-1);
     color: var(--blanco);
     background-color: var( --gris-oscuro-2);
-    font-size: var(--font-size-2);
+    font-size: var(--font-size-3);
 }
 
 .anuncios p {

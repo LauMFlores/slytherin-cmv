@@ -19,8 +19,9 @@
     color: var(--blanco);
     border-top: 1px solid var(--blanco);
     background-color: var(--negro-opacidad-85);
-    font-size: var(--font-size-10);
-    font-family: var(--font-family-3);
+    font-size: var(--font-size-4);
+    font-family: var(--font-family-2);
+    letter-spacing: 6px;
 }
 
 .login-formulario{
@@ -42,6 +43,9 @@
     border: 1px solid var(--blanco);
     color: var(--blanco);
     background-color: var(--gris-oscuro-2-opacidad-85);
+    letter-spacing: 0.5px;
+    font-family: var(--font-family-2);
+    font-size: var(--font-size-2);
     transition: all 0.3s;
 }
  
@@ -61,6 +65,7 @@
 .login-clave::placeholder {
     color: var(--blanco);
     font-family: var(--font-family-2);
+    font-size: var(--font-size-0);
 }
 
 .login-mostrar-clave-boton {
@@ -89,6 +94,8 @@
     color: var(--blanco);
     border-left: 12px solid var(--rojo-mensaje-border-2);
     background-color: var(--rojo-mensaje-bg-2);
+    font-family: var(--font-family-2);
+    font-style: italic;
 }
 
 .login-mensaje {
@@ -96,16 +103,18 @@
     padding: 12px;
     border-left: 12px solid var(--verde-mensaje-border-2);
     background-color: var(--verde-mensaje-bg-2);
-    font-size: var(--font-size-2);
+    font-size: var(--font-size-3);
+    font-family: var(--font-family-2);
     font-weight: bold;
+    font-style: italic;
 }
 
 .login-alohomora-boton {
-    width: 200px;
+    width: 190px;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px 6px;
+    padding: 8px 4px;
     display: block;
     text-align: center;
     text-decoration: none;
@@ -113,9 +122,10 @@
     border-radius: 10px;
     border: 2px solid var( --verde-claro);
     box-shadow: 0px 0px 8px var(--gris-oscuro-2);
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-weight: bold;
-    font-family: var(--font-family-3);
+    font-family: var(--font-family-2);
+    font-size: var(--font-size-3);
     color: var(--blanco);
     background-color: var( --verde-claro);
     transition: all 0.8s;
@@ -136,9 +146,10 @@
     padding: 12px 5px;
     display: block;
     text-decoration: none;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-weight: bold;
-    font-family: var(--font-family-3);
+    font-family: var(--font-family-2);
+    font-size: var(--font-size-3);
     border-radius: 10px;
     box-shadow: 0 0 5px;
     color: var(--blanco);
@@ -148,7 +159,7 @@
 }
 
 .login-entrar-boton:hover {
-    letter-spacing: 5px;
+    letter-spacing: 6px;
     box-shadow: 0 0 5px;
     outline: 1px solid var(--blanco);
     background-color: var(--negro);

@@ -40,6 +40,8 @@
   --blanco: white;
   --blanco-opacidad-15: rgba(255, 255, 255, 0.15);
   --blanco-opacidad-50: rgba(255, 255, 255, 0.5);
+  --blanco-opacidad-65: rgba(255, 255, 255, 0.65);
+  --blanco-opacidad-75: rgba(255, 255, 255, 0.75);
   
   /* ------- negros -----  */
   --negro: black;
@@ -71,14 +73,13 @@
  /* tamaños de fuente del sitio */
   --font-size-0: clamp(14px, 8px + 0.4vw, 17px);
   --font-size-1: clamp(15px, 8px + 0.8vw, 18px);
-  --font-size-2: clamp(17px, 8px + 0.8vw, 20px);
-  --font-size-3: clamp(16px, 8px + 0.8vw, 19px);
+  --font-size-2: clamp(16px, 8px + 0.8vw, 19px);
+  --font-size-3: clamp(17px, 8px + 0.8vw, 20px);
   --font-size-4:clamp(18px, 10px + 1.1vw, 22px);
 
-  --font-size-5: clamp(16px, 8px + 0.8vw, 18px);
-  --font-size-8: clamp(18px, 14px + 1.1vw, 26px);
-  --font-size-9: clamp(16px, 10px + 1.4vw, 34px);
-  --font-size-10: clamp(12px, 10px + 1.1vw, 26px);
+ 
+  --font-size-9: clamp(18px, 10px + 1.4vw, 34px); 
+  /* estaba en 16 */
 
 }
 
@@ -92,16 +93,13 @@
   font-family: var(--font-family-1);
 }
 
-body {
-  background-color: var(--negro-opacidad-75);
-  font-size: var(--font-size-1);
-}
+body { background-color: var(--negro-opacidad-75); }
 
 .layout-header-contenedor {
   position: relative;
   z-index: 10;
   background-color: var(--negro-opacidad-85);
-  border-bottom: 1px solid rgba(247, 245, 245, 0.658);
+  border-bottom: 1px solid var(--blanco-opacidad-65);
 }
 
 .layout-header {
@@ -122,8 +120,9 @@ body {
   text-align: center;
   letter-spacing: 1vw;
   border-radius: 15px;
-  text-shadow: 7px 2px 8px rgb(96, 97, 96);
-  color: rgba(255, 255, 255, 0.767);
+  /* text-shadow: 7px 2px 8px rgb(96, 97, 96); */
+  text-shadow: 7px 2px 8px var(--gris-claro-2);
+  color: var(--blanco-opacidad-75);
   border-left: 5px solid var(--blanco);
   border-right: 5px solid var(--blanco);
   font-family:var(--font-family-3);
@@ -134,7 +133,7 @@ body {
   .layout-header-contenedor {
     margin-left: auto;
     margin-right: auto;
-    background-color: rgba(0, 0, 0, 0.356);
+    background-color: var(--negro-opacidad-45);
   }
 
   .layout-header { padding: 3px 30px; }
