@@ -9,7 +9,7 @@
 
 .general-botonera button {
     height: 40px;
-    max-width:150px;
+    max-width:160px;
     flex-grow: 1;
     cursor: pointer;
     letter-spacing: 0.5px;

@@ -51,7 +51,7 @@ export default function ProductosEnCamino({ productos, cantidadItems, onEliminar
                         <button onClick={() => handleEliminarProducto(index)}> 
                           Cancelar Lechuza
                         </button>
-                        {mostrarConfirmacion && (
+                        {mostrarConfirmacion && productoIndex === index  && (
                           <div className='lechuzas-confirmacion'>
                             <p className='lechuzas-confirmacion-p1'>¿Está seguro que desea cancelar esta lechuza?</p>
                             <p className='lechuzas-confirmacion-p2'>{producto.nombre} x{producto.cantidad}</p>

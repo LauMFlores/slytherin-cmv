@@ -9,7 +9,7 @@ import "../general/styles.css";
 
 
 export default function salonPersonal() {
-    const pageTitle = "Campus Mágico de Slytherin";
+    const pageTitle = "Mi Salón Personal";
     const [contenedorActivo, setContenedorActivo] = useState<string>("horarios");
 
     const handleContenedorActivo = (section: string) => {

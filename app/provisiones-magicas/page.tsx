@@ -109,7 +109,7 @@ export default function provisionesMagicas () {
                 <p className="sin-item">No se encuentra tal artículo mágico dentro de {filtro || "la tienda"}.</p>
               )}
               {productosFiltrados.map((elemento) => (
-                <Tarjeta key={elemento.id} producto={elemento} agregarProductoEnCamino={agregarProductoEnCamino} />
+                <Tarjeta key={elemento.id} producto={elemento} agregarProductoEnCamino={agregarProductoEnCamino}/>
               ))} 
             </div>
           {/* Productos en camino = Lechuzas */}

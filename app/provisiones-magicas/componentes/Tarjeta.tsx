@@ -39,7 +39,7 @@ export default function Tarjeta (props: TarjetaProps) {
             <p className='tarjeta-precio-final'>${precioFinal} Galeones</p>
           </> 
          ) : ( 
-            <p className='tarjeta-precio-final'>${precioFinal} Galeones</p> )
+          <p className='tarjeta-precio-final'>${precioFinal} Galeones</p> )
         }
       </div>
       <Contador precioUnitario={precioFinal} onCantidadChange={setCantidad} /> 
