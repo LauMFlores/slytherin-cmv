@@ -44,6 +44,5 @@
     color: var(--blanco);
     background-color: var(--negro);
     font-size: var(--font-size-3);
-    font-family: var(--font-family-3);
     transform: translate(7px, 55px);
 }

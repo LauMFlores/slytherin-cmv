@@ -21,7 +21,6 @@
     flex-grow: 2;
     letter-spacing: 1px;
     border-top: 2px solid var(--blanco);
-    font-family: var(--font-family-3);
     font-size: var(--font-size-5);
 }
 

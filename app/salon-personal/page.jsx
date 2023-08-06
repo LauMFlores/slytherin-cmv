@@ -4,7 +4,6 @@ import Layout from "../layout2";
 import Botonera from "../componentes/Botonera";
 import Horarios from "./componentes/Horarios";
 import Calificaciones from "./componentes/Calificaciones";
-import dataUsuarios from "../data_usuarios.json";
 import "../general/styles.css";
 import "./styles.css";
 
@@ -19,8 +18,8 @@ export default function salonPersonal() {
         setContenedorActivo(section);
     };
 
+ //usuario  del localStorage
     useEffect(() => {
-        // Recuperar el usuario autenticado del localStorage
         const usuarioString = localStorage.getItem("usuarioAutenticado");
         if (usuarioString) {
             const usuarioAutenticado = JSON.parse(usuarioString);
@@ -28,10 +27,12 @@ export default function salonPersonal() {
         }
     }, []);
 
+  //mayúscula
     const capitalizeFirstLetter = (str) => {
       return str.charAt(0).toUpperCase() + str.slice(1);
     };
 
+  //switch para poner tipo de estudiante 
     const tipoUsuarioMensaje = () => {
       const usuario = usuarioAutenticado;
       if (!usuario) {
@@ -58,6 +59,7 @@ export default function salonPersonal() {
       return <p>{mensaje}</p>;
     };
 
+
     return (
         <Layout pageTitle={pageTitle}>
          <main>
@@ -73,7 +75,8 @@ export default function salonPersonal() {
               <div> {tipoUsuarioMensaje()} </div>
               <div> Año: {usuarioAutenticado?.anio}</div>
             </div>
-            <div className="separador"></div>
+          <div className="separador"></div>
+
           {contenedorActivo === "horarios" && 
           <div className="personal-horarios">
             <h3 className='campus-titulos'> Mis Horarios</h3> 

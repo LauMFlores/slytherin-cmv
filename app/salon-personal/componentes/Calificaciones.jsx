@@ -1,14 +1,12 @@
-
-
 import React, { useState, useEffect } from "react";
 import dataUsuarios from "../../data_usuarios.json";
 import "../estilos/calificaciones.css";
 
 export default function Calificaciones() {
     const [usuarioAutenticado, setUsuarioAutenticado] = useState(null);
-  
+
+  //usuario localStorage 
     useEffect(() => {
-      // Recuperar el usuario autenticado del LocalStorage al cargar la página
       const usuarioString = localStorage.getItem("usuarioAutenticado");
       if (usuarioString) {
         const usuarioAutenticado = JSON.parse(usuarioString);
@@ -16,7 +14,7 @@ export default function Calificaciones() {
       }
     }, []);
   
-    // Función para obtener las calificaciones del usuario autenticado desde el JSON
+    // Calificaciones del usuario
     const obtenerCalificacionesUsuario = () => {
       if (usuarioAutenticado) {
         const usuarioEncontrado = dataUsuarios.find((usuario) => usuario.username === usuarioAutenticado.username);

@@ -55,7 +55,7 @@
 .contador-mensaje{
     margin-bottom: 5px;
     padding: 5px 2px;
-    color: var(--verde-oscuro-1) ;
+    color: var(--verde-oscuro-3) ;
     background-color: var(--verde-mensaje-bg-2) ;
     border: 10px solid var(--gris-plata);
 }
