@@ -1,34 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## PROYECTO FINAL 
 
-## Getting Started
+¡Bienvenidos al CAMPUS MÁGICO VIRUTAL - CMV - de la CASA SLYTHERIN!
 
-First, run the development server:
+En el CMV vas a encontrar todos los recursos necesarios para tu cursada en Hogwarts. Es exclusivo para alumnos que fueron seleccionados dentro de Slytherin.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## LOGIN
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ingresá con tu IEM - usuario mágico - y Contraseña - la misma que está vigente para la sala común del castillo -.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## GENERAL
+Contenido importante para todos los alumnos.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### ANUNCIOS
+Muestra las últimas noticias.  
+### CALENDARIO
+Muestra fechas importantes del año en curso. 
+### PUNTOS
+Muestra la puntuacion actual de cada casa.
+### HECHIZOS
+Trivia para practicar los conocimientos de hechizos.
 
-## Learn More
+## SALÓN PERSONAL
+Contenido específico para el alumno que realizó el login.
 
-To learn more about Next.js, take a look at the following resources:
+### MIS HORARIOS 
+Muestra sus horarios para las materias del año.   
+### MIS CALIFICACIONES
+Muestra sus calificaciones de los examenes rendidos en el año.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## PROVISIONES MÁGICAS DE EMERGENCIA
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Tienda mágica para comprar todo aquel artículo que necesitás para la cursada. 
+Cada envío se realiza a través de una lechuza y el importe se debita mágicamente de Gringotts. 
 
-## Deploy on Vercel
+## ----------------- PAUTAS OPCIONALES ELEGIDAS--------
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Pequeñas animaciones con CSS
+- Llamada a una API externa
+- Llamadas a JSON internos
+- Muy responsive (espero!)
+- Sitio en NextJS
+- Uso de Hooks
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+------- 
+ Lo que me hubiera gustado agregar pero no llegué con el tiempo:   
+- Algunas cositas de desarrollo cool en JS o librerías externas, como SwiperJS.
+- Mejor CSS en los menús que se abren y cierran, para que tengan animación y la transición sea más bonita y suave. 
+- Personalizar el favicon.ico  
+                    
+
