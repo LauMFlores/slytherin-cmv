@@ -8,7 +8,7 @@ import database from '../data_usuarios.json';
 
 const passwordDatabase = database.map((user) => ({
   ...user,
-  password: "123" //"magiaantigua" // Cambio la clave segun cambia en la sala común:
+  password: "magiaantigua" // Cambio la clave segun cambia en la sala común.
 }));
 
 export default function Login() {

@@ -33,8 +33,9 @@
 }
 
 .cuenta-regresiva-contenedor {
-    background-color: silver;
+    background-color: var(--gris-plata);
 }
+
 .campus-descripcion {
     margin: 0 25px;
     padding-top:20px;

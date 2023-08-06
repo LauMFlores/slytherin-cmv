@@ -9,14 +9,14 @@
       "dia": "Martes",
       "horario": "2:00 PM - 4:00 PM",
       "materia": "Pociones",
-      "usuarios": []
+      "usuarios": ["00000"]
     },
     {
       "id": "1",
       "dia": "Miércoles",
       "horario": "10:00 AM - 12:00 PM",
       "materia": "Encantamientos",
-      "usuarios": ["12345"]
+      "usuarios": ["12345", "00000"]
     },
     {
         "id": "2",
@@ -29,7 +29,7 @@
       "dia": "Viernes",
       "horario": "10:00 AM - 12:00 PM",
       "materia": "Defensa Contra las Artes Oscuras",
-      "usuarios": ["12345"]
+      "usuarios": ["12345", "00000"]
     },
     {"id": "2",
       "dia": "Sábado",
@@ -47,7 +47,7 @@
       "dia": "Miércoles",
       "horario": "4:00 PM - 6:00 PM",
       "materia": "Herbología",
-      "usuarios": []
+      "usuarios": ["00000"]
     },
     {"id": "1",
       "dia": "Martes",
@@ -59,13 +59,13 @@
       "dia": "Jueves",
       "horario": "4:00 PM - 6:00 PM",
       "materia": "Transformaciones",
-      "usuarios": ["12345"]
+      "usuarios": ["12345","00000"]
     },
     {"id": "1",
       "dia": "Miércoles",
       "horario": "8:00 AM - 10:00 AM",
       "materia": "Astronomía",
-      "usuarios": []
+      "usuarios": ["00000"]
     },
     {"id": "2",
       "dia": "Viernes",
@@ -83,13 +83,13 @@
       "dia": "Sábado",
       "horario": "4:00 PM - 6:00 PM",
       "materia": "Historia de la Magia",
-      "usuarios": ["123"]
+      "usuarios": ["00000"]
     },
     {"id": "1",
       "dia": "Viernes",
       "horario": "8:00 AM - 10:00 AM",
       "materia": "Runas Antiguas",
-      "usuarios": ["123"]
+      "usuarios": ["00000"]
     },
     {"id": "2",
       "dia": "Lunes",
@@ -101,7 +101,7 @@
       "dia": "Sábado",
       "horario": "8:00 AM - 10:00 AM",
       "materia": "Adivinación",
-      "usuarios": ["123","12345"]
+      "usuarios": ["00000","12345"]
     },
     {"id": "2",
       "dia": "Martes",
@@ -119,7 +119,7 @@
       "dia": "Jueves",
       "horario": "10:00 AM - 12:00 PM",
       "materia": "Estudio de los Muggles",
-      "usuarios": ["123"]
+      "usuarios": ["00000"]
     },
     {"id": "1",
       "dia": "Viernes",
@@ -131,6 +131,6 @@
       "dia": "Sábado",
       "horario": "10:00 AM - 12:00 PM",
       "materia": "Cuidado de Criaturas Mágicas",
-      "usuarios": ["123"]
+      "usuarios": ["00000"]
     }
   ]

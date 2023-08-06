@@ -46,7 +46,7 @@ export default function General() {
           {contenedorActivo === "puntos" && 
             <div className="general-puntos">
                 <h3 className='campus-titulos'>Copa de las Casas</h3> 
-                <p className='campus-descripcion'>Seguimiento de la puntuación de la copa de las casas.</p>
+                <p className='campus-descripcion'>Seguimiento de la puntuación de la Copa de las Casas.</p>
                 <Puntos/>
             </div>}
           {contenedorActivo === "hechizos" && 

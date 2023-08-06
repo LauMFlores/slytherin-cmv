@@ -1,6 +1,6 @@
 .musica-contenedor {
-    min-width: 65px;
-    max-width: 80px;
+    min-width: 50px;
+    width: 80px;
     padding: 0 5px;
 }
 
@@ -23,11 +23,12 @@
     box-shadow: 0 0 8px var(--blanco);
 }
 
-
 @media (min-width: 500px) {
     .musica-contenedor {
-        max-width: 100px;
+        min-width: 65px;
+        width: 100px;
         margin:0 10px;
     }
+
     .musica-boton { padding: 3px 10px; }
   }
