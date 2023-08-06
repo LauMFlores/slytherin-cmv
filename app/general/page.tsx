@@ -23,7 +23,7 @@ export default function General() {
       <main className="campus">
         <div className="campus-contenedor">
         <div className="cuenta-regresiva-contenedor">
-          <CuentaRegresiva/>
+          {/* <CuentaRegresiva/> */}
         </div>
         
         <Botonera

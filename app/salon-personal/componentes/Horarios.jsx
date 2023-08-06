@@ -54,13 +54,13 @@ export default function Horarios() {
     <div>
       {usuarioAutenticado ? (
         <div className="horarios-contenedor">
-          {Object.entries(materiasPorDia).map(([dia, materias]) => (
-            <div className="dia-contenedor" key={dia}>
+          {Object.entries(materiasPorDia).map(([dia, materias, horario]) => (
+            <div className="dia-contenedor" key={`${dia}-${horario}`}>
               <p className="dia-titulo">{dia}</p>
               {materias.length > 0 ? (
                 <ul className="dia-item-contenedor">
                   {materias.map((materia) => (
-                    <li className="dia-item" key={materia.id}>
+                    <li className="dia-item" key={`${materia.materia}-${materia.horario}`}>
                       <p className="dia-materia"> {materia.materia}</p> <p className="dia-horario"> {materia.horario}</p>
                     </li>
                   ))}

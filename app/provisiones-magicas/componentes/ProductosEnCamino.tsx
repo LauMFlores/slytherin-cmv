@@ -44,10 +44,9 @@ export default function ProductosEnCamino({ productos, cantidadItems, onEliminar
             <p className="lechuzas-info">Paquetes en cada lechuza:</p>
                 <ul className="lechuzas-total-paquetes"> 
                   {productos.map((producto, index) => (
-                    <li key={producto.id}>
-                        <p>{producto.nombre} x{producto.cantidad} 
-                          <p>(${producto.precio * producto.cantidad} Galeones)</p>
-                        </p>
+                    <li key={`${producto.id}-${index}`}>
+                        <p>{producto.nombre} x{producto.cantidad}</p> 
+                        <p>(${producto.precio * producto.cantidad} Galeones)</p>
                         <button onClick={() => handleEliminarProducto(index)}> 
                           Cancelar Lechuza
                         </button>

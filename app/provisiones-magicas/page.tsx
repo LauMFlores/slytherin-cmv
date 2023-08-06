@@ -79,7 +79,8 @@ export default function provisionesMagicas () {
 
 
     return (
-      <Layout pageTitle={pageTitle}>
+     <Layout pageTitle={pageTitle}>
+       <main>
         {/* Introduccion */}
         <div className="introduccion-contenedor">
           <p className='introduccion-p1'>
@@ -129,7 +130,8 @@ export default function provisionesMagicas () {
               )}
             </div>     
         </div>
-      </Layout>
+       </main>
+     </Layout>
     )
 }
 
