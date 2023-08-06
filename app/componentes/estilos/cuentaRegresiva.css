@@ -1,0 +1,51 @@
+.cuenta-regresiva {
+    max-width: 340px;
+    padding: 5px 0 20px;
+    margin: 0 auto;
+}
+
+.etiqueta {
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: var(--verde-oscuro);
+    color: var(--gris-oscuro);
+}
+
+.tiempo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    border-radius: 5px;
+}
+
+.tiempo p{
+    width: 85px;
+    height: 50px;
+    display: flex;
+    direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid var(--blanco);
+    box-shadow: 8px 8px 10px var(--gris-oscuro-2);
+    text-shadow: 2px 2px 7px var(--negro);
+    color: var(--blanco);
+    background-color: var(--verde-oscuro-2);
+    font-family: var(--font-family-2);
+}
+
+@media (min-width: 720px) { 
+    .cuenta-regresiva { max-width: 500px; }
+
+    .etiqueta { letter-spacing: 2px; }
+
+    .tiempo span{ 
+        width: 120px;
+        height: 50px;
+        padding: 15px;
+        letter-spacing: 1px;
+    }
+}

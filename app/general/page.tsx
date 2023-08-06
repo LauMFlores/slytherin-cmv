@@ -7,6 +7,7 @@ import Calendario from "./componentes/Calendario";
 import Puntos from "./componentes/Puntos";
 import Trivia from "./componentes/Trivia";
 import data from "./data/data_calendario.json";
+import CuentaRegresiva from "../componentes/CuentaRegresiva";
 import "./styles.css"; 
 
 export default function General() {
@@ -21,6 +22,10 @@ export default function General() {
     <Layout pageTitle={pageTitle}>
       <main className="campus">
         <div className="campus-contenedor">
+        <div className="cuenta-regresiva-contenedor">
+          <CuentaRegresiva/>
+        </div>
+        
         <Botonera
             opciones={["anuncios", "calendario", "puntos","hechizos"]} 
             contenedorActivo={contenedorActivo}

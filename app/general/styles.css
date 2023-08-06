@@ -32,6 +32,9 @@
     font-size: var(--font-size-4);
 }
 
+.cuenta-regresiva-contenedor {
+    background-color: silver;
+}
 .campus-descripcion {
     margin: 0 25px;
     padding-top:20px;

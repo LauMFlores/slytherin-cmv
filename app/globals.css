@@ -11,7 +11,7 @@
 
  /* gradiente del sitio */
   --verde-gradiente: linear-gradient( to right,
-   #0f855dbd 10%,
+   rgba(15, 133, 93, 0.741) 10%,
    rgba(129, 194, 158, 0.741) 30%,
    #81d681bd 70%); 
 
@@ -22,7 +22,7 @@
   /* --verde-medio: rgb(69, 115, 85); */
   --verde-medio: rgb(43, 129, 94);
   --verde-oscuro:rgb(43, 104, 65);
-  /* --verde-oscuro-1: rgb(15, 133, 94); */
+  --verde-oscuro-2: rgba(15, 133, 93, 0.741);
   --verde-oscuro-1: rgb(8, 95, 66);
   --verde-claro-opacidad-60: rgba(128, 194, 157, 0.6) ;
   /* --verde-medio-opacidad-65: rgba(3, 73, 27, 0.6); */
