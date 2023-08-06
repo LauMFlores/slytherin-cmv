@@ -1,6 +1,9 @@
 .solicitar-contenedor{
     margin-bottom: 10px;
     padding: 5px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .solicitar-boton,
@@ -16,9 +19,7 @@
     transition: all 0.5s;
 }
 
-.solicitar-boton:disabled {
-    opacity: 0.2;
-}
+.solicitar-boton:disabled { opacity: 0.2; }
 
 .solicitar-boton:disabled:hover {
     letter-spacing: 0;
@@ -33,9 +34,16 @@
 }
 
 .mensaje-carrito{
-    padding: 5px 2px;
-    border-top: 2px solid var(--blanco);
-    border-bottom: 2px solid var(--blanco);
-    background-color: var(--verde-mensaje-bg-2);
+    height: 70px;
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    color: var(--blanco);
+    background-color: var(--negro);
+    font-size: var(--font-size-3);
     font-family: var(--font-family-3);
+    transform: translate(7px, 55px);
 }

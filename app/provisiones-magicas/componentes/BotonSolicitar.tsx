@@ -20,11 +20,12 @@ export default function BotonSolicitar(props: BotonSolicitarProps) {
         
     return (
         <div className='solicitar-contenedor' >
+            {mensajeCarrito &&
+            <p className='mensaje-carrito' >Excelente, una lechuza ya está en camino! 🦉</p>}  
+
             <button className='solicitar-boton' onClick={handleClick} disabled={disabled}>
                 Accio Item!
             </button> 
-            {mensajeCarrito &&
-            <p className='mensaje-carrito' >Excelente, una lechuza ya está en camino! 🦉</p>}  
         </div>
     )
 }

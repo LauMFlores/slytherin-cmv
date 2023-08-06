@@ -89,8 +89,8 @@
   },
 
   { "username": "30001",
-    "nombre": "Maria Laura",
-    "apellido":"Morello Flores",
+    "nombre": "Alma",
+    "apellido":"Roots",
     "prefecto":false,
     "calificaciones": [
         {
@@ -109,8 +109,8 @@
   },
 
   { "username": "30002",
-    "nombre": "Maria Laura",
-    "apellido":"Morello Flores",
+    "nombre": "Emmett",
+    "apellido":"Newtt",
     "prefecto":false,
     "calificaciones": [
       {
@@ -129,8 +129,8 @@
   },
 
   { "username": "30003",
-    "nombre": "Maria Laura",
-    "apellido":"Morello Flores",
+    "nombre": "Denis",
+    "apellido":"Liktus",
     "prefecto":false,
     "calificaciones": [
       {

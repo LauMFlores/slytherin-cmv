@@ -18,12 +18,15 @@
 /* colores del sitio */
 /* ------- verdes -----  */
   --verde-claro-chillon:rgb(118, 231, 74);
-  --verde-claro: rgb(76, 100, 80);
-  --verde-medio: rgb(69, 115, 85);
-  /* --verde-medio:rgba(47, 83, 52, 0.76); */
-  --verde-oscuro-1: #0f855dbd;
+  /* --verde-claro: rgb(76, 100, 80); */
+  /* --verde-medio: rgb(69, 115, 85); */
+  --verde-medio: rgb(43, 129, 94);
+  --verde-oscuro:rgb(43, 104, 65);
+  /* --verde-oscuro-1: rgb(15, 133, 94); */
+  --verde-oscuro-1: rgb(8, 95, 66);
   --verde-claro-opacidad-60: rgba(128, 194, 157, 0.6) ;
-  --verde-medio-opacidad-65: rgba(3, 73, 27, 0.6);
+  /* --verde-medio-opacidad-65: rgba(3, 73, 27, 0.6); */
+  --verde-medio-opacidad-65: rgba(43, 129, 95, 0.862);
 
 /* ------- grises -----  */
   --gris-plata: rgb(192, 192, 192);
@@ -32,8 +35,10 @@
   --gris-medio: rgb(82, 82, 82);
   --gris-oscuro: rgb(70, 70, 70);
   --gris-oscuro-2: rgb(51, 51, 51);
-  
+
   --gris-claro-opacidad-30: rgba(145, 145, 145, 0.294);
+  --gris-medio-opacidad-70:rgba(113, 116, 113, 0.7);
+  --gris-medio-opacidad-95:rgba(113, 116, 113, 0.95);
   --gris-oscuro-2-opacidad-85: rgba(51, 51, 51, 0.85);
   
   /* ------- blancos -----  */
@@ -75,7 +80,7 @@
   --font-size-0: clamp(14px, 8px + 0.4vw, 17px);
   --font-size-1: clamp(16px, 8px + 0.9vw, 18px);
   --font-size-2: clamp(16px, 8px + 1vw, 19px);
-  --font-size-3: clamp(17px, 8px + 0.8vw, 20px);
+  --font-size-3: clamp(17px, 8px + 1vw, 20px);
   --font-size-4:clamp(18px, 10px + 1.1vw, 22px);
   --font-size-5:clamp(18px, 10px + 1.6vw, 28px);
  

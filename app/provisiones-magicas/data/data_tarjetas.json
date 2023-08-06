@@ -1,113 +1,155 @@
 [
-   {
-   "id": 1,
-   "tipo":"varitas",
-   "imagen": "./imgProvisiones/varita.webp",
-   "nombre": "Varita generica",
-   "descripcion": "Varita de madera de roble, nucleo de fibra de corazon de dragon, 15cm.",
-   "precio": 10,
-   "descuento": 1,
-   "promocion": false
+   {  
+      "id": 1,
+      "tipo":"varitas",
+      "imagen": "./imgProvisiones/varita.webp",
+      "nombre": "Varita Genérica",
+      "descripcion": "Varita de madera de roble, núcleo de fibra de corazón de dragón, 13cm.",
+      "precio": 20,
+      "descuento": 1
    },
-
    {
       "id": 2,
       "tipo":"indumentaria",
       "imagen": "/imgProvisiones/tunica.jpg",
-      "nombre": "Tunica Basica",
-      "descripcion": "Tunica negra basica, para uso diario en el castillo.",
-      "precio": 5,
-      "descuento": 0.8,
-      "promocion": false
+      "nombre": "Túnica Básica",
+      "descripcion": "Túnica negra básica, para uso diario en el castillo.",
+      "precio": 10,
+      "descuento": 0.8
    },
    {
       "id": 3,
-      "tipo":"escobas",
-      "imagen": "./imgProvisiones/protecciones.jpg",
-      "nombre": "Kit Protecciones para Escoba",
-      "descripcion": "Combo de protecciones para lecciones de vuelvo en escoba o para practicas de quidditch",
-   "precio": 2,
-   "descuento": 1,
-   "promocion": false
-},
-{
-   "id": 4,
-   "tipo":"escobas",
-   "imagen": "/imgProvisiones/nimbus2023.jpg",
-   "nombre": "Escoba Nimbus Modelo 2023",
-   "descripcion": "La renombrada escoba Nimbus, de las mas veloces del mercado, en su ultima version: 2023",
-   "precio": 100,
-   "descuento": 1,
-   "promocion": false
-},
-{
-   "id": 5,
-   "tipo":"básicos",
-   "imagen": "./imgProvisiones/kit-tinta-pluma.avif",
-   "nombre": "Kit del estudiante",
-   "descripcion": "1 Pluma, 3 frascos de tinta y 10 rollos de pergamino",
-   "precio": 3,
-   "descuento": 1,
-   "promocion": false
-},
-{
-   "id": 6,
-   "tipo":"básicos",
-   "imagen": "./imgProvisiones/tinta-pluma.png",
-   "nombre": "Frasco de tinta con pluma",
-   "descripcion": "Frasco de tinta negra, pluma incluida. 2 unidades.",
-   "precio": 1,
-   "descuento": 1,
-   "promocion": false
+      "tipo":"vuelo",
+      "imagen": "./imgProvisiones/casco-quidditch.png",
+      "nombre": "Casco para Escoba",
+      "descripcion": "Ideal para lecciones de vuelvo en escoba o para prácticas de quidditch.",
+      "precio": 5,
+      "descuento": 1
    },
    {
-   "id": 7,
-   "tipo":"básicos",
-   "imagen": "./imgProvisiones/pergamino-2.jpg",
-   "nombre": "Rollo de pergamino",
-   "descripcion": "Rollos de pergamino, para todo tipo de tintas. 6 unidades ",
-   "precio": 2,
-   "descuento": 1,
-   "promocion": false
-},
-{
-   "id": 8,
-   "tipo":"pociones",
-   "imagen": "./imgProvisiones/potion-bottle.jpg",
-   "nombre": "Frascos para pociones",
-   "descripcion": "Frascos para pociones",
-   "precio": 5000,
-   "descuento": 1,
-   "promocion": false
-},
-{
-   "id": 9,
-   "tipo":"pociones",
-   "imagen": "./imgProvisiones/potion-bottle-2.jpg",
-   "nombre": "Frascos para pociones",
-   "descripcion": "Frascos para pociones",
-   "precio": 5000,
-   "descuento": 1,
-   "promocion": false
-},
-{
-   "id": 10,
-   "tipo":"pociones",
-   "imagen": "./imgProvisiones/potion-bottle-3.webp",
-   "nombre": "Frascos para pociones",
-   "descripcion": "Frascos para pociones",
-   "precio": 5000,
-   "descuento": 1,
-   "promocion": false
-}, 
-   {"id": 11,
-   "tipo":"indumentaria",
-   "imagen": "./imgProvisiones/guantes.webp",
-   "nombre": "Guantes Protectores",
-   "descripcion": "Pueden utilizarse para las clases de herbologia y de cuidados de animales magicos. Tambien excelentes para montar escobas.",
-   "precio": 1,
-   "descuento": 1,
-   "promocion": true
+      "id": 4,
+      "tipo":"vuelo",
+      "imagen": "/imgProvisiones/nimbus2023.jpg",
+      "nombre": "Escoba Nimbus Modelo 2023",
+      "descripcion": "La renombrada escoba Nimbus, de las más veloces del mercado, en su última versión: 2023.",
+      "precio": 100,
+      "descuento": 1
+   },
+   {
+      "id": 5,
+      "tipo":"básicos",
+      "imagen": "./imgProvisiones/kit-tinta-pluma.avif",
+      "nombre": "Kit del Estudiante",
+      "descripcion": "1 Pluma, 3 frascos de tinta y 10 rollos de pergamino.",
+      "precio": 4,
+      "descuento": 0.75
+   },
+   {
+      "id": 6,
+      "tipo":"básicos",
+      "imagen": "./imgProvisiones/tinta-pluma.webp",
+      "nombre": "Frasco de Tinta con Pluma",
+      "descripcion": "Frasco de tinta negra, pluma incluida de repuesto incluida.",
+      "precio": 2,
+      "descuento": 1
+   },
+   {
+      "id": 7,
+      "tipo":"básicos",
+      "imagen": "./imgProvisiones/pergamino-2.jpg",
+      "nombre": "Rollo de Pergamino",
+      "descripcion": "Rollos de pergamino, para todo tipo de tintas. 6 unidades. ",
+      "precio": 2,
+      "descuento": 1
+   },
+   {
+      "id": 8,
+      "tipo":"pociones",
+      "imagen": "./imgProvisiones/potion-bottle.jpg",
+      "nombre": "Frascos para Pociones",
+      "descripcion": "Kit pequeño de 3 unidades.",
+      "precio": 2,
+      "descuento": 1
+   },
+   {
+      "id": 9,
+      "tipo":"pociones",
+      "imagen": "./imgProvisiones/potion-bottle-2.jpg",
+      "nombre": "Frascos para Pociones",
+      "descripcion": "Kit mediano de 10 unidades",
+      "precio": 6,
+      "descuento": 0.5
+   },
+   {
+      "id": 10,
+      "tipo":"pociones",
+      "imagen": "./imgProvisiones/potion-bottle-3.webp",
+      "nombre": "Frascos para Pociones",
+      "descripcion": "Kit gigante de 34 unidades, con distintas medidas.",
+      "precio": 20,
+      "descuento": 0.25
+   }, 
+   {  
+      "id": 11,
+      "tipo":"indumentaria",
+      "imagen": "./imgProvisiones/guantes.webp",
+      "nombre": "Guantes Protectores",
+      "descripcion": "Necesarios para las clases de Herbología y Cuidado de Criaturas Mágicas.",
+      "precio": 6,
+      "descuento": 1
+   },
+   {  
+      "id": 12,
+      "tipo":"indumentaria",
+      "imagen": "./imgProvisiones/bufanda.avif",
+      "nombre": "Bufanda",
+      "descripcion": "Bufanda 100% algodon de Puffskein, ideal para el invierno.",
+      "precio": 4,
+      "descuento": 0.75
+   },
+   {  
+      "id": 13,
+      "tipo":"pociones",
+      "imagen": "./imgProvisiones/caldero.jpg",
+      "nombre": "Caldero",
+      "descripcion": " Revestido en hierro, interior en plata. Fundamental para la clase de Pociones.",
+      "precio": 40,
+      "descuento": 1
+   },
+   {  
+      "id": 14,
+      "tipo":"libros",
+      "imagen": "./imgProvisiones/libro-criaturas.jpg",
+      "nombre": "Monstruoso Libro de los Monstruos ",
+      "descripcion": "Asignatura: Cuidado de Criaturas Mágicas - Autor: Edwardus Lima",
+      "precio": 10,
+      "descuento": 1
+   },
+   {  
+      "id": 15,
+      "tipo":"libros",
+      "imagen": "./imgProvisiones/libro-gilderoy.png",
+      "nombre": "Viajes con Trolls",
+      "descripcion": "Asignatura: Defensa contra las Artes Oscuras - Autor: Gilderoy Lockhart",
+      "precio": 10,
+      "descuento": 0.5
+   },
+   {  
+      "id": 16,
+      "tipo":"libros",
+      "imagen": "./imgProvisiones/libro-hierbas.png",
+      "nombre": "1000 Hierbas y Hongos Mágicos ",
+      "descripcion": "Asignatura: Herbología - Autor: Phyllida Spore",
+      "precio": 10,
+      "descuento": 1
+   },
+   {  
+      "id": 17,
+      "tipo":"libros",
+      "imagen": "./imgProvisiones/libro-transformaciones.webp",
+      "nombre": "Guía de Transformaciones para Principiantes",
+      "descripcion": "Asignatura: Transformaciones - Autor: Emeric Switch",
+      "precio": 10,
+      "descuento": 1
    }
-
 ]
