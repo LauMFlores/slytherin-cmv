@@ -30,7 +30,7 @@
   line-height: 26px;
   /* text-shadow: 0.3px -0.8px 1px rgba(40, 41, 40, 0.39); */
   border-bottom: 2px solid var(--blanco);
-  background-color: var(--verde-claro-opacidad-50);
+  background-color: var(--verde-claro-opacidad-60);
 }
   
 .revelio {
@@ -49,7 +49,7 @@
 
 .faq-respuesta-texto {
   padding: 5px 0 20px;
-  font-family:var(--font-family-2);
+  line-height: 26px;
   font-size: var(--font-size-2);
   animation: fadeIn ease 4s;
 }

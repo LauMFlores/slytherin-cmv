@@ -2,14 +2,15 @@
   { "username": "123",
     "nombre": "Maria Laura",
     "apellido":"Morello Flores",
+    "anio": "7º",
     "prefecto":false,
     "calificaciones": [
         {
-          "Pociones": "0",
+          "Pociones": "",
           "Encantamientos": "",
           "Defensa Contra las Artes Oscuras": "",
           "Herbología": "",
-          "Transformaciones": "8",
+          "Transformaciones": "",
           "Astronomía": "",
           "Historia de la Magia": "",
           "Runas Antiguas": "",
@@ -22,83 +23,234 @@
   { "username": "12345",
     "nombre": "Evangelina",
     "apellido":"Ferreira",
-    "prefecto": false
+    "anio": "7º",
+    "prefecto": true,
+    "calificaciones": [
+      {
+        "Pociones": "E",
+        "Encantamientos": "S",
+        "Defensa Contra las Artes Oscuras": "S",
+        "Herbología": "T",
+        "Transformaciones": "S",
+        "Astronomía": "E",
+        "Historia de la Magia": "E",
+        "Runas Antiguas": "E",
+        "Adivinación": "A",
+        "Estudio de los Muggles": "A",
+        "Cuidado de Criaturas Mágicas": "S"
+      } ]
   },
 
   { "username": "33467",
     "nombre": "Sybill",
     "apellido":"Cooper",
-    "prefecto": true
+    "anio": "6º",
+    "prefecto": true,
+    "calificaciones": [
+      {
+        "Pociones": "",
+        "Encantamientos": "",
+        "Defensa Contra las Artes Oscuras": "",
+        "Herbología": "",
+        "Transformaciones": "",
+        "Astronomía": "",
+        "Historia de la Magia": "",
+        "Runas Antiguas": "",
+        "Adivinación": "",
+        "Estudio de los Muggles": "",
+        "Cuidado de Criaturas Mágicas": ""
+      } ]
   },
 
   { "username": "32566",
     "nombre": "Apolo",
     "apellido":"Longbottom",
-    "prefecto": true
+    "anio": "7º",
+    "prefecto": true,
+    "calificaciones": [
+      {
+        "Pociones": "",
+        "Encantamientos": "",
+        "Defensa Contra las Artes Oscuras": "",
+        "Herbología": "",
+        "Transformaciones": "",
+        "Astronomía": "",
+        "Historia de la Magia": "",
+        "Runas Antiguas": "",
+        "Adivinación": "",
+        "Estudio de los Muggles": "",
+        "Cuidado de Criaturas Mágicas": ""
+      } ]
   },
     
   { "username": "10072",
     "nombre": "Horace",
     "apellido":"Slughorn",
+    "anio": "Profesor",
     "profesor": true,
-    "jefe": true
+    "jefe": true,
+    "calificaciones": [
+      {
+        "Pociones": "Profesor",
+        "Encantamientos": "-",
+        "Defensa Contra las Artes Oscuras": "-",
+        "Herbología": "-",
+        "Transformaciones": "-",
+        "Astronomía": "-",
+        "Historia de la Magia": "-",
+        "Runas Antiguas": "-",
+        "Adivinación": "-",
+        "Estudio de los Muggles": "-",
+        "Cuidado de Criaturas Mágicas": "-"
+      } ]
   },
 
   { "username": "40566",
     "nombre": "Jasmine",
     "apellido":"Silverling",
+    "anio": "4º",
     "prefecto": false,
-    "quidditch":"buscador"
+    "quidditch":"buscador",
+    "calificaciones": [
+      {
+        "Pociones": "",
+        "Encantamientos": "",
+        "Defensa Contra las Artes Oscuras": "",
+        "Herbología": "",
+        "Transformaciones": "",
+        "Astronomía": "",
+        "Historia de la Magia": "",
+        "Runas Antiguas": "",
+        "Adivinación": "",
+        "Estudio de los Muggles": "",
+        "Cuidado de Criaturas Mágicas": ""
+      } ]
   },
 
   { "username": "32283",
     "nombre": "Ellis",
     "apellido":"Fiddlewood",
+    "anio": "5º",
     "prefecto": false,
-    "quidditch":"cazador"
+    "quidditch":"cazador",
+    "calificaciones": [
+      {
+        "Pociones": "",
+        "Encantamientos": "",
+        "Defensa Contra las Artes Oscuras": "",
+        "Herbología": "",
+        "Transformaciones": "",
+        "Astronomía": "",
+        "Historia de la Magia": "",
+        "Runas Antiguas": "",
+        "Adivinación": "",
+        "Estudio de los Muggles": "",
+        "Cuidado de Criaturas Mágicas": ""
+      } ]
   },
 
   { "username": "35026",
     "nombre": "Rowan",
     "apellido":"Leveret",
+    "anio": "6º",
     "prefecto": false,
-    "quidditch":"cazador"
+    "quidditch":"cazador",
+    "calificaciones": [
+      {
+        "Pociones": "",
+        "Encantamientos": "",
+        "Defensa Contra las Artes Oscuras": "",
+        "Herbología": "",
+        "Transformaciones": "",
+        "Astronomía": "",
+        "Historia de la Magia": "",
+        "Runas Antiguas": "",
+        "Adivinación": "",
+        "Estudio de los Muggles": "",
+        "Cuidado de Criaturas Mágicas": ""
+      } ]
   },
 
   { "username": "37555",
     "nombre": "Lavender",
     "apellido":"Goyle",
+    "anio": "3º",
     "prefecto": false,
-    "quidditch":"cazador"
+    "quidditch":"cazador",
+    "calificaciones": [
+      {
+        "Pociones": "",
+        "Encantamientos": "",
+        "Defensa Contra las Artes Oscuras": "",
+        "Herbología": "",
+        "Transformaciones": "",
+        "Astronomía": "",
+        "Historia de la Magia": "",
+        "Runas Antiguas": "",
+        "Adivinación": "",
+        "Estudio de los Muggles": "",
+        "Cuidado de Criaturas Mágicas": ""
+      } ]
   },
 
   {
     "username": "31103",
     "nombre": "Leota",
     "apellido":"Fledging",
+    "anio": "5º",
     "prefecto": false,
-    "quidditch":"bateador"
+    "quidditch":"bateador",
+    "calificaciones": [
+      {
+        "Pociones": "",
+        "Encantamientos": "",
+        "Defensa Contra las Artes Oscuras": "",
+        "Herbología": "",
+        "Transformaciones": "",
+        "Astronomía": "",
+        "Historia de la Magia": "",
+        "Runas Antiguas": "",
+        "Adivinación": "",
+        "Estudio de los Muggles": "",
+        "Cuidado de Criaturas Mágicas": ""
+      } ]
   },
 
   {
     "username": "39939",
     "nombre": "Mathias",
     "apellido":"Cross",
+    "anio": "6º",
     "prefecto": false,
-    "quidditch":"bateador"
+    "quidditch":"bateador",
+    "calificaciones": [
+      {
+        "Pociones": "",
+        "Encantamientos": "",
+        "Defensa Contra las Artes Oscuras": "",
+        "Herbología": "",
+        "Transformaciones": "",
+        "Astronomía": "",
+        "Historia de la Magia": "",
+        "Runas Antiguas": "",
+        "Adivinación": "",
+        "Estudio de los Muggles": "",
+        "Cuidado de Criaturas Mágicas": ""
+      } ]
   },
 
   { "username": "30001",
     "nombre": "Alma",
     "apellido":"Roots",
+    "anio": "1º",
     "prefecto":false,
     "calificaciones": [
         {
-          "Pociones": "0",
+          "Pociones": "",
           "Encantamientos": "",
           "Defensa Contra las Artes Oscuras": "",
           "Herbología": "",
-          "Transformaciones": "8",
+          "Transformaciones": "",
           "Astronomía": "",
           "Historia de la Magia": "",
           "Runas Antiguas": "",
@@ -111,14 +263,15 @@
   { "username": "30002",
     "nombre": "Emmett",
     "apellido":"Newtt",
+    "anio": "1º",
     "prefecto":false,
     "calificaciones": [
       {
-        "Pociones": "0",
+        "Pociones": "",
         "Encantamientos": "",
         "Defensa Contra las Artes Oscuras": "",
         "Herbología": "",
-        "Transformaciones": "8",
+        "Transformaciones": "",
         "Astronomía": "",
         "Historia de la Magia": "",
         "Runas Antiguas": "",
@@ -131,14 +284,15 @@
   { "username": "30003",
     "nombre": "Denis",
     "apellido":"Liktus",
+    "anio": "2º",
     "prefecto":false,
     "calificaciones": [
       {
-        "Pociones": "0",
+        "Pociones": "",
         "Encantamientos": "",
         "Defensa Contra las Artes Oscuras": "",
         "Herbología": "",
-        "Transformaciones": "8",
+        "Transformaciones": "",
         "Astronomía": "",
         "Historia de la Magia": "",
         "Runas Antiguas": "",

@@ -107,6 +107,7 @@
     font-family: var(--font-family-2);
     font-weight: bold;
     font-style: italic;
+    color: var(--negro-opacidad-85);
 }
 
 .login-alohomora-boton {

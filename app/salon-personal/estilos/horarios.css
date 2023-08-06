@@ -1,0 +1,55 @@
+.horarios-contenedor {
+    margin: 30px 3vw;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.dia-contenedor {
+    min-height: 150px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px var(--gris-medio);
+    background-color: var(--gris-plata);
+}
+
+.dia-item-contenedor{ margin: 10px 10px 20px ; }
+
+.dia-item{
+    margin: 5px 10px;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: start;
+    text-align: left;
+    list-style: none;
+    border-bottom: 1px solid var(--blanco);
+}
+
+.dia-titulo {
+    padding: 8px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 2px solid var(--blanco);
+    color: var(--blanco);
+    background-color: var(--verde-medio-2);
+    font-size: var(--font-size-3);
+}
+
+.dia-materia { font-weight: bold; }
+
+.dia-horario { padding-top: 5px; }
+
+
+@media (min-width: 720px) {
+  .horarios-contenedor {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+    grid-template-columns: repeat(
+        auto-fit, minmax(320px, 1fr));
+  }
+}

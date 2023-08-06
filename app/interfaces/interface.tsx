@@ -37,3 +37,8 @@ interface TarjetaProps {
   producto: Producto;
   agregarProductoEnCamino: (producto: Producto) => void;
 }
+
+interface ContadorProps {
+  onCantidadChange: (cantidad: number) => void;
+  precioUnitario: number;
+}

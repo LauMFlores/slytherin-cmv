@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import dataHorarios from "../data/data_horarios.json";
+import "../estilos/horarios.css";
 
 export default function Horarios() {
   const [usuarioAutenticado, setUsuarioAutenticado] = useState(null);
@@ -52,27 +53,26 @@ export default function Horarios() {
   return (
     <div>
       {usuarioAutenticado ? (
-        <div>
-          <h1>Horarios de {usuarioAutenticado.nombre} {usuarioAutenticado.apellido}</h1>
+        <div className="horarios-contenedor">
           {Object.entries(materiasPorDia).map(([dia, materias]) => (
-            <div key={dia}>
-              <h2>{dia}</h2>
+            <div className="dia-contenedor" key={dia}>
+              <p className="dia-titulo">{dia}</p>
               {materias.length > 0 ? (
-                <ul>
+                <ul className="dia-item-contenedor">
                   {materias.map((materia) => (
-                    <li key={materia.id}>
-                      <strong>Materia:</strong> {materia.materia}, <strong>Día:</strong> {materia.dia}, <strong>Horario:</strong> {materia.horario}
+                    <li className="dia-item" key={materia.id}>
+                      <p className="dia-materia"> {materia.materia}</p> <p className="dia-horario"> {materia.horario}</p>
                     </li>
                   ))}
                 </ul>
               ) : (
-                <p>No tienes horarios inscritos para este día.</p>
+                <p className="dia-item">No cursas materias este día.</p>
               )}
             </div>
           ))}
         </div>
       ) : (
-        <p>Debe iniciar sesión para ver los horarios.</p>
+        <p className="dia-item" >Debe iniciar sesión para ver los horarios.</p>
       )}
     </div>
   );

@@ -1,11 +1,10 @@
 'use client';
 import React, { useState } from 'react';
+import '../../interfaces/interface';
 import '../estilos/contador.css';
 
-export default function Contador(props: {
-    onCantidadChange: (cantidad: number) => void;
-    precioUnitario: number;
-  }) {
+export default function Contador(props: ContadorProps) {
+
     const [cantidad, setCantidad] = useState(0);
     const precioTotal=cantidad*props.precioUnitario;
 

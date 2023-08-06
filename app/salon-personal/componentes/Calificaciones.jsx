@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import dataUsuarios from "../../data_usuarios.json";
+import "../estilos/calificaciones.css";
 
 export default function Calificaciones() {
     const [usuarioAutenticado, setUsuarioAutenticado] = useState(null);
@@ -27,21 +28,31 @@ export default function Calificaciones() {
     const calificacionesUsuario = obtenerCalificacionesUsuario();
   
     return (
-      <div>
-        {usuarioAutenticado ? (
-          <div>
-            <h1>Calificaciones de {usuarioAutenticado.nombre} {usuarioAutenticado.apellido}</h1>
-            <ul>
-              {Object.entries(calificacionesUsuario).map(([materia, calificacion], index) => (
-                <li key={index}>
-                  <strong>{materia}:</strong> {calificacion || "Aún no ha rendido ningún examen"}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ) : (
-          <p>Debe iniciar sesión para ver las calificaciones.</p>
-        )}
-      </div>
+      <>
+        <div>
+          {usuarioAutenticado ? (
+            <div className="calificaciones-contenedor">
+              <ul className="calificaciones-item-contenedor">
+                {Object.entries(calificacionesUsuario).map(([materia, calificacion], index) => (
+                  <li className="calificaciones-item" key={index}>
+                    <p className="calificaciones-materia">{materia}:</p> <p className="calificaciones-nota"> {calificacion || "Aún no ha rendido examen"}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : (
+            <p className="calificaciones-item" >Debe iniciar sesión para ver las calificaciones.</p>
+          )}
+        </div>
+        <div className="anexo-notas">
+            <h4>Guía de Notas Mágicas</h4>
+            <p>O - Sobresaliente</p>
+            <p>E - Excede Expectativas</p>
+            <p>A - Aceptable</p>
+            <p>P - Pobre </p>
+            <p>D - Deficiente</p>
+            <p>T - Troll</p>
+        </div>
+      </>
     );
   }

@@ -18,9 +18,10 @@
 /* colores del sitio */
 /* ------- verdes -----  */
   --verde-claro-chillon:rgb(118, 231, 74);
-  /* --verde-claro: rgb(76, 100, 80); */
+  --verde-claro: rgb(78, 119, 95);
   /* --verde-medio: rgb(69, 115, 85); */
   --verde-medio: rgb(43, 129, 94);
+  --verde-medio-2: rgb(22, 124, 93);
   --verde-oscuro:rgb(43, 104, 65);
   --verde-oscuro-2: rgba(15, 133, 93, 0.741);
   --verde-oscuro-1: rgb(8, 95, 66);
