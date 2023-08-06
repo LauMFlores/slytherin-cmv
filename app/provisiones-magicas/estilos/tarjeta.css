@@ -44,6 +44,8 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
+    max-width: 230px;
+    margin: 0 auto;
 }
 
 .tarjeta-precio { text-decoration:line-through; }

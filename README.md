@@ -4,31 +4,31 @@
 
 En el CMV vas a encontrar todos los recursos necesarios para tu cursada en Hogwarts. Es exclusivo para alumnos que fueron seleccionados dentro de Slytherin.
 
-## LOGIN
+### LOGIN
 
 Ingresá con tu IEM - usuario mágico - y Contraseña - la misma que está vigente para la sala común del castillo -.
 
-## GENERAL
+### GENERAL
 Contenido importante para todos los alumnos.
 
-### ANUNCIOS
+##### ANUNCIOS
 Muestra las últimas noticias.  
-### CALENDARIO
+##### CALENDARIO
 Muestra fechas importantes del año en curso. 
-### PUNTOS
+##### PUNTOS
 Muestra la puntuacion actual de cada casa.
-### HECHIZOS
+##### HECHIZOS
 Trivia para practicar los conocimientos de hechizos.
 
-## SALÓN PERSONAL
+### SALÓN PERSONAL
 Contenido específico para el alumno que realizó el login.
 
-### MIS HORARIOS 
+#### MIS HORARIOS 
 Muestra sus horarios para las materias del año.   
-### MIS CALIFICACIONES
+#### MIS CALIFICACIONES
 Muestra sus calificaciones de los examenes rendidos en el año.
 
-## PROVISIONES MÁGICAS DE EMERGENCIA
+### PROVISIONES MÁGICAS DE EMERGENCIA
 
 Tienda mágica para comprar todo aquel artículo que necesitás para la cursada. 
 Cada envío se realiza a través de una lechuza y el importe se debita mágicamente de Gringotts. 
@@ -48,4 +48,5 @@ Cada envío se realiza a través de una lechuza y el importe se debita mágicame
 - Mejor CSS en los menús que se abren y cierran, para que tengan animación y la transición sea más bonita y suave. 
 - Personalizar el favicon.ico  
                     
+
 
