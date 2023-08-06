@@ -160,7 +160,7 @@
 
 .cargando {
     margin: 20px auto;
-    width: 500px;
+    width: 280px;
     border-radius: 15px;
     padding: 10px;
     line-height: 25px;
@@ -243,5 +243,5 @@
         margin-right: auto;
     }
 
-    
+    .cargando { width: 500x;} 
 }

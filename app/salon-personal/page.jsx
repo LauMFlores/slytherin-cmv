@@ -71,9 +71,9 @@ export default function salonPersonal() {
           <div className="campus-contenedor">
             <div className="personal-bienvenida">
               <img src="./img/puntos-slytherin.png" alt="" />
-              <div className="principal"> {usuarioAutenticado?.nombre} {usuarioAutenticado?.apellido} </div>
-              <div> {tipoUsuarioMensaje()} </div>
-              <div> Año: {usuarioAutenticado?.anio}</div>
+              <div className="bienvenida-nombre"> {usuarioAutenticado?.nombre} {usuarioAutenticado?.apellido} </div>
+              <div className="bienvenida-tipo"> {tipoUsuarioMensaje()} </div>
+              <div className="bienvenida-anio"> Año: {usuarioAutenticado?.anio}</div>
             </div>
           <div className="separador"></div>
 

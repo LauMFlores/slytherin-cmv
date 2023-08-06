@@ -48,15 +48,15 @@ export default function Anuncios () {
             </div>
             {/* anuncio 3 */}
             <div className='anuncios'>
-            {/* ❌❕✖❗ */}
-                <h4 className='anuncios-titulo'> IMPORTANTE: <br/>🚫 Toque de Queda y Restricciones </h4>
+           
+                <h4 className='anuncios-titulo'> IMPORTANTE: <br/> Toque de Queda y Restricciones </h4>
                 <p> Se recuerda a los alumnos que no se permite circular por ningún área del castillo entre las 22:00 pm y 6:00 am.  </p>
                 <p>Asimismo, se mencionan a continuación las zonas con acceso prohibido durante el año escolar vigente: </p>
-                  <p>❌<span className='subrayado'>Sección Restringida de la Biblioteca</span></p>
+                  <p>🚫 <span className='subrayado'>Sección Restringida de la Biblioteca</span></p>
                 <p> Sólo se permitirá el acceso a aquel estudiante que posea un permiso firmado por algún profesor o miembre del personal de la escuela.</p>
-                <p>❌<span className='subrayado'>Torre de Astronomía</span></p>
+                <p>🚫 <span className='subrayado'>Torre de Astronomía</span></p>
                 <p> Se permite circular por la torre únicamente en el horario asignado para cursar la materia, con tolerancia máxima de 15 minutos previos y 15 minutos al finalizar la clase.</p>
-                <p>❌<span className='subrayado'>Terrenos del Bosque Prohibido</span></p>
+                <p>🚫 <span className='subrayado'>Terrenos del Bosque Prohibido</span></p>
                 <p> Queda terminantemente prohibido el ingreso en cualquier horario para todos los estudiantes. </p>
                 <p className='rojo'>Infringir tanto el toque de queda como acceder a dichas áreas restringidas del castillo conlleva en una severa sanción disciplinaria, pudiendo derivar incluso en la expulsión de Hogwarts. </p>
             </div>

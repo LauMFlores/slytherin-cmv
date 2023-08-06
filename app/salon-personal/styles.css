@@ -10,10 +10,14 @@
     color: var(--gris-oscuro);
 }
 
-.personal-bienvenida .principal {
-    padding-right: 15px;
+.bienvenida-nombre {
     letter-spacing: 0.5px;
     font-weight: bold;
+    flex-grow: 1;
+}
+
+.bienvenida-anio, .bienvenida-tipo {
+    flex-grow: 1;
 }
 
 .personal-bienvenida img {
@@ -30,8 +34,6 @@
 @media (min-width: 720px) {
   .personal-bienvenida { padding: 0 7vw; }
 
-.personal-bienvenida div {
-    font-size: var(--font-size-3);
-}
+
 
 }
