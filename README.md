@@ -16,7 +16,7 @@ Muestra las últimas noticias.
 ##### CALENDARIO
 Muestra fechas importantes del año en curso. 
 ##### PUNTOS
-Muestra la puntuacion actual de cada casa.
+Muestra la puntuación actual de cada casa.
 ##### HECHIZOS
 Trivia para practicar los conocimientos de hechizos.
 
@@ -24,9 +24,9 @@ Trivia para practicar los conocimientos de hechizos.
 Contenido específico para el alumno que realizó el login.
 
 #### MIS HORARIOS 
-Muestra sus horarios para las materias del año.   
+Muestra tus horarios para las materias del año.   
 #### MIS CALIFICACIONES
-Muestra sus calificaciones de los examenes rendidos en el año.
+Muestra tus calificaciones de los examenes rendidos en el año.
 
 ### PROVISIONES MÁGICAS DE EMERGENCIA
 
